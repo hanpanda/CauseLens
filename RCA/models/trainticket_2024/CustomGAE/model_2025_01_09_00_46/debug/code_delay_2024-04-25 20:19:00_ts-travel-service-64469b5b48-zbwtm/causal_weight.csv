@@ -1,0 +1,28 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+17,ts-basic-service-BasicController.queryForTravel,24,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel,7.9634539835366125,7.9634539835366125,0.0
+24,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel,175,ts-preserve-other-service-HTTP POST /api/v1/basicservice/basic/travel,8.561469126393769,8.561469126393769,0.0
+24,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel,187,ts-preserve-service-HTTP POST /api/v1/basicservice/basic/travel,7.84424053553593,7.84424053553593,0.0
+24,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel,275,ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travel,6.907868881038132,6.907868881038132,0.0
+24,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel,261,ts-travel-service-HTTP POST /api/v1/basicservice/basic/travel,5.641249221310506,5.641249221310506,0.0
+20,ts-basic-service-HTTP GET /api/v1/priceservice/prices/{routeId}/{trainType},17,ts-basic-service-BasicController.queryForTravel,8.661597518226088,8.661597518226088,0.0
+264,ts-travel-service-HTTP POST /api/v1/travelservice/trip_detail,192,ts-preserve-service-HTTP POST /api/v1/travelservice/trip_detail,3.0648578158146385,3.0648578158146385,0.0
+24,ts-travel-service-64469b5b48-zbwtm,268,ts-travel-service-Transaction.commit,22.53766194856939,22.53766194856939,0.0
+24,ts-travel-service-64469b5b48-zbwtm,267,ts-travel-service-SELECT ts.trip,22.536198186989825,22.536198186989825,0.0
+24,ts-travel-service-64469b5b48-zbwtm,261,ts-travel-service-HTTP POST /api/v1/basicservice/basic/travel,0.37488913178872707,5.641249221310506,5.266360089521779
+24,ts-travel-service-64469b5b48-zbwtm,264,ts-travel-service-HTTP POST /api/v1/travelservice/trip_detail,-0.404058215712674,2.8138592537246128,3.2179174694372867
+21,ts-basic-service-HTTP GET /api/v1/routeservice/routes/{routeId},17,ts-basic-service-BasicController.queryForTravel,-0.03514629448623552,8.661597518226088,8.696743812712324
+22,ts-basic-service-HTTP GET /api/v1/stationservice/stations/id/{stationNameForId},17,ts-basic-service-BasicController.queryForTravel,-0.07641287190023505,8.661597518226088,8.738010390126323
+23,ts-basic-service-HTTP GET /api/v1/trainservice/trains/byName/{name},17,ts-basic-service-BasicController.queryForTravel,-0.058043705254851474,8.661597518226088,8.71964122348094
+2,ts-basic-service-5dc8d4f9fd-58xkn,17,ts-basic-service-BasicController.queryForTravel,-0.1517984878320302,8.661597518226088,8.813396006058118
+2,ts-basic-service-5dc8d4f9fd-58xkn,24,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel,-0.15411672577731306,7.9634539835366125,8.117570709313926
+2,ts-basic-service-5dc8d4f9fd-58xkn,20,ts-basic-service-HTTP GET /api/v1/priceservice/prices/{routeId}/{trainType},-0.24777486886046418,7.797217531844186,8.04499240070465
+14,ts-preserve-other-service-66646bdb5b-sd2p8,175,ts-preserve-other-service-HTTP POST /api/v1/basicservice/basic/travel,0.10370163142631306,8.561469126393769,8.457767494967456
+198,ts-price-service-PriceController.query,195,ts-price-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,8.086667621180068,8.086667621180068,0.0
+16,ts-price-service-76846864d9-shjpl,195,ts-price-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,0.008234033891568515,8.086667621180068,8.0784335872885
+16,ts-price-service-76846864d9-shjpl,196,ts-price-service-PriceConfigRepository.findByRouteIdAndTrainType,0.08450809353904187,2.5686302265988643,2.4841221330598224
+15,ts-preserve-service-b5ccf8557-cn5km,187,ts-preserve-service-HTTP POST /api/v1/basicservice/basic/travel,0.025279821874558017,7.84424053553593,7.818960713661372
+15,ts-preserve-service-b5ccf8557-cn5km,192,ts-preserve-service-HTTP POST /api/v1/travelservice/trip_detail,-0.025055929758412976,3.0648578158146385,3.0899137455730514
+194,ts-price-service-HTTP GET /api/v1/priceservice/prices/{routeId}/{trainType},20,ts-basic-service-HTTP GET /api/v1/priceservice/prices/{routeId}/{trainType},7.797217531844186,7.797217531844186,0.0
+25,ts-travel2-service-5c66d57d58-klvkm,275,ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travel,0.2103271120564827,6.907868881038132,6.697541768981649
+270,ts-travel-service-TravelController.getTripAllDetailInfo,264,ts-travel-service-HTTP POST /api/v1/travelservice/trip_detail,2.8138592537246128,2.8138592537246128,0.0
+199,ts-price-service-SELECT PriceConfig,196,ts-price-service-PriceConfigRepository.findByRouteIdAndTrainType,2.5686302265988643,2.5686302265988643,0.0

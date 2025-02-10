@@ -1,0 +1,46 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+34,ts-cancel-service-HTTP GET /api/v1/orderservice/order/{orderId},30,ts-cancel-service-CancelController.cancelTicket,4.1146039542449175,4.1146039542449175,0.0
+63,ts-execute-service-HTTP GET /api/v1/orderservice/order/{orderId},56,ts-execute-service-ExecuteControlller.collectTicket,4.5190172507178925,4.5190172507178925,0.0
+63,ts-execute-service-HTTP GET /api/v1/orderservice/order/{orderId},57,ts-execute-service-ExecuteControlller.executeTicket,3.6519751188085077,4.113730057039379,0.4617549382308714
+140,ts-order-service-HTTP GET /api/v1/orderservice/order/{orderId},34,ts-cancel-service-HTTP GET /api/v1/orderservice/order/{orderId},30.096335175384183,30.096335175384183,0.0
+140,ts-order-service-HTTP GET /api/v1/orderservice/order/{orderId},63,ts-execute-service-HTTP GET /api/v1/orderservice/order/{orderId},15.83346882211797,15.83346882211797,0.0
+140,ts-order-service-HTTP GET /api/v1/orderservice/order/{orderId},99,ts-inside-payment-service-HTTP GET /api/v1/orderservice/order/{orderId},8.405405255686354,8.405405255686354,0.0
+59,ts-execute-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},84,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},5.5715399997207555,5.5715399997207555,0.0
+84,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},80,ts-gateway-service-/*,0.7030169411021205,4.22157170398055,3.5185547628784297
+83,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},80,ts-gateway-service-/*,2.4017503591574254,4.22157170398055,1.8198213448231249
+56,ts-execute-service-ExecuteControlller.collectTicket,58,ts-execute-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},3.5423422253233916,3.5423422253233916,0.0
+57,ts-execute-service-ExecuteControlller.executeTicket,59,ts-execute-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},5.575225238588258,5.575225238588258,0.0
+58,ts-execute-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},83,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},5.09891214442929,5.09891214442929,0.0
+3,ts-cancel-service-756f6c4675-n8l65,34,ts-cancel-service-HTTP GET /api/v1/orderservice/order/{orderId},-0.4266366564584132,30.096335175384183,30.522971831842597
+3,ts-cancel-service-756f6c4675-n8l65,30,ts-cancel-service-CancelController.cancelTicket,-0.03261329968216309,4.1146039542449175,4.147217253927081
+7,ts-execute-service-775f544d9-xhnd8,63,ts-execute-service-HTTP GET /api/v1/orderservice/order/{orderId},-0.06029419653287604,15.83346882211797,15.893763018650846
+7,ts-execute-service-775f544d9-xhnd8,59,ts-execute-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},-0.037962431175945,5.575225238588258,5.613187669764203
+7,ts-execute-service-775f544d9-xhnd8,56,ts-execute-service-ExecuteControlller.collectTicket,-0.0147169149354891,4.5190172507178925,4.533734165653382
+7,ts-execute-service-775f544d9-xhnd8,57,ts-execute-service-ExecuteControlller.executeTicket,-0.05878157139402962,4.113730057039379,4.1725116284334085
+7,ts-execute-service-775f544d9-xhnd8,58,ts-execute-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},-0.006089734817775305,3.5423422253233916,3.548431960141167
+146,ts-order-service-OrderController.getOrderById,140,ts-order-service-HTTP GET /api/v1/orderservice/order/{orderId},11.03108162227704,11.03108162227704,0.0
+12,ts-order-service-5b67c48447-4d4rx,140,ts-order-service-HTTP GET /api/v1/orderservice/order/{orderId},-0.08746492093117375,11.03108162227704,11.118546543208213
+10,ts-inside-payment-service-6f94c49ccd-ql78t,99,ts-inside-payment-service-HTTP GET /api/v1/orderservice/order/{orderId},-0.030404668067864904,8.405405255686354,8.435809923754219
+9,ts-gateway-service-6f6cfc45b-m2jwn,84,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},-0.06392227916014015,5.5715399997207555,5.635462278880896
+9,ts-gateway-service-6f6cfc45b-m2jwn,83,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},-0.1324310953954395,5.09891214442929,5.23134323982473
+9,ts-gateway-service-6f6cfc45b-m2jwn,80,ts-gateway-service-/*,0.1168111121159976,4.22157170398055,4.104760591864553
+60,ts-execute-service-HTTP GET /api/v1/orderOtherService/orderOther/status/{orderId}/{status},56,ts-execute-service-ExecuteControlller.collectTicket,0.031377139867264425,4.5190172507178925,4.487640110850628
+61,ts-execute-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId},56,ts-execute-service-ExecuteControlller.collectTicket,0.03273936553581347,4.5190172507178925,4.486277885182079
+61,ts-execute-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId},57,ts-execute-service-ExecuteControlller.executeTicket,0.10051903795817907,4.113730057039379,4.0132110190812
+62,ts-execute-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},56,ts-execute-service-ExecuteControlller.collectTicket,-0.060629645979040525,4.5190172507178925,4.579646896696933
+62,ts-execute-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},57,ts-execute-service-ExecuteControlller.executeTicket,-0.024521682651624133,4.113730057039379,4.138251739691003
+86,ts-gateway-service-HTTP POST /api/v1/inside_pay_service/inside_payment,80,ts-gateway-service-/*,0.5548254801371444,4.22157170398055,3.666746223843406
+89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,80,ts-gateway-service-/*,0.8557162048636182,4.22157170398055,3.365855499116932
+81,ts-gateway-service-FilteringWebHandler.handle,80,ts-gateway-service-/*,0.3767677343964948,4.22157170398055,3.8448039695840555
+88,ts-gateway-service-HTTP POST /api/v1/preserveservice/preserve,80,ts-gateway-service-/*,-0.40102575482697045,4.22157170398055,4.622597458807521
+87,ts-gateway-service-HTTP POST /api/v1/preserveotherservice/preserveOther,80,ts-gateway-service-/*,-0.1656780180399764,4.22157170398055,4.387249722020527
+82,ts-gateway-service-HTTP GET /api/v1/cancelservice/cancel/{orderId}/{loginId},80,ts-gateway-service-/*,-0.13311820491289783,4.22157170398055,4.354689908893448
+91,ts-gateway-service-HTTP POST /api/v1/users/login,80,ts-gateway-service-/*,0.0464805587734487,4.22157170398055,4.175091145207102
+90,ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left,80,ts-gateway-service-/*,-0.01815482722153572,4.22157170398055,4.239726531202086
+85,ts-gateway-service-HTTP GET /api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId},80,ts-gateway-service-/*,-0.048267879346172826,4.22157170398055,4.269839583326723
+36,ts-cancel-service-HTTP PUT /api/v1/orderOtherService/orderOther,30,ts-cancel-service-CancelController.cancelTicket,0.004638455220840498,4.1146039542449175,4.109965499024077
+35,ts-cancel-service-HTTP GET /api/v1/userservice/users/id/{userId},30,ts-cancel-service-CancelController.cancelTicket,0.004083371175235051,4.1146039542449175,4.1105205830696825
+37,ts-cancel-service-HTTP PUT /api/v1/orderservice/order,30,ts-cancel-service-CancelController.cancelTicket,-0.0045311157814040826,4.1146039542449175,4.119135070026322
+32,ts-cancel-service-HTTP GET /api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money},30,ts-cancel-service-CancelController.cancelTicket,-0.0069442654013309735,4.1146039542449175,4.1215482196462485
+33,ts-cancel-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId},30,ts-cancel-service-CancelController.cancelTicket,0.0011663225201745675,4.1146039542449175,4.113437631724743
+55,ts-execute-service-BasicErrorController.error,58,ts-execute-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},0.06888808096512111,3.5423422253233916,3.4734541443582705

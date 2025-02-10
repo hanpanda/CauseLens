@@ -1,0 +1,15 @@
+{
+    "editor.rulers": [
+        120
+    ],
+    "editor.overviewRulerBorder": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb",
+        "*.xlsx": "cweijan.officeViewer",
+        "*.csv": "default",
+        "{git,gitlens}:/**/*.{md,csv}": "default",
+        "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default",
+        "{git,gitlens}:/**/*.{md,csv,svg}": "default",
+        "file:/**/*.xlsx": "jupyter-data-wrangler"
+    }
+}

@@ -1,0 +1,1309 @@
+{
+    "metric": {
+        "network_delay": {
+            "n": 10,
+            "skipped": 0,
+            "top-1": 0.8,
+            "top-2": 0.8,
+            "top-3": 0.9,
+            "top-4": 0.9,
+            "top-5": 0.9,
+            "avg@5": 0.86,
+            "avg_rank": 1.8
+        },
+        "cpu_contention": {
+            "n": 7,
+            "skipped": 0,
+            "top-1": 1.0,
+            "top-2": 1.0,
+            "top-3": 1.0,
+            "top-4": 1.0,
+            "top-5": 1.0,
+            "avg@5": 1.0,
+            "avg_rank": 1.0
+        },
+        "all": {
+            "n": 17,
+            "skipped": 0,
+            "top-1": 0.8823529411764706,
+            "top-2": 0.8823529411764706,
+            "top-3": 0.9411764705882353,
+            "top-4": 0.9411764705882353,
+            "top-5": 0.9411764705882353,
+            "avg@5": 0.9176470588235295,
+            "avg_rank": 1.4705882352941178
+        }
+    },
+    "detail": [
+        {
+            "timestamp": 1712315460,
+            "level": "pod",
+            "cmdb_id": "ts-auth-service-7f8d7d756d-vx7bh",
+            "failure_type": "cpu_contention",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 1,
+                    "score": 63.49718951917983,
+                    "path": "pod: ts-auth-service-7f8d7d756d-vx7bh --10.94--> api: ts-auth-service-SELECT ts.auth_user --8.05--> api: ts-auth-service-SELECT User --9.89--> api: ts-auth-service-UserRepository.findByUsername",
+                    "name": "ts-auth-service-7f8d7d756d-vx7bh"
+                },
+                {
+                    "ntype": "api",
+                    "id": 13,
+                    "score": 10.985016590339876,
+                    "path": "api: ts-auth-service-SELECT ts.auth_user --8.05--> api: ts-auth-service-SELECT User --9.89--> api: ts-auth-service-UserRepository.findByUsername",
+                    "name": "ts-auth-service-SELECT ts.auth_user"
+                },
+                {
+                    "ntype": "api",
+                    "id": 11,
+                    "score": 9.593623389428783,
+                    "path": "api: ts-auth-service-HTTP POST /api/v1/users/login --6.91--> api: ts-gateway-service-HTTP POST /api/v1/users/login",
+                    "name": "ts-auth-service-HTTP POST /api/v1/users/login"
+                },
+                {
+                    "ntype": "api",
+                    "id": 12,
+                    "score": 8.54089051768467,
+                    "path": "api: ts-auth-service-SELECT User --9.89--> api: ts-auth-service-UserRepository.findByUsername",
+                    "name": "ts-auth-service-SELECT User"
+                },
+                {
+                    "ntype": "api",
+                    "id": 10,
+                    "score": 7.410548381896488,
+                    "path": "api: ts-auth-service-HTTP GET /api/v1/verifycode/verify/{verifyCode}",
+                    "name": "ts-auth-service-HTTP GET /api/v1/verifycode/verify/{verifyCode}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 15,
+                    "score": 6.111338542185828,
+                    "path": "api: ts-auth-service-UserController.getToken",
+                    "name": "ts-auth-service-UserController.getToken"
+                },
+                {
+                    "ntype": "api",
+                    "id": 144,
+                    "score": 4.195634476077099,
+                    "name": "ts-order-service-INSERT ts.orders"
+                },
+                {
+                    "ntype": "api",
+                    "id": 16,
+                    "score": 3.5120978957095095,
+                    "path": "api: ts-auth-service-UserRepository.findByUsername",
+                    "name": "ts-auth-service-UserRepository.findByUsername"
+                },
+                {
+                    "ntype": "api",
+                    "id": 71,
+                    "score": 3.468003241231739,
+                    "name": "ts-food-service-HTTP GET /api/v1/trainfoodservice/trainfoods/{tripId}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 137,
+                    "score": 3.081616640150984,
+                    "name": "ts-order-other-service-UPDATE ts.orders_other"
+                }
+            ]
+        },
+        {
+            "timestamp": 1712316360,
+            "level": "pod",
+            "cmdb_id": "ts-cancel-service-756f6c4675-n8l65",
+            "failure_type": "cpu_contention",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 3,
+                    "score": 503.71815540321126,
+                    "path": "pod: ts-cancel-service-756f6c4675-n8l65 --9.65--> api: ts-cancel-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId}",
+                    "name": "ts-cancel-service-756f6c4675-n8l65"
+                },
+                {
+                    "ntype": "api",
+                    "id": 31,
+                    "score": 8.964555540213581,
+                    "name": "ts-cancel-service-HTTP GET /api/v1/cancelservice/cancel/{orderId}/{loginId}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 206,
+                    "score": 5.550762718147635,
+                    "name": "ts-route-service-RouteRepository.findById"
+                },
+                {
+                    "ntype": "api",
+                    "id": 239,
+                    "score": 4.971384881589216,
+                    "path": "api: ts-station-service-SELECT ts.station --2.97--> api: ts-station-service-SELECT station --3.43--> api: ts-station-service-StationRepository.findByNames --2.64--> api: ts-station-service-StationController.queryForIdBatch",
+                    "name": "ts-station-service-SELECT ts.station"
+                },
+                {
+                    "ntype": "api",
+                    "id": 255,
+                    "score": 4.417142970052244,
+                    "path": "api: ts-train-service-TrainController.retrieveByName --2.60--> api: ts-train-service-HTTP POST /api/v1/trainservice/trains/byNames --2.80--> api: ts-basic-service-HTTP POST /api/v1/trainservice/trains/byNames",
+                    "name": "ts-train-service-TrainController.retrieveByName"
+                },
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 4.247912656862501,
+                    "name": "ts-cancel-service-CancelController.cancelTicket"
+                },
+                {
+                    "ntype": "api",
+                    "id": 144,
+                    "score": 4.0640597587538645,
+                    "name": "ts-order-service-INSERT ts.orders"
+                },
+                {
+                    "ntype": "api",
+                    "id": 137,
+                    "score": 3.820980295836981,
+                    "name": "ts-order-other-service-UPDATE ts.orders_other"
+                },
+                {
+                    "ntype": "api",
+                    "id": 238,
+                    "score": 3.662055650767636,
+                    "path": "api: ts-station-service-SELECT station --3.43--> api: ts-station-service-StationRepository.findByNames --2.64--> api: ts-station-service-StationController.queryForIdBatch",
+                    "name": "ts-station-service-SELECT station"
+                },
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 3.559813387690613,
+                    "name": "ts-cancel-service-HTTP GET /api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money}"
+                }
+            ]
+        },
+        {
+            "timestamp": 1712317260,
+            "level": "pod",
+            "cmdb_id": "ts-config-service-5fcd447d84-f8khv",
+            "failure_type": "cpu_contention",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 4,
+                    "score": 112.21674011025051,
+                    "path": "pod: ts-config-service-5fcd447d84-f8khv --32.06--> api: ts-config-service-SELECT ts.config --14.07--> api: ts-config-service-SELECT Config --9.98--> api: ts-config-service-ConfigRepository.findByName --7.61--> api: ts-config-service-ConfigController.retrieve --5.65--> api: ts-config-service-HTTP GET /api/v1/configservice/configs/{configName} --12.04--> api: ts-seat-service-HTTP GET /api/v1/configservice/configs/{configName} --3.39--> api: ts-seat-service-SeatController.getLeftTicketOfInterval --3.20--> api: ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.60--> api: ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets",
+                    "name": "ts-config-service-5fcd447d84-f8khv"
+                },
+                {
+                    "ntype": "api",
+                    "id": 39,
+                    "score": 47.19434642350391,
+                    "path": "api: ts-config-service-ConfigRepository.findByName --7.61--> api: ts-config-service-ConfigController.retrieve --5.65--> api: ts-config-service-HTTP GET /api/v1/configservice/configs/{configName} --12.04--> api: ts-seat-service-HTTP GET /api/v1/configservice/configs/{configName} --3.39--> api: ts-seat-service-SeatController.getLeftTicketOfInterval --3.20--> api: ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.60--> api: ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets",
+                    "name": "ts-config-service-ConfigRepository.findByName"
+                },
+                {
+                    "ntype": "api",
+                    "id": 42,
+                    "score": 45.31727452269091,
+                    "path": "api: ts-config-service-SELECT ts.config --14.07--> api: ts-config-service-SELECT Config --9.98--> api: ts-config-service-ConfigRepository.findByName --7.61--> api: ts-config-service-ConfigController.retrieve --5.65--> api: ts-config-service-HTTP GET /api/v1/configservice/configs/{configName} --12.04--> api: ts-seat-service-HTTP GET /api/v1/configservice/configs/{configName} --3.39--> api: ts-seat-service-SeatController.getLeftTicketOfInterval --3.20--> api: ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.60--> api: ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets",
+                    "name": "ts-config-service-SELECT ts.config"
+                },
+                {
+                    "ntype": "api",
+                    "id": 41,
+                    "score": 37.81306397165402,
+                    "path": "api: ts-config-service-SELECT Config --9.98--> api: ts-config-service-ConfigRepository.findByName --7.61--> api: ts-config-service-ConfigController.retrieve --5.65--> api: ts-config-service-HTTP GET /api/v1/configservice/configs/{configName} --12.04--> api: ts-seat-service-HTTP GET /api/v1/configservice/configs/{configName} --3.39--> api: ts-seat-service-SeatController.getLeftTicketOfInterval --3.20--> api: ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.60--> api: ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets",
+                    "name": "ts-config-service-SELECT Config"
+                },
+                {
+                    "ntype": "api",
+                    "id": 40,
+                    "score": 32.100054135041496,
+                    "path": "api: ts-config-service-HTTP GET /api/v1/configservice/configs/{configName} --12.04--> api: ts-seat-service-HTTP GET /api/v1/configservice/configs/{configName} --3.39--> api: ts-seat-service-SeatController.getLeftTicketOfInterval --3.20--> api: ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.60--> api: ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets",
+                    "name": "ts-config-service-HTTP GET /api/v1/configservice/configs/{configName}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 38,
+                    "score": 31.55791173328696,
+                    "path": "api: ts-config-service-ConfigController.retrieve --5.65--> api: ts-config-service-HTTP GET /api/v1/configservice/configs/{configName} --12.04--> api: ts-seat-service-HTTP GET /api/v1/configservice/configs/{configName} --3.39--> api: ts-seat-service-SeatController.getLeftTicketOfInterval --3.20--> api: ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.60--> api: ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets",
+                    "name": "ts-config-service-ConfigController.retrieve"
+                },
+                {
+                    "ntype": "api",
+                    "id": 215,
+                    "score": 17.124990685527997,
+                    "path": "api: ts-seat-service-HTTP GET /api/v1/configservice/configs/{configName} --3.39--> api: ts-seat-service-SeatController.getLeftTicketOfInterval --3.20--> api: ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.60--> api: ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets",
+                    "name": "ts-seat-service-HTTP GET /api/v1/configservice/configs/{configName}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 221,
+                    "score": 6.7977640206743715,
+                    "path": "api: ts-seat-service-SeatController.getLeftTicketOfInterval --3.20--> api: ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.60--> api: ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets",
+                    "name": "ts-seat-service-SeatController.getLeftTicketOfInterval"
+                },
+                {
+                    "ntype": "api",
+                    "id": 271,
+                    "score": 4.096756847681588,
+                    "path": "api: ts-travel-service-TravelController.queryInfo --3.56--> api: ts-travel-service-HTTP POST /api/v1/travelservice/trips/left --3.27--> api: ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left",
+                    "name": "ts-travel-service-TravelController.queryInfo"
+                },
+                {
+                    "ntype": "api",
+                    "id": 137,
+                    "score": 4.079433868668154,
+                    "name": "ts-order-other-service-UPDATE ts.orders_other"
+                }
+            ]
+        },
+        {
+            "timestamp": 1712319960,
+            "level": "pod",
+            "cmdb_id": "ts-food-service-f5756978c-55kmn",
+            "failure_type": "cpu_contention",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 8,
+                    "score": 245.00596948126355,
+                    "path": "pod: ts-food-service-f5756978c-55kmn --13.94--> api: ts-food-service-BasicErrorController.error",
+                    "name": "ts-food-service-f5756978c-55kmn"
+                },
+                {
+                    "ntype": "api",
+                    "id": 4,
+                    "score": 19.31929828294687,
+                    "path": "api: ts-assurance-service-INSERT ts.assurance --10.16--> api: ts-assurance-service-Transaction.commit --6.66--> api: ts-assurance-service-AssuranceRepository.save --4.79--> api: ts-assurance-service-AssuranceController.createNewAssurance --3.81--> api: ts-assurance-service-HTTP GET /api/v1/assuranceservice/assurances/{typeIndex}/{orderId} --2.97--> api: ts-preserve-service-HTTP GET /api/v1/assuranceservice/assurances/{typeIndex}/{orderId}",
+                    "name": "ts-assurance-service-INSERT ts.assurance"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 8.11951960581997,
+                    "path": "api: ts-assurance-service-Transaction.commit --6.66--> api: ts-assurance-service-AssuranceRepository.save --4.79--> api: ts-assurance-service-AssuranceController.createNewAssurance --3.81--> api: ts-assurance-service-HTTP GET /api/v1/assuranceservice/assurances/{typeIndex}/{orderId} --2.97--> api: ts-preserve-service-HTTP GET /api/v1/assuranceservice/assurances/{typeIndex}/{orderId}",
+                    "name": "ts-assurance-service-Transaction.commit"
+                },
+                {
+                    "ntype": "api",
+                    "id": 2,
+                    "score": 6.777652983473715,
+                    "path": "api: ts-assurance-service-AssuranceRepository.save --4.79--> api: ts-assurance-service-AssuranceController.createNewAssurance --3.81--> api: ts-assurance-service-HTTP GET /api/v1/assuranceservice/assurances/{typeIndex}/{orderId} --2.97--> api: ts-preserve-service-HTTP GET /api/v1/assuranceservice/assurances/{typeIndex}/{orderId}",
+                    "name": "ts-assurance-service-AssuranceRepository.save"
+                },
+                {
+                    "ntype": "api",
+                    "id": 12,
+                    "score": 4.815398206268144,
+                    "path": "api: ts-auth-service-SELECT User --2.97--> api: ts-auth-service-UserRepository.findByUsername",
+                    "name": "ts-auth-service-SELECT User"
+                },
+                {
+                    "ntype": "api",
+                    "id": 70,
+                    "score": 4.070926571567037,
+                    "path": "api: ts-food-service-HTTP GET /api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId} --3.82--> api: ts-gateway-service-HTTP GET /api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}",
+                    "name": "ts-food-service-HTTP GET /api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 267,
+                    "score": 3.948188435975664,
+                    "path": "api: ts-travel-service-SELECT ts.trip --2.71--> api: ts-travel-service-SELECT Trip --3.47--> api: ts-travel-service-TripRepository.findByTripId",
+                    "name": "ts-travel-service-SELECT ts.trip"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 26,
+                    "score": 3.9415564800249627,
+                    "path": "pod: ts-user-service-687d654649-vr6qt --3.72--> api: ts-user-service-SELECT ts.user",
+                    "name": "ts-user-service-687d654649-vr6qt"
+                },
+                {
+                    "ntype": "api",
+                    "id": 0,
+                    "score": 3.3095807449543986,
+                    "path": "api: ts-assurance-service-AssuranceController.createNewAssurance --3.81--> api: ts-assurance-service-HTTP GET /api/v1/assuranceservice/assurances/{typeIndex}/{orderId} --2.97--> api: ts-preserve-service-HTTP GET /api/v1/assuranceservice/assurances/{typeIndex}/{orderId}",
+                    "name": "ts-assurance-service-AssuranceController.createNewAssurance"
+                },
+                {
+                    "ntype": "api",
+                    "id": 71,
+                    "score": 2.9027750754127832,
+                    "path": "api: ts-food-service-HTTP GET /api/v1/trainfoodservice/trainfoods/{tripId} --1.59--> api: ts-food-service-FoodController.getAllFood",
+                    "name": "ts-food-service-HTTP GET /api/v1/trainfoodservice/trainfoods/{tripId}"
+                }
+            ]
+        },
+        {
+            "timestamp": 1712320860,
+            "level": "pod",
+            "cmdb_id": "ts-inside-payment-service-6f94c49ccd-ql78t",
+            "failure_type": "cpu_contention",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 10,
+                    "score": 80.83098566085734,
+                    "path": "pod: ts-inside-payment-service-6f94c49ccd-ql78t --13.58--> api: ts-inside-payment-service-SELECT ts.inside_money --2.86--> api: ts-inside-payment-service-SELECT Money",
+                    "name": "ts-inside-payment-service-6f94c49ccd-ql78t"
+                },
+                {
+                    "ntype": "api",
+                    "id": 112,
+                    "score": 6.424963165861246,
+                    "path": "api: ts-inside-payment-service-Session.persist inside_payment.entity.Money",
+                    "name": "ts-inside-payment-service-Session.persist inside_payment.entity.Money"
+                },
+                {
+                    "ntype": "api",
+                    "id": 227,
+                    "score": 5.658920801435729,
+                    "path": "api: ts-security-service-SELECT ts.security_config --3.87--> api: ts-security-service-SELECT SecurityConfig --3.42--> api: ts-security-service-SecurityRepository.findByName",
+                    "name": "ts-security-service-SELECT ts.security_config"
+                },
+                {
+                    "ntype": "api",
+                    "id": 250,
+                    "score": 5.069424730198861,
+                    "path": "api: ts-train-service-HTTP GET /api/v1/trainservice/trains/byName/{name} --5.29--> api: ts-basic-service-HTTP GET /api/v1/trainservice/trains/byName/{name}",
+                    "name": "ts-train-service-HTTP GET /api/v1/trainservice/trains/byName/{name}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 144,
+                    "score": 4.662747747668882,
+                    "name": "ts-order-service-INSERT ts.orders"
+                },
+                {
+                    "ntype": "api",
+                    "id": 104,
+                    "score": 4.611734913768432,
+                    "path": "api: ts-inside-payment-service-InsidePaymentController.drawBack --3.49--> api: ts-inside-payment-service-HTTP GET /api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money} --4.36--> api: ts-cancel-service-HTTP GET /api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money}",
+                    "name": "ts-inside-payment-service-InsidePaymentController.drawBack"
+                },
+                {
+                    "ntype": "api",
+                    "id": 113,
+                    "score": 4.208017368731378,
+                    "path": "api: ts-inside-payment-service-Session.persist inside_payment.entity.Payment",
+                    "name": "ts-inside-payment-service-Session.persist inside_payment.entity.Payment"
+                },
+                {
+                    "ntype": "api",
+                    "id": 106,
+                    "score": 4.108401530846815,
+                    "path": "api: ts-inside-payment-service-PaymentRepository.findByUserId",
+                    "name": "ts-inside-payment-service-PaymentRepository.findByUserId"
+                },
+                {
+                    "ntype": "api",
+                    "id": 97,
+                    "score": 4.042463999392886,
+                    "path": "api: ts-inside-payment-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId}",
+                    "name": "ts-inside-payment-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 96,
+                    "score": 4.0406659967364496,
+                    "path": "api: ts-inside-payment-service-HTTP GET /api/v1/orderOtherService/orderOther/status/{orderId}/{status}",
+                    "name": "ts-inside-payment-service-HTTP GET /api/v1/orderOtherService/orderOther/status/{orderId}/{status}"
+                }
+            ]
+        },
+        {
+            "timestamp": 1712321280,
+            "level": "pod",
+            "cmdb_id": "ts-order-other-service-6cdbf9b4cc-m4l5n",
+            "failure_type": "cpu_contention",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 134,
+                    "score": 43.25238931402869,
+                    "path": "api: ts-order-other-service-Session.find other.entity.Order --17.90--> api: ts-order-other-service-OrderOtherRepository.findById --7.69--> api: ts-order-other-service-OrderOtherController.getOrderById --7.59--> api: ts-order-other-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId} --22.08--> api: ts-inside-payment-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId}",
+                    "name": "ts-order-other-service-Session.find other.entity.Order"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 11,
+                    "score": 41.94249978596319,
+                    "path": "pod: ts-order-other-service-6cdbf9b4cc-m4l5n --6.18--> api: ts-order-other-service-SELECT ts.orders_other --4.24--> api: ts-order-other-service-SELECT Order --2.93--> api: ts-order-other-service-OrderOtherRepository.findByTravelDateAndTrainNumber --4.95--> api: ts-order-other-service-OrderOtherController.getTicketListByDateAndTripId --4.99--> api: ts-order-other-service-HTTP POST /api/v1/orderOtherService/orderOther/tickets --7.83--> api: ts-seat-service-HTTP POST /api/v1/orderOtherService/orderOther/tickets --2.68--> api: ts-seat-service-SeatController.getLeftTicketOfInterval --3.47--> api: ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.72--> api: ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets",
+                    "name": "ts-order-other-service-6cdbf9b4cc-m4l5n"
+                },
+                {
+                    "ntype": "api",
+                    "id": 117,
+                    "score": 35.70925738603513,
+                    "path": "api: ts-order-other-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId} --22.08--> api: ts-inside-payment-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId}",
+                    "name": "ts-order-other-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 123,
+                    "score": 34.17725394714659,
+                    "path": "api: ts-order-other-service-OrderOtherController.getOrderById --7.59--> api: ts-order-other-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId} --22.08--> api: ts-inside-payment-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId}",
+                    "name": "ts-order-other-service-OrderOtherController.getOrderById"
+                },
+                {
+                    "ntype": "api",
+                    "id": 129,
+                    "score": 22.280671544821217,
+                    "path": "api: ts-order-other-service-OrderOtherRepository.findById --7.69--> api: ts-order-other-service-OrderOtherController.getOrderById --7.59--> api: ts-order-other-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId} --22.08--> api: ts-inside-payment-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId}",
+                    "name": "ts-order-other-service-OrderOtherRepository.findById"
+                },
+                {
+                    "ntype": "api",
+                    "id": 130,
+                    "score": 16.88783367872453,
+                    "path": "api: ts-order-other-service-OrderOtherRepository.findByTravelDateAndTrainNumber --4.95--> api: ts-order-other-service-OrderOtherController.getTicketListByDateAndTripId --4.99--> api: ts-order-other-service-HTTP POST /api/v1/orderOtherService/orderOther/tickets --7.83--> api: ts-seat-service-HTTP POST /api/v1/orderOtherService/orderOther/tickets --2.68--> api: ts-seat-service-SeatController.getLeftTicketOfInterval --3.47--> api: ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.72--> api: ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets",
+                    "name": "ts-order-other-service-OrderOtherRepository.findByTravelDateAndTrainNumber"
+                },
+                {
+                    "ntype": "api",
+                    "id": 116,
+                    "score": 16.400564072827812,
+                    "path": "api: ts-order-other-service-HTTP GET /api/v1/orderOtherService/orderOther/status/{orderId}/{status} --11.86--> api: ts-inside-payment-service-HTTP GET /api/v1/orderOtherService/orderOther/status/{orderId}/{status}",
+                    "name": "ts-order-other-service-HTTP GET /api/v1/orderOtherService/orderOther/status/{orderId}/{status}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 119,
+                    "score": 15.619667255853471,
+                    "path": "api: ts-order-other-service-HTTP POST /api/v1/orderOtherService/orderOther/tickets --7.83--> api: ts-seat-service-HTTP POST /api/v1/orderOtherService/orderOther/tickets --2.68--> api: ts-seat-service-SeatController.getLeftTicketOfInterval --3.47--> api: ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.72--> api: ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets",
+                    "name": "ts-order-other-service-HTTP POST /api/v1/orderOtherService/orderOther/tickets"
+                },
+                {
+                    "ntype": "api",
+                    "id": 124,
+                    "score": 14.9173998680972,
+                    "path": "api: ts-order-other-service-OrderOtherController.getTicketListByDateAndTripId --4.99--> api: ts-order-other-service-HTTP POST /api/v1/orderOtherService/orderOther/tickets --7.83--> api: ts-seat-service-HTTP POST /api/v1/orderOtherService/orderOther/tickets --2.68--> api: ts-seat-service-SeatController.getLeftTicketOfInterval --3.47--> api: ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.72--> api: ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets",
+                    "name": "ts-order-other-service-OrderOtherController.getTicketListByDateAndTripId"
+                },
+                {
+                    "ntype": "api",
+                    "id": 133,
+                    "score": 14.684926598294396,
+                    "path": "api: ts-order-other-service-SELECT ts.orders_other --4.24--> api: ts-order-other-service-SELECT Order --2.93--> api: ts-order-other-service-OrderOtherRepository.findByTravelDateAndTrainNumber --4.95--> api: ts-order-other-service-OrderOtherController.getTicketListByDateAndTripId --4.99--> api: ts-order-other-service-HTTP POST /api/v1/orderOtherService/orderOther/tickets --7.83--> api: ts-seat-service-HTTP POST /api/v1/orderOtherService/orderOther/tickets --2.68--> api: ts-seat-service-SeatController.getLeftTicketOfInterval --3.47--> api: ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.72--> api: ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets",
+                    "name": "ts-order-other-service-SELECT ts.orders_other"
+                }
+            ]
+        },
+        {
+            "timestamp": 1712322720,
+            "level": "pod",
+            "cmdb_id": "ts-preserve-other-service-66646bdb5b-sd2p8",
+            "failure_type": "cpu_contention",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 14,
+                    "score": 39.155935352984905,
+                    "name": "ts-preserve-other-service-66646bdb5b-sd2p8"
+                },
+                {
+                    "ntype": "api",
+                    "id": 42,
+                    "score": 4.486375973041845,
+                    "path": "api: ts-config-service-SELECT ts.config --3.27--> api: ts-config-service-SELECT Config --2.62--> api: ts-config-service-ConfigRepository.findByName --2.61--> api: ts-config-service-ConfigController.retrieve",
+                    "name": "ts-config-service-SELECT ts.config"
+                },
+                {
+                    "ntype": "api",
+                    "id": 137,
+                    "score": 3.9917745150866915,
+                    "name": "ts-order-other-service-UPDATE ts.orders_other"
+                },
+                {
+                    "ntype": "api",
+                    "id": 174,
+                    "score": 3.7234340298375694,
+                    "name": "ts-preserve-other-service-HTTP GET /api/v1/userservice/users/id/{userId}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 268,
+                    "score": 3.0052638339144697,
+                    "path": "api: ts-travel-service-Transaction.commit --1.83--> api: ts-travel-service-TripRepository.findAll",
+                    "name": "ts-travel-service-Transaction.commit"
+                },
+                {
+                    "ntype": "api",
+                    "id": 72,
+                    "score": 2.9922229387307846,
+                    "name": "ts-food-service-HTTP GET /api/v1/travelservice/routes/{tripId}"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 19,
+                    "score": 2.855391381600628,
+                    "name": "ts-security-service-cb9788d56-v24jq"
+                },
+                {
+                    "ntype": "api",
+                    "id": 41,
+                    "score": 2.7428669598201947,
+                    "path": "api: ts-config-service-SELECT Config --2.62--> api: ts-config-service-ConfigRepository.findByName --2.61--> api: ts-config-service-ConfigController.retrieve",
+                    "name": "ts-config-service-SELECT Config"
+                },
+                {
+                    "ntype": "api",
+                    "id": 172,
+                    "score": 2.5839463173787904,
+                    "name": "ts-preserve-other-service-HTTP GET /api/v1/contactservice/contacts/{id}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 240,
+                    "score": 2.515047687786791,
+                    "name": "ts-station-service-StationController.queryForIdBatch"
+                }
+            ]
+        },
+        {
+            "timestamp": 1712379300,
+            "level": "pod",
+            "cmdb_id": "ts-assurance-service-69876c9868-sscp4",
+            "failure_type": "network_delay",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 183,
+                    "score": 13.47805175296941,
+                    "path": "api: ts-preserve-service-HTTP GET /api/v1/assuranceservice/assurances/{typeIndex}/{orderId} --3.54--> api: ts-preserve-service-PreserveController.preserve",
+                    "name": "ts-preserve-service-HTTP GET /api/v1/assuranceservice/assurances/{typeIndex}/{orderId}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 171,
+                    "score": 8.790696620231449,
+                    "name": "ts-preserve-other-service-HTTP GET /api/v1/assuranceservice/assurances/{typeIndex}/{orderId}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 247,
+                    "score": 7.383564740564147,
+                    "path": "api: ts-train-food-service-SELECT ts.train_food_list --3.93--> api: ts-train-food-service-TrainFoodController.getTrainFoodOfTrip --3.42--> api: ts-train-food-service-HTTP GET /api/v1/trainfoodservice/trainfoods/{tripId} --2.82--> api: ts-food-service-HTTP GET /api/v1/trainfoodservice/trainfoods/{tripId}",
+                    "name": "ts-train-food-service-SELECT ts.train_food_list"
+                },
+                {
+                    "ntype": "api",
+                    "id": 144,
+                    "score": 4.4001500268575295,
+                    "name": "ts-order-service-INSERT ts.orders"
+                },
+                {
+                    "ntype": "api",
+                    "id": 137,
+                    "score": 3.1400413985818134,
+                    "name": "ts-order-other-service-UPDATE ts.orders_other"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 19,
+                    "score": 2.840500435638527,
+                    "name": "ts-security-service-cb9788d56-v24jq"
+                },
+                {
+                    "ntype": "api",
+                    "id": 248,
+                    "score": 2.7674008844196916,
+                    "path": "api: ts-train-food-service-TrainFoodController.getTrainFoodOfTrip --3.42--> api: ts-train-food-service-HTTP GET /api/v1/trainfoodservice/trainfoods/{tripId} --2.82--> api: ts-food-service-HTTP GET /api/v1/trainfoodservice/trainfoods/{tripId}",
+                    "name": "ts-train-food-service-TrainFoodController.getTrainFoodOfTrip"
+                },
+                {
+                    "ntype": "api",
+                    "id": 96,
+                    "score": 1.8319391201004644,
+                    "name": "ts-inside-payment-service-HTTP GET /api/v1/orderOtherService/orderOther/status/{orderId}/{status}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 176,
+                    "score": 1.7705954325148574,
+                    "name": "ts-preserve-other-service-HTTP POST /api/v1/foodservice/orders"
+                },
+                {
+                    "ntype": "api",
+                    "id": 244,
+                    "score": 1.7427908414523197,
+                    "path": "api: ts-train-food-service-HTTP GET /api/v1/trainfoodservice/trainfoods/{tripId} --2.82--> api: ts-food-service-HTTP GET /api/v1/trainfoodservice/trainfoods/{tripId}",
+                    "name": "ts-train-food-service-HTTP GET /api/v1/trainfoodservice/trainfoods/{tripId}"
+                }
+            ]
+        },
+        {
+            "timestamp": 1712379780,
+            "level": "pod",
+            "cmdb_id": "ts-auth-service-7f8d7d756d-vx7bh",
+            "failure_type": "network_delay",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 91,
+                    "score": 6.3025616852990165,
+                    "name": "ts-gateway-service-HTTP POST /api/v1/users/login"
+                },
+                {
+                    "ntype": "api",
+                    "id": 53,
+                    "score": 5.123943785919538,
+                    "path": "api: ts-delivery-service-Transaction.commit --2.37--> api: ts-delivery-service-DeliveryRepository.save",
+                    "name": "ts-delivery-service-Transaction.commit"
+                },
+                {
+                    "ntype": "api",
+                    "id": 40,
+                    "score": 4.383339032136016,
+                    "path": "api: ts-config-service-HTTP GET /api/v1/configservice/configs/{configName} --4.03--> api: ts-seat-service-HTTP GET /api/v1/configservice/configs/{configName}",
+                    "name": "ts-config-service-HTTP GET /api/v1/configservice/configs/{configName}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 255,
+                    "score": 4.008754555865527,
+                    "path": "api: ts-train-service-TrainController.retrieveByName --3.75--> api: ts-train-service-HTTP GET /api/v1/trainservice/trains/byName/{name}",
+                    "name": "ts-train-service-TrainController.retrieveByName"
+                },
+                {
+                    "ntype": "api",
+                    "id": 137,
+                    "score": 3.600722060481293,
+                    "name": "ts-order-other-service-UPDATE ts.orders_other"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 19,
+                    "score": 3.03069752788787,
+                    "name": "ts-security-service-cb9788d56-v24jq"
+                },
+                {
+                    "ntype": "api",
+                    "id": 60,
+                    "score": 2.559985867338072,
+                    "name": "ts-execute-service-HTTP GET /api/v1/orderOtherService/orderOther/status/{orderId}/{status}"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 24,
+                    "score": 2.4181886613235806,
+                    "name": "ts-travel-service-64469b5b48-cmq9p"
+                },
+                {
+                    "ntype": "api",
+                    "id": 52,
+                    "score": 2.361759395614766,
+                    "path": "api: ts-delivery-service-Session.merge delivery.entity.Delivery",
+                    "name": "ts-delivery-service-Session.merge delivery.entity.Delivery"
+                },
+                {
+                    "ntype": "api",
+                    "id": 64,
+                    "score": 2.3289192394172935,
+                    "name": "ts-food-service-<default> send"
+                }
+            ]
+        },
+        {
+            "timestamp": 1712380260,
+            "level": "pod",
+            "cmdb_id": "ts-basic-service-5dc8d4f9fd-58xkn",
+            "failure_type": "network_delay",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 181,
+                    "score": 14.614241498568074,
+                    "name": "ts-preserve-other-service-PreserveOtherController.preserve"
+                },
+                {
+                    "ntype": "api",
+                    "id": 284,
+                    "score": 10.812580704198407,
+                    "path": "api: ts-travel2-service-Travel2Controller.queryInfo --6.69--> api: ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left --6.93--> api: ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left",
+                    "name": "ts-travel2-service-Travel2Controller.queryInfo"
+                },
+                {
+                    "ntype": "api",
+                    "id": 262,
+                    "score": 9.574465084137916,
+                    "path": "api: ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels --4.59--> api: ts-travel-service-TravelController.queryInfo --2.87--> api: ts-travel-service-HTTP POST /api/v1/travelservice/trips/left --3.36--> api: ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left",
+                    "name": "ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels"
+                },
+                {
+                    "ntype": "api",
+                    "id": 261,
+                    "score": 9.373867191812355,
+                    "path": "api: ts-travel-service-HTTP POST /api/v1/basicservice/basic/travel --3.82--> api: ts-travel-service-TravelController.getTripAllDetailInfo",
+                    "name": "ts-travel-service-HTTP POST /api/v1/basicservice/basic/travel"
+                },
+                {
+                    "ntype": "api",
+                    "id": 187,
+                    "score": 9.253063544845148,
+                    "name": "ts-preserve-service-HTTP POST /api/v1/basicservice/basic/travel"
+                },
+                {
+                    "ntype": "api",
+                    "id": 247,
+                    "score": 8.223952296382961,
+                    "path": "api: ts-train-food-service-SELECT ts.train_food_list --4.35--> api: ts-train-food-service-TrainFoodController.getTrainFoodOfTrip --3.84--> api: ts-train-food-service-HTTP GET /api/v1/trainfoodservice/trainfoods/{tripId} --3.47--> api: ts-food-service-HTTP GET /api/v1/trainfoodservice/trainfoods/{tripId}",
+                    "name": "ts-train-food-service-SELECT ts.train_food_list"
+                },
+                {
+                    "ntype": "api",
+                    "id": 276,
+                    "score": 5.248896421074174,
+                    "name": "ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travels"
+                },
+                {
+                    "ntype": "api",
+                    "id": 279,
+                    "score": 4.838044827931879,
+                    "path": "api: ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left --6.93--> api: ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left",
+                    "name": "ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left"
+                },
+                {
+                    "ntype": "api",
+                    "id": 137,
+                    "score": 4.047228955710724,
+                    "name": "ts-order-other-service-UPDATE ts.orders_other"
+                },
+                {
+                    "ntype": "api",
+                    "id": 144,
+                    "score": 3.4995196875057686,
+                    "name": "ts-order-service-INSERT ts.orders"
+                }
+            ]
+        },
+        {
+            "timestamp": 1712380680,
+            "level": "pod",
+            "cmdb_id": "ts-cancel-service-756f6c4675-n8l65",
+            "failure_type": "network_delay",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 49,
+                    "score": 4.3690005855165035,
+                    "name": "ts-delivery-service-DeliveryRepository.save"
+                },
+                {
+                    "ntype": "api",
+                    "id": 144,
+                    "score": 4.309260873268869,
+                    "name": "ts-order-service-INSERT ts.orders"
+                },
+                {
+                    "ntype": "api",
+                    "id": 136,
+                    "score": 3.557065906159015,
+                    "path": "api: ts-order-other-service-Transaction.commit --2.64--> api: ts-order-other-service-OrderOtherRepository.save",
+                    "name": "ts-order-other-service-Transaction.commit"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 19,
+                    "score": 2.818391554140232,
+                    "name": "ts-security-service-cb9788d56-v24jq"
+                },
+                {
+                    "ntype": "api",
+                    "id": 243,
+                    "score": 2.518497913028565,
+                    "path": "api: ts-station-service-StationRepository.findByNames --3.35--> api: ts-station-service-StationController.queryForIdBatch",
+                    "name": "ts-station-service-StationRepository.findByNames"
+                },
+                {
+                    "ntype": "api",
+                    "id": 238,
+                    "score": 1.9699838806034036,
+                    "name": "ts-station-service-SELECT station"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 3,
+                    "score": 1.7308642797267333,
+                    "name": "ts-cancel-service-756f6c4675-n8l65"
+                },
+                {
+                    "ntype": "api",
+                    "id": 90,
+                    "score": 1.7304596580822567,
+                    "name": "ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left"
+                },
+                {
+                    "ntype": "api",
+                    "id": 75,
+                    "score": 1.7218270206011252,
+                    "name": "ts-food-service-INSERT ts.food_order"
+                },
+                {
+                    "ntype": "api",
+                    "id": 98,
+                    "score": 1.4608734758280855,
+                    "name": "ts-inside-payment-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status}"
+                }
+            ]
+        },
+        {
+            "timestamp": 1712381100,
+            "level": "pod",
+            "cmdb_id": "ts-config-service-5fcd447d84-f8khv",
+            "failure_type": "network_delay",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 215,
+                    "score": 26.916113664587463,
+                    "path": "api: ts-seat-service-HTTP GET /api/v1/configservice/configs/{configName} --4.36--> api: ts-seat-service-SeatController.getLeftTicketOfInterval --4.18--> api: ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets --5.53--> api: ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.33--> api: ts-travel-service-TravelController.queryInfo --4.56--> api: ts-travel-service-HTTP POST /api/v1/travelservice/trips/left --4.15--> api: ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left",
+                    "name": "ts-seat-service-HTTP GET /api/v1/configservice/configs/{configName}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 219,
+                    "score": 12.441830761636533,
+                    "path": "api: ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets --5.53--> api: ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.33--> api: ts-travel-service-TravelController.queryInfo --4.56--> api: ts-travel-service-HTTP POST /api/v1/travelservice/trips/left --4.15--> api: ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left",
+                    "name": "ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets"
+                },
+                {
+                    "ntype": "api",
+                    "id": 221,
+                    "score": 10.98661391577079,
+                    "path": "api: ts-seat-service-SeatController.getLeftTicketOfInterval --4.18--> api: ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets --5.53--> api: ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.33--> api: ts-travel-service-TravelController.queryInfo --4.56--> api: ts-travel-service-HTTP POST /api/v1/travelservice/trips/left --4.15--> api: ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left",
+                    "name": "ts-seat-service-SeatController.getLeftTicketOfInterval"
+                },
+                {
+                    "ntype": "api",
+                    "id": 66,
+                    "score": 10.787134076412208,
+                    "path": "api: ts-food-service-FoodController.createFoodOrder --6.37--> api: ts-food-service-HTTP POST /api/v1/foodservice/orders --5.40--> api: ts-preserve-service-HTTP POST /api/v1/foodservice/orders",
+                    "name": "ts-food-service-FoodController.createFoodOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 284,
+                    "score": 10.715444939575358,
+                    "path": "api: ts-travel2-service-Travel2Controller.queryInfo --5.47--> api: ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left --5.29--> api: ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left",
+                    "name": "ts-travel2-service-Travel2Controller.queryInfo"
+                },
+                {
+                    "ntype": "api",
+                    "id": 277,
+                    "score": 8.634185565358866,
+                    "path": "api: ts-travel2-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.41--> api: ts-travel2-service-Travel2Controller.getTripAllDetailInfo --3.69--> api: ts-travel2-service-HTTP POST /api/v1/travel2service/trip_detail --3.92--> api: ts-preserve-other-service-HTTP POST /api/v1/travel2service/trip_detail",
+                    "name": "ts-travel2-service-HTTP POST /api/v1/seatservice/seats/left_tickets"
+                },
+                {
+                    "ntype": "api",
+                    "id": 188,
+                    "score": 6.189449061624583,
+                    "path": "api: ts-preserve-service-HTTP POST /api/v1/foodservice/orders",
+                    "name": "ts-preserve-service-HTTP POST /api/v1/foodservice/orders"
+                },
+                {
+                    "ntype": "api",
+                    "id": 271,
+                    "score": 5.838707187364151,
+                    "path": "api: ts-travel-service-TravelController.queryInfo --4.56--> api: ts-travel-service-HTTP POST /api/v1/travelservice/trips/left --4.15--> api: ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left",
+                    "name": "ts-travel-service-TravelController.queryInfo"
+                },
+                {
+                    "ntype": "api",
+                    "id": 263,
+                    "score": 4.975489598736559,
+                    "path": "api: ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets --3.33--> api: ts-travel-service-TravelController.queryInfo --4.56--> api: ts-travel-service-HTTP POST /api/v1/travelservice/trips/left --4.15--> api: ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left",
+                    "name": "ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets"
+                },
+                {
+                    "ntype": "api",
+                    "id": 279,
+                    "score": 4.933087842026303,
+                    "path": "api: ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left --5.29--> api: ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left",
+                    "name": "ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left"
+                }
+            ]
+        },
+        {
+            "timestamp": 1712382960,
+            "level": "pod",
+            "cmdb_id": "ts-execute-service-775f544d9-xhnd8",
+            "failure_type": "network_delay",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 84,
+                    "score": 10.833550611250194,
+                    "name": "ts-gateway-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 83,
+                    "score": 7.669221620791625,
+                    "name": "ts-gateway-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 67,
+                    "score": 3.955812561685847,
+                    "name": "ts-food-service-FoodController.getAllFood"
+                },
+                {
+                    "ntype": "api",
+                    "id": 103,
+                    "score": 3.3669902682879282,
+                    "path": "api: ts-inside-payment-service-INSERT ts.inside_payment --2.60--> api: ts-inside-payment-service-Transaction.commit",
+                    "name": "ts-inside-payment-service-INSERT ts.inside_payment"
+                },
+                {
+                    "ntype": "api",
+                    "id": 137,
+                    "score": 3.2835828101503295,
+                    "name": "ts-order-other-service-UPDATE ts.orders_other"
+                },
+                {
+                    "ntype": "api",
+                    "id": 72,
+                    "score": 3.085355147307435,
+                    "name": "ts-food-service-HTTP GET /api/v1/travelservice/routes/{tripId}"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 19,
+                    "score": 2.8286112136343102,
+                    "name": "ts-security-service-cb9788d56-v24jq"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 3,
+                    "score": 1.975823440994846,
+                    "name": "ts-cancel-service-756f6c4675-n8l65"
+                },
+                {
+                    "ntype": "api",
+                    "id": 131,
+                    "score": 1.8313799640834183,
+                    "name": "ts-order-other-service-OrderOtherRepository.save"
+                },
+                {
+                    "ntype": "api",
+                    "id": 97,
+                    "score": 1.5336426887832297,
+                    "name": "ts-inside-payment-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId}"
+                }
+            ]
+        },
+        {
+            "timestamp": 1712386140,
+            "level": "pod",
+            "cmdb_id": "ts-price-service-76846864d9-shjpl",
+            "failure_type": "network_delay",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 20,
+                    "score": 24.74357050787698,
+                    "path": "api: ts-basic-service-HTTP GET /api/v1/priceservice/prices/{routeId}/{trainType} --7.91--> api: ts-basic-service-BasicController.queryForTravel --6.94--> api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel --6.18--> api: ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travel --4.72--> api: ts-travel2-service-Travel2Controller.getTripAllDetailInfo --3.25--> api: ts-travel2-service-HTTP POST /api/v1/travel2service/trip_detail --3.15--> api: ts-preserve-other-service-HTTP POST /api/v1/travel2service/trip_detail",
+                    "name": "ts-basic-service-HTTP GET /api/v1/priceservice/prices/{routeId}/{trainType}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 26,
+                    "score": 20.338326729937435,
+                    "path": "api: ts-basic-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes --8.82--> api: ts-basic-service-BasicController.queryForTravels --7.33--> api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels --7.93--> api: ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels --5.57--> api: ts-travel-service-TravelController.queryInfo --4.01--> api: ts-travel-service-HTTP POST /api/v1/travelservice/trips/left --4.00--> api: ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left",
+                    "name": "ts-basic-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes"
+                },
+                {
+                    "ntype": "api",
+                    "id": 194,
+                    "score": 17.516347737623015,
+                    "path": "api: ts-price-service-HTTP GET /api/v1/priceservice/prices/{routeId}/{trainType} --3.39--> api: ts-basic-service-HTTP GET /api/v1/priceservice/prices/{routeId}/{trainType} --7.91--> api: ts-basic-service-BasicController.queryForTravel --6.94--> api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel --6.18--> api: ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travel --4.72--> api: ts-travel2-service-Travel2Controller.getTripAllDetailInfo --3.25--> api: ts-travel2-service-HTTP POST /api/v1/travel2service/trip_detail --3.15--> api: ts-preserve-other-service-HTTP POST /api/v1/travel2service/trip_detail",
+                    "name": "ts-price-service-HTTP GET /api/v1/priceservice/prices/{routeId}/{trainType}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 25,
+                    "score": 15.438849885633783,
+                    "path": "api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels --7.93--> api: ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels --5.57--> api: ts-travel-service-TravelController.queryInfo --4.01--> api: ts-travel-service-HTTP POST /api/v1/travelservice/trips/left --4.00--> api: ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left",
+                    "name": "ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels"
+                },
+                {
+                    "ntype": "api",
+                    "id": 18,
+                    "score": 14.574595178416462,
+                    "path": "api: ts-basic-service-BasicController.queryForTravels --7.33--> api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels --7.93--> api: ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels --5.57--> api: ts-travel-service-TravelController.queryInfo --4.01--> api: ts-travel-service-HTTP POST /api/v1/travelservice/trips/left --4.00--> api: ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left",
+                    "name": "ts-basic-service-BasicController.queryForTravels"
+                },
+                {
+                    "ntype": "api",
+                    "id": 116,
+                    "score": 13.133875650444413,
+                    "path": "api: ts-order-other-service-HTTP GET /api/v1/orderOtherService/orderOther/status/{orderId}/{status} --3.05--> api: ts-inside-payment-service-HTTP GET /api/v1/orderOtherService/orderOther/status/{orderId}/{status}",
+                    "name": "ts-order-other-service-HTTP GET /api/v1/orderOtherService/orderOther/status/{orderId}/{status}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 24,
+                    "score": 12.334241166902615,
+                    "path": "api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel --6.18--> api: ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travel --4.72--> api: ts-travel2-service-Travel2Controller.getTripAllDetailInfo --3.25--> api: ts-travel2-service-HTTP POST /api/v1/travel2service/trip_detail --3.15--> api: ts-preserve-other-service-HTTP POST /api/v1/travel2service/trip_detail",
+                    "name": "ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel"
+                },
+                {
+                    "ntype": "api",
+                    "id": 284,
+                    "score": 11.310374339967973,
+                    "path": "api: ts-travel2-service-Travel2Controller.queryInfo --6.75--> api: ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left --6.18--> api: ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left",
+                    "name": "ts-travel2-service-Travel2Controller.queryInfo"
+                },
+                {
+                    "ntype": "api",
+                    "id": 17,
+                    "score": 10.820941112441801,
+                    "path": "api: ts-basic-service-BasicController.queryForTravel --6.94--> api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel --6.18--> api: ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travel --4.72--> api: ts-travel2-service-Travel2Controller.getTripAllDetailInfo --3.25--> api: ts-travel2-service-HTTP POST /api/v1/travel2service/trip_detail --3.15--> api: ts-preserve-other-service-HTTP POST /api/v1/travel2service/trip_detail",
+                    "name": "ts-basic-service-BasicController.queryForTravel"
+                },
+                {
+                    "ntype": "api",
+                    "id": 262,
+                    "score": 8.826788700860991,
+                    "path": "api: ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels --5.57--> api: ts-travel-service-TravelController.queryInfo --4.01--> api: ts-travel-service-HTTP POST /api/v1/travelservice/trips/left --4.00--> api: ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left",
+                    "name": "ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels"
+                }
+            ]
+        },
+        {
+            "timestamp": 1712388480,
+            "level": "pod",
+            "cmdb_id": "ts-station-service-7f4f5f6f77-ssgjb",
+            "failure_type": "network_delay",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 22,
+                    "score": 29.614119891411033,
+                    "path": "api: ts-basic-service-HTTP GET /api/v1/stationservice/stations/id/{stationNameForId} --7.22--> api: ts-basic-service-BasicController.queryForTravel --7.18--> api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel --5.34--> api: ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travel --5.05--> api: ts-travel2-service-Travel2Controller.getTripAllDetailInfo --3.50--> api: ts-travel2-service-HTTP POST /api/v1/travel2service/trip_detail --3.59--> api: ts-preserve-other-service-HTTP POST /api/v1/travel2service/trip_detail",
+                    "name": "ts-basic-service-HTTP GET /api/v1/stationservice/stations/id/{stationNameForId}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 28,
+                    "score": 25.891880479195823,
+                    "path": "api: ts-basic-service-HTTP POST /api/v1/stationservice/stations/idlist --8.91--> api: ts-basic-service-BasicController.queryForTravels --6.14--> api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels --6.04--> api: ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travels",
+                    "name": "ts-basic-service-HTTP POST /api/v1/stationservice/stations/idlist"
+                },
+                {
+                    "ntype": "api",
+                    "id": 24,
+                    "score": 13.031551732836164,
+                    "path": "api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel --5.34--> api: ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travel --5.05--> api: ts-travel2-service-Travel2Controller.getTripAllDetailInfo --3.50--> api: ts-travel2-service-HTTP POST /api/v1/travel2service/trip_detail --3.59--> api: ts-preserve-other-service-HTTP POST /api/v1/travel2service/trip_detail",
+                    "name": "ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel"
+                },
+                {
+                    "ntype": "api",
+                    "id": 17,
+                    "score": 11.80143805066572,
+                    "path": "api: ts-basic-service-BasicController.queryForTravel --7.18--> api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel --5.34--> api: ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travel --5.05--> api: ts-travel2-service-Travel2Controller.getTripAllDetailInfo --3.50--> api: ts-travel2-service-HTTP POST /api/v1/travel2service/trip_detail --3.59--> api: ts-preserve-other-service-HTTP POST /api/v1/travel2service/trip_detail",
+                    "name": "ts-basic-service-BasicController.queryForTravel"
+                },
+                {
+                    "ntype": "api",
+                    "id": 275,
+                    "score": 8.172748424613998,
+                    "path": "api: ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travel --5.05--> api: ts-travel2-service-Travel2Controller.getTripAllDetailInfo --3.50--> api: ts-travel2-service-HTTP POST /api/v1/travel2service/trip_detail --3.59--> api: ts-preserve-other-service-HTTP POST /api/v1/travel2service/trip_detail",
+                    "name": "ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travel"
+                },
+                {
+                    "ntype": "api",
+                    "id": 284,
+                    "score": 5.817205942486651,
+                    "path": "api: ts-travel2-service-Travel2Controller.queryInfo --3.16--> api: ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left --4.48--> api: ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left",
+                    "name": "ts-travel2-service-Travel2Controller.queryInfo"
+                },
+                {
+                    "ntype": "api",
+                    "id": 18,
+                    "score": 5.740978413534165,
+                    "path": "api: ts-basic-service-BasicController.queryForTravels --6.14--> api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels --6.04--> api: ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travels",
+                    "name": "ts-basic-service-BasicController.queryForTravels"
+                },
+                {
+                    "ntype": "api",
+                    "id": 123,
+                    "score": 4.7313338537686676,
+                    "path": "api: ts-order-other-service-OrderOtherController.getOrderById --3.89--> api: ts-order-other-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId}",
+                    "name": "ts-order-other-service-OrderOtherController.getOrderById"
+                },
+                {
+                    "ntype": "api",
+                    "id": 187,
+                    "score": 4.216087699167413,
+                    "path": "api: ts-preserve-service-HTTP POST /api/v1/basicservice/basic/travel",
+                    "name": "ts-preserve-service-HTTP POST /api/v1/basicservice/basic/travel"
+                },
+                {
+                    "ntype": "api",
+                    "id": 137,
+                    "score": 4.120193334723514,
+                    "name": "ts-order-other-service-UPDATE ts.orders_other"
+                }
+            ]
+        },
+        {
+            "timestamp": 1712389320,
+            "level": "pod",
+            "cmdb_id": "ts-train-service-86f5f97bc9-f7687",
+            "failure_type": "network_delay",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 29,
+                    "score": 33.328544948470984,
+                    "path": "api: ts-basic-service-HTTP POST /api/v1/trainservice/trains/byNames --9.13--> api: ts-basic-service-BasicController.queryForTravels --6.82--> api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels --6.86--> api: ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels --4.46--> api: ts-travel-service-TravelController.queryInfo --2.65--> api: ts-travel-service-HTTP POST /api/v1/travelservice/trips/left --3.06--> api: ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left",
+                    "name": "ts-basic-service-HTTP POST /api/v1/trainservice/trains/byNames"
+                },
+                {
+                    "ntype": "api",
+                    "id": 23,
+                    "score": 25.342243066591408,
+                    "path": "api: ts-basic-service-HTTP GET /api/v1/trainservice/trains/byName/{name} --7.11--> api: ts-basic-service-BasicController.queryForTravel --6.56--> api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel --5.20--> api: ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travel --3.80--> api: ts-travel2-service-Travel2Controller.getTripAllDetailInfo --2.72--> api: ts-travel2-service-HTTP POST /api/v1/travel2service/trip_detail --2.70--> api: ts-preserve-other-service-HTTP POST /api/v1/travel2service/trip_detail",
+                    "name": "ts-basic-service-HTTP GET /api/v1/trainservice/trains/byName/{name}"
+                },
+                {
+                    "ntype": "api",
+                    "id": 255,
+                    "score": 19.34691175741112,
+                    "path": "api: ts-train-service-TrainController.retrieveByName --3.82--> api: ts-train-service-HTTP POST /api/v1/trainservice/trains/byNames --3.30--> api: ts-basic-service-HTTP POST /api/v1/trainservice/trains/byNames --9.13--> api: ts-basic-service-BasicController.queryForTravels --6.82--> api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels --6.86--> api: ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels --4.46--> api: ts-travel-service-TravelController.queryInfo --2.65--> api: ts-travel-service-HTTP POST /api/v1/travelservice/trips/left --3.06--> api: ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left",
+                    "name": "ts-train-service-TrainController.retrieveByName"
+                },
+                {
+                    "ntype": "api",
+                    "id": 251,
+                    "score": 15.790950232323745,
+                    "path": "api: ts-train-service-HTTP POST /api/v1/trainservice/trains/byNames --3.30--> api: ts-basic-service-HTTP POST /api/v1/trainservice/trains/byNames --9.13--> api: ts-basic-service-BasicController.queryForTravels --6.82--> api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels --6.86--> api: ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels --4.46--> api: ts-travel-service-TravelController.queryInfo --2.65--> api: ts-travel-service-HTTP POST /api/v1/travelservice/trips/left --3.06--> api: ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left",
+                    "name": "ts-train-service-HTTP POST /api/v1/trainservice/trains/byNames"
+                },
+                {
+                    "ntype": "api",
+                    "id": 18,
+                    "score": 11.000151545340895,
+                    "path": "api: ts-basic-service-BasicController.queryForTravels --6.82--> api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels --6.86--> api: ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels --4.46--> api: ts-travel-service-TravelController.queryInfo --2.65--> api: ts-travel-service-HTTP POST /api/v1/travelservice/trips/left --3.06--> api: ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left",
+                    "name": "ts-basic-service-BasicController.queryForTravels"
+                },
+                {
+                    "ntype": "api",
+                    "id": 24,
+                    "score": 10.502624151558114,
+                    "path": "api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel --5.20--> api: ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travel --3.80--> api: ts-travel2-service-Travel2Controller.getTripAllDetailInfo --2.72--> api: ts-travel2-service-HTTP POST /api/v1/travel2service/trip_detail --2.70--> api: ts-preserve-other-service-HTTP POST /api/v1/travel2service/trip_detail",
+                    "name": "ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel"
+                },
+                {
+                    "ntype": "api",
+                    "id": 17,
+                    "score": 10.07345676692493,
+                    "path": "api: ts-basic-service-BasicController.queryForTravel --6.56--> api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel --5.20--> api: ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travel --3.80--> api: ts-travel2-service-Travel2Controller.getTripAllDetailInfo --2.72--> api: ts-travel2-service-HTTP POST /api/v1/travel2service/trip_detail --2.70--> api: ts-preserve-other-service-HTTP POST /api/v1/travel2service/trip_detail",
+                    "name": "ts-basic-service-BasicController.queryForTravel"
+                },
+                {
+                    "ntype": "api",
+                    "id": 25,
+                    "score": 9.616699885066728,
+                    "path": "api: ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels --6.86--> api: ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels --4.46--> api: ts-travel-service-TravelController.queryInfo --2.65--> api: ts-travel-service-HTTP POST /api/v1/travelservice/trips/left --3.06--> api: ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left",
+                    "name": "ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels"
+                },
+                {
+                    "ntype": "api",
+                    "id": 284,
+                    "score": 8.760001855137052,
+                    "path": "api: ts-travel2-service-Travel2Controller.queryInfo --5.75--> api: ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left --6.26--> api: ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left",
+                    "name": "ts-travel2-service-Travel2Controller.queryInfo"
+                },
+                {
+                    "ntype": "api",
+                    "id": 262,
+                    "score": 6.467685967798689,
+                    "path": "api: ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels --4.46--> api: ts-travel-service-TravelController.queryInfo --2.65--> api: ts-travel-service-HTTP POST /api/v1/travelservice/trips/left --3.06--> api: ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left",
+                    "name": "ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels"
+                }
+            ]
+        },
+        {
+            "timestamp": 1712390280,
+            "level": "pod",
+            "cmdb_id": "ts-travel2-service-5c66d57d58-9f88q",
+            "failure_type": "network_delay",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 89,
+                    "score": 7.576619673660664,
+                    "path": "api: ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left",
+                    "name": "ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left"
+                },
+                {
+                    "ntype": "api",
+                    "id": 180,
+                    "score": 6.122099634987798,
+                    "name": "ts-preserve-other-service-HTTP POST /api/v1/travel2service/trip_detail"
+                },
+                {
+                    "ntype": "api",
+                    "id": 92,
+                    "score": 5.512201003485046,
+                    "path": "api: ts-inside-payment-service-AddMoneyRepository.findByUserId --2.84--> api: ts-inside-payment-service-InsidePaymentController.drawBack --3.41--> api: ts-inside-payment-service-HTTP GET /api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money} --3.44--> api: ts-cancel-service-HTTP GET /api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money}",
+                    "name": "ts-inside-payment-service-AddMoneyRepository.findByUserId"
+                },
+                {
+                    "ntype": "api",
+                    "id": 293,
+                    "score": 4.054579475184682,
+                    "path": "api: ts-verification-code-service-VerifyCodeController.verifyCode --4.38--> api: ts-verification-code-service-HTTP GET /api/v1/verifycode/verify/{verifyCode}",
+                    "name": "ts-verification-code-service-VerifyCodeController.verifyCode"
+                },
+                {
+                    "ntype": "api",
+                    "id": 137,
+                    "score": 3.826928494322137,
+                    "name": "ts-order-other-service-UPDATE ts.orders_other"
+                },
+                {
+                    "ntype": "api",
+                    "id": 104,
+                    "score": 3.819331728242118,
+                    "path": "api: ts-inside-payment-service-InsidePaymentController.drawBack --3.41--> api: ts-inside-payment-service-HTTP GET /api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money} --3.44--> api: ts-cancel-service-HTTP GET /api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money}",
+                    "name": "ts-inside-payment-service-InsidePaymentController.drawBack"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 22,
+                    "score": 3.7728502314294663,
+                    "path": "pod: ts-train-food-service-59bbbdd99b-dvkgz --4.26--> api: ts-train-food-service-SELECT ts.train_food",
+                    "name": "ts-train-food-service-59bbbdd99b-dvkgz"
+                },
+                {
+                    "ntype": "api",
+                    "id": 144,
+                    "score": 3.6421263123898022,
+                    "name": "ts-order-service-INSERT ts.orders"
+                },
+                {
+                    "ntype": "api",
+                    "id": 289,
+                    "score": 3.1307836421986917,
+                    "path": "api: ts-user-service-SELECT ts.user --3.22--> api: ts-user-service-SELECT User",
+                    "name": "ts-user-service-SELECT ts.user"
+                },
+                {
+                    "ntype": "api",
+                    "id": 157,
+                    "score": 2.977295823189764,
+                    "path": "api: ts-order-service-Session.find order.entity.Order --3.40--> api: ts-order-service-OrderRepository.findById",
+                    "name": "ts-order-service-Session.find order.entity.Order"
+                }
+            ]
+        }
+    ]
+}

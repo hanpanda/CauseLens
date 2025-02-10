@@ -1,0 +1,13 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},172,ts-preserve-other-service-HTTP GET /api/v1/contactservice/contacts/{id},12.12987115754088,12.12987115754088,0.0
+45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},184,ts-preserve-service-HTTP GET /api/v1/contactservice/contacts/{id},9.728882122077462,9.728882122077462,0.0
+14,ts-preserve-other-service-66646bdb5b-sd2p8,172,ts-preserve-other-service-HTTP GET /api/v1/contactservice/contacts/{id},0.2789063541851071,12.12987115754088,11.850964803355772
+15,ts-preserve-service-b5ccf8557-cn5km,184,ts-preserve-service-HTTP GET /api/v1/contactservice/contacts/{id},-0.09721115855286655,9.728882122077462,9.826093280630328
+43,ts-contacts-service-ContactsController.getContactsByContactsId,45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},8.418632927207522,8.418632927207522,0.0
+5,ts-contacts-service-866bd68c97-b6rfg,45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},0.4391556089055486,8.418632927207522,7.979477318301973
+239,ts-station-service-SELECT ts.station,238,ts-station-service-SELECT station,3.3501118126250833,3.3501118126250833,0.0
+239,ts-station-service-SELECT ts.station,237,ts-station-service-SELECT Station,2.5871131102652685,2.5871131102652685,0.0
+21,ts-station-service-7f4f5f6f77-ssgjb,238,ts-station-service-SELECT station,0.34736652674954493,3.3501118126250833,3.0027452858755384
+21,ts-station-service-7f4f5f6f77-ssgjb,237,ts-station-service-SELECT Station,-1.6641710463610222,2.5871131102652685,4.251284156626291
+267,ts-travel-service-SELECT ts.trip,266,ts-travel-service-SELECT Trip,2.671322009398789,2.671322009398789,0.0
+24,ts-travel-service-64469b5b48-zbwtm,266,ts-travel-service-SELECT Trip,0.011763350517483229,2.671322009398789,2.6595586588813056

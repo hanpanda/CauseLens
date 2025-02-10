@@ -1,0 +1,15 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},184,ts-preserve-service-HTTP GET /api/v1/contactservice/contacts/{id},9.782739362053512,9.782739362053512,0.0
+292,ts-verification-code-service-HTTP GET /api/v1/verifycode/verify/{verifyCode},10,ts-auth-service-HTTP GET /api/v1/verifycode/verify/{verifyCode},4.059399824749882,4.059399824749882,0.0
+143,ts-order-service-HTTP PUT /api/v1/orderservice/order,37,ts-cancel-service-HTTP PUT /api/v1/orderservice/order,3.3632532383234217,3.3632532383234217,0.0
+15,ts-preserve-service-b5ccf8557-cn5km,184,ts-preserve-service-HTTP GET /api/v1/contactservice/contacts/{id},-0.08640394095754367,9.782739362053512,9.869143303011056
+43,ts-contacts-service-ContactsController.getContactsByContactsId,45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},8.348535059808473,8.348535059808473,0.0
+5,ts-contacts-service-866bd68c97-b6rfg,45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},0.513063645668348,8.348535059808473,7.835471414140125
+293,ts-verification-code-service-VerifyCodeController.verifyCode,292,ts-verification-code-service-HTTP GET /api/v1/verifycode/verify/{verifyCode},6.160098824525865,6.160098824525865,0.0
+27,ts-verification-code-service-7b6dc75c45-pf5xk,292,ts-verification-code-service-HTTP GET /api/v1/verifycode/verify/{verifyCode},0.31941224215758,6.160098824525865,5.840686582368285
+149,ts-order-service-OrderController.saveOrderInfo,143,ts-order-service-HTTP PUT /api/v1/orderservice/order,4.174246863000514,4.174246863000514,0.0
+12,ts-order-service-5b67c48447-4d4rx,143,ts-order-service-HTTP PUT /api/v1/orderservice/order,-0.022957870634539468,4.174246863000514,4.197204733635053
+1,ts-auth-service-7f8d7d756d-vx7bh,10,ts-auth-service-HTTP GET /api/v1/verifycode/verify/{verifyCode},0.17848375630005453,4.059399824749882,3.880916068449827
+3,ts-cancel-service-756f6c4675-n8l65,37,ts-cancel-service-HTTP PUT /api/v1/orderservice/order,0.09823151990905421,3.3632532383234217,3.2650217184143675
+289,ts-user-service-SELECT ts.user,288,ts-user-service-SELECT User,2.677227194371056,2.677227194371056,0.0
+26,ts-user-service-687d654649-vr6qt,288,ts-user-service-SELECT User,0.08731872042380306,2.677227194371056,2.589908473947253

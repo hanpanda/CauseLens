@@ -1,0 +1,3 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+194,ts-price-service-HTTP GET /api/v1/priceservice/prices/{routeId}/{trainType},20,ts-basic-service-HTTP GET /api/v1/priceservice/prices/{routeId}/{trainType},2.8403832479572326,2.8403832479572326,0.0
+2,ts-basic-service-5dc8d4f9fd-58xkn,20,ts-basic-service-HTTP GET /api/v1/priceservice/prices/{routeId}/{trainType},0.03641650333579127,2.8403832479572326,2.8039667446214414

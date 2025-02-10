@@ -1,0 +1,4309 @@
+{
+    "metric": {
+        "k8s容器cpu负载": {
+            "n": 33,
+            "skipped": 0,
+            "top-1": 0.5757575757575758,
+            "top-2": 0.6060606060606061,
+            "top-3": 0.6666666666666666,
+            "top-4": 0.6666666666666666,
+            "top-5": 0.6666666666666666,
+            "avg@5": 0.6363636363636364,
+            "avg_rank": 4.151515151515151
+        },
+        "k8s容器网络延迟": {
+            "n": 18,
+            "skipped": 0,
+            "top-1": 0.5,
+            "top-2": 0.6111111111111112,
+            "top-3": 0.6111111111111112,
+            "top-4": 0.6111111111111112,
+            "top-5": 0.6111111111111112,
+            "avg@5": 0.5888888888888889,
+            "avg_rank": 4.611111111111111
+        },
+        "k8s容器网络资源包损坏": {
+            "n": 30,
+            "skipped": 0,
+            "top-1": 0.7,
+            "top-2": 0.7333333333333333,
+            "top-3": 0.7666666666666667,
+            "top-4": 0.7666666666666667,
+            "top-5": 0.7666666666666667,
+            "avg@5": 0.7466666666666666,
+            "avg_rank": 3.2
+        },
+        "k8s容器网络丢包": {
+            "n": 37,
+            "skipped": 0,
+            "top-1": 0.5945945945945946,
+            "top-2": 0.6756756756756757,
+            "top-3": 0.6756756756756757,
+            "top-4": 0.7027027027027027,
+            "top-5": 0.7027027027027027,
+            "avg@5": 0.6702702702702703,
+            "avg_rank": 3.8378378378378377
+        },
+        "k8s容器内存负载": {
+            "n": 29,
+            "skipped": 0,
+            "top-1": 0.13793103448275862,
+            "top-2": 0.1724137931034483,
+            "top-3": 0.20689655172413793,
+            "top-4": 0.20689655172413793,
+            "top-5": 0.20689655172413793,
+            "avg@5": 0.18620689655172412,
+            "avg_rank": 8.241379310344827
+        },
+        "k8s容器读io负载": {
+            "n": 26,
+            "skipped": 0,
+            "top-1": 0.3076923076923077,
+            "top-2": 0.3076923076923077,
+            "top-3": 0.3076923076923077,
+            "top-4": 0.3076923076923077,
+            "top-5": 0.3076923076923077,
+            "avg@5": 0.3076923076923077,
+            "avg_rank": 7.230769230769231
+        },
+        "k8s容器写io负载": {
+            "n": 15,
+            "skipped": 0,
+            "top-1": 0.3333333333333333,
+            "top-2": 0.3333333333333333,
+            "top-3": 0.3333333333333333,
+            "top-4": 0.3333333333333333,
+            "top-5": 0.3333333333333333,
+            "avg@5": 0.3333333333333333,
+            "avg_rank": 7.0
+        },
+        "k8s容器进程中止": {
+            "n": 15,
+            "skipped": 0,
+            "top-1": 0.13333333333333333,
+            "top-2": 0.13333333333333333,
+            "top-3": 0.13333333333333333,
+            "top-4": 0.13333333333333333,
+            "top-5": 0.13333333333333333,
+            "avg@5": 0.13333333333333333,
+            "avg_rank": 8.8
+        },
+        "all": {
+            "n": 203,
+            "skipped": 0,
+            "top-1": 0.4433497536945813,
+            "top-2": 0.4827586206896552,
+            "top-3": 0.5024630541871922,
+            "top-4": 0.5073891625615764,
+            "top-5": 0.5073891625615764,
+            "avg@5": 0.4886699507389163,
+            "avg_rank": 5.527093596059113
+        }
+    },
+    "detail": [
+        {
+            "timestamp": 1647736751,
+            "level": "service",
+            "cmdb_id": "cartservice",
+            "failure_type": "k8s容器网络延迟",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 5,
+                    "score": 41.62366288165405,
+                    "path": "api: cartservice-HMSET --27.92--> api: cartservice-/hipstershop.CartService/EmptyCart --13.70--> api: checkoutservice-hipstershop.CartService/EmptyCart",
+                    "name": "cartservice-HMSET"
+                },
+                {
+                    "ntype": "api",
+                    "id": 3,
+                    "score": 14.718361731441938,
+                    "path": "api: cartservice-/hipstershop.CartService/GetCart --14.72--> api: frontend-hipstershop.CartService/GetCart",
+                    "name": "cartservice-/hipstershop.CartService/GetCart"
+                },
+                {
+                    "ntype": "api",
+                    "id": 2,
+                    "score": 13.70392085795155,
+                    "path": "api: cartservice-/hipstershop.CartService/EmptyCart --13.70--> api: checkoutservice-hipstershop.CartService/EmptyCart",
+                    "name": "cartservice-/hipstershop.CartService/EmptyCart"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 8.179744605262304,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --8.18--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 1,
+                    "score": 4.631560378056776,
+                    "path": "api: cartservice-/hipstershop.CartService/AddItem --4.63--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-/hipstershop.CartService/AddItem"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647737329,
+            "level": "service",
+            "cmdb_id": "adservice",
+            "failure_type": "k8s容器网络延迟",
+            "cand": []
+        },
+        {
+            "timestamp": 1647738546,
+            "level": "pod",
+            "cmdb_id": "shippingservice-1",
+            "failure_type": "k8s容器读io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1647741299,
+            "level": "pod",
+            "cmdb_id": "emailservice-0",
+            "failure_type": "k8s容器读io负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 16,
+                    "score": 15.73197455846236,
+                    "path": "pod: emailservice-0 --15.73--> api: emailservice-/hipstershop.EmailService/SendOrderConfirmation",
+                    "name": "emailservice-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647746396,
+            "level": "pod",
+            "cmdb_id": "shippingservice-1",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1647747326,
+            "level": "service",
+            "cmdb_id": "recommendationservice",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 68.95906114649472,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --38.40--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --24.88--> api: frontend-hipstershop.RecommendationService/ListRecommendations --5.68--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 30.558931049329715,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --24.88--> api: frontend-hipstershop.RecommendationService/ListRecommendations --5.68--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                },
+                {
+                    "ntype": "api",
+                    "id": 27,
+                    "score": 5.683153512477703,
+                    "path": "api: frontend-hipstershop.RecommendationService/ListRecommendations --5.68--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.RecommendationService/ListRecommendations"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647749457,
+            "level": "service",
+            "cmdb_id": "recommendationservice",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 33,
+                    "score": 17.891533577307463,
+                    "path": "pod: recommendationservice-1 --17.89--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-1"
+                },
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 17.386857979416185,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --17.39--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 34,
+                    "score": 15.6449108696834,
+                    "path": "pod: recommendationservice-2 --15.64--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-2"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 32,
+                    "score": 14.145771016399479,
+                    "path": "pod: recommendationservice-0 --14.15--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 35,
+                    "score": 13.28633101853656,
+                    "path": "pod: recommendationservice2-0 --13.29--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice2-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647756886,
+            "level": "pod",
+            "cmdb_id": "recommendationservice2-0",
+            "failure_type": "k8s容器进程中止",
+            "cand": []
+        },
+        {
+            "timestamp": 1647757395,
+            "level": "service",
+            "cmdb_id": "shippingservice",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 1,
+                    "score": 6.791898744973324,
+                    "path": "api: cartservice-/hipstershop.CartService/AddItem --6.79--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-/hipstershop.CartService/AddItem"
+                },
+                {
+                    "ntype": "api",
+                    "id": 3,
+                    "score": 4.703147199413344,
+                    "path": "api: cartservice-/hipstershop.CartService/GetCart --4.70--> api: frontend-hipstershop.CartService/GetCart",
+                    "name": "cartservice-/hipstershop.CartService/GetCart"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 37,
+                    "score": 4.58277333500668,
+                    "path": "pod: shippingservice-1 --4.58--> api: shippingservice-hipstershop.ShippingService/ShipOrder",
+                    "name": "shippingservice-1"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 36,
+                    "score": 4.58277333500668,
+                    "path": "pod: shippingservice-0 --4.58--> api: shippingservice-hipstershop.ShippingService/ShipOrder",
+                    "name": "shippingservice-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 39,
+                    "score": 4.438350417916561,
+                    "path": "pod: shippingservice2-0 --4.44--> api: shippingservice-hipstershop.ShippingService/ShipOrder",
+                    "name": "shippingservice2-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647759640,
+            "level": "service",
+            "cmdb_id": "paymentservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 11,
+                    "score": 3.9835598622783768,
+                    "path": "api: checkoutservice-hipstershop.PaymentService/Charge --3.98--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.PaymentService/Charge"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647761243,
+            "level": "service",
+            "cmdb_id": "shippingservice",
+            "failure_type": "k8s容器进程中止",
+            "cand": []
+        },
+        {
+            "timestamp": 1647761852,
+            "level": "pod",
+            "cmdb_id": "cartservice-1",
+            "failure_type": "k8s容器网络延迟",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 5,
+                    "score": 24.589915630382592,
+                    "path": "api: cartservice-HMSET --16.62--> api: cartservice-/hipstershop.CartService/AddItem --7.97--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-HMSET"
+                },
+                {
+                    "ntype": "api",
+                    "id": 4,
+                    "score": 24.073169478414627,
+                    "path": "api: cartservice-HGET --16.10--> api: cartservice-/hipstershop.CartService/AddItem --7.97--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-HGET"
+                },
+                {
+                    "ntype": "api",
+                    "id": 2,
+                    "score": 9.311071919484963,
+                    "path": "api: cartservice-/hipstershop.CartService/EmptyCart --3.38--> api: checkoutservice-hipstershop.CartService/EmptyCart --5.93--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "cartservice-/hipstershop.CartService/EmptyCart"
+                },
+                {
+                    "ntype": "api",
+                    "id": 1,
+                    "score": 7.969401790709527,
+                    "path": "api: cartservice-/hipstershop.CartService/AddItem --7.97--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-/hipstershop.CartService/AddItem"
+                },
+                {
+                    "ntype": "api",
+                    "id": 3,
+                    "score": 6.924884953205372,
+                    "path": "api: cartservice-/hipstershop.CartService/GetCart --6.92--> api: frontend-hipstershop.CartService/GetCart",
+                    "name": "cartservice-/hipstershop.CartService/GetCart"
+                },
+                {
+                    "ntype": "api",
+                    "id": 6,
+                    "score": 5.933851888282163,
+                    "path": "api: checkoutservice-hipstershop.CartService/EmptyCart --5.93--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CartService/EmptyCart"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647765104,
+            "level": "pod",
+            "cmdb_id": "currencyservice-0",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 7.381141430528246,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --7.38--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 2,
+                    "score": 4.676061005437511,
+                    "path": "api: cartservice-/hipstershop.CartService/EmptyCart --4.68--> api: checkoutservice-hipstershop.CartService/EmptyCart",
+                    "name": "cartservice-/hipstershop.CartService/EmptyCart"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647768199,
+            "level": "service",
+            "cmdb_id": "paymentservice",
+            "failure_type": "k8s容器进程中止",
+            "cand": []
+        },
+        {
+            "timestamp": 1647770808,
+            "level": "service",
+            "cmdb_id": "paymentservice",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1647771846,
+            "level": "service",
+            "cmdb_id": "emailservice",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 17,
+                    "score": 22.545418767716896,
+                    "path": "api: emailservice-/hipstershop.EmailService/SendOrderConfirmation --9.80--> api: checkoutservice-hipstershop.EmailService/SendOrderConfirmation --9.95--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --2.80--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "emailservice-/hipstershop.EmailService/SendOrderConfirmation"
+                },
+                {
+                    "ntype": "api",
+                    "id": 10,
+                    "score": 12.745686888902185,
+                    "path": "api: checkoutservice-hipstershop.EmailService/SendOrderConfirmation --9.95--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --2.80--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.EmailService/SendOrderConfirmation"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 23,
+                    "score": 3.454064322867801,
+                    "path": "pod: frontend2-0 --3.45--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "frontend2-0"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 2.797072512839936,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --2.80--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647772648,
+            "level": "pod",
+            "cmdb_id": "currencyservice-0",
+            "failure_type": "k8s容器网络丢包",
+            "cand": []
+        },
+        {
+            "timestamp": 1647778982,
+            "level": "pod",
+            "cmdb_id": "shippingservice2-0",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 35,
+                    "score": 5.714626371867418,
+                    "path": "api: shippingservice-hipstershop.ShippingService/ShipOrder --5.71--> api: checkoutservice-hipstershop.ShippingService/ShipOrder",
+                    "name": "shippingservice-hipstershop.ShippingService/ShipOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 34,
+                    "score": 3.719556654261642,
+                    "path": "api: shippingservice-hipstershop.ShippingService/GetQuote --3.72--> api: checkoutservice-hipstershop.ShippingService/GetQuote",
+                    "name": "shippingservice-hipstershop.ShippingService/GetQuote"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647782181,
+            "level": "service",
+            "cmdb_id": "emailservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 10,
+                    "score": 27.904604734049776,
+                    "path": "api: checkoutservice-hipstershop.EmailService/SendOrderConfirmation --13.27--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --9.31--> api: frontend-hipstershop.CheckoutService/PlaceOrder --5.33--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.EmailService/SendOrderConfirmation"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 14.634838106642277,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --9.31--> api: frontend-hipstershop.CheckoutService/PlaceOrder --5.33--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 21,
+                    "score": 5.327278844361856,
+                    "path": "api: frontend-hipstershop.CheckoutService/PlaceOrder --5.33--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647783016,
+            "level": "pod",
+            "cmdb_id": "cartservice-0",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1647784872,
+            "level": "pod",
+            "cmdb_id": "frontend-1",
+            "failure_type": "k8s容器网络延迟",
+            "cand": []
+        },
+        {
+            "timestamp": 1647786708,
+            "level": "pod",
+            "cmdb_id": "currencyservice-1",
+            "failure_type": "k8s容器网络丢包",
+            "cand": []
+        },
+        {
+            "timestamp": 1647788966,
+            "level": "pod",
+            "cmdb_id": "checkoutservice-2",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1647790210,
+            "level": "service",
+            "cmdb_id": "productcatalogservice",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 9.639200625721488,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --9.64--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 3.4116280129309797,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --3.41--> api: frontend-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647793479,
+            "level": "service",
+            "cmdb_id": "emailservice",
+            "failure_type": "k8s容器进程中止",
+            "cand": []
+        },
+        {
+            "timestamp": 1647796830,
+            "level": "pod",
+            "cmdb_id": "productcatalogservice-2",
+            "failure_type": "k8s容器读io负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 9.219190106644213,
+                    "path": "pod: productcatalogservice-2 --9.22--> api: productcatalogservice-hipstershop.ProductCatalogService/ListProducts",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647800799,
+            "level": "service",
+            "cmdb_id": "recommendationservice",
+            "failure_type": "k8s容器进程中止",
+            "cand": []
+        },
+        {
+            "timestamp": 1647803448,
+            "level": "service",
+            "cmdb_id": "checkoutservice",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 12,
+                    "score": 40.662880445303344,
+                    "path": "api: checkoutservice-hipstershop.ProductCatalogService/GetProduct --21.08--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --14.49--> api: frontend-hipstershop.CheckoutService/PlaceOrder --5.08--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 19.578873423441053,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --14.49--> api: frontend-hipstershop.CheckoutService/PlaceOrder --5.08--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 3,
+                    "score": 7.018187723010748,
+                    "path": "pod: adservice2-0 --7.02--> api: adservice-hipstershop.adservice/getads",
+                    "name": "adservice2-0"
+                },
+                {
+                    "ntype": "api",
+                    "id": 21,
+                    "score": 5.084198761420987,
+                    "path": "api: frontend-hipstershop.CheckoutService/PlaceOrder --5.08--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647809681,
+            "level": "pod",
+            "cmdb_id": "recommendationservice-2",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 3,
+                    "score": 6.1710614621989865,
+                    "path": "pod: adservice2-0 --6.17--> api: adservice-hipstershop.adservice/getads",
+                    "name": "adservice2-0"
+                },
+                {
+                    "ntype": "api",
+                    "id": 27,
+                    "score": 3.402984587282774,
+                    "path": "api: frontend-hipstershop.RecommendationService/ListRecommendations --3.40--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.RecommendationService/ListRecommendations"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647812163,
+            "level": "pod",
+            "cmdb_id": "shippingservice2-0",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 13,
+                    "score": 16.855472710024735,
+                    "path": "api: checkoutservice-hipstershop.ShippingService/GetQuote --7.32--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --9.53--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.ShippingService/GetQuote"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 9.533129334760934,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --9.53--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647816058,
+            "level": "pod",
+            "cmdb_id": "currencyservice-0",
+            "failure_type": "k8s容器网络延迟",
+            "cand": []
+        },
+        {
+            "timestamp": 1647818816,
+            "level": "pod",
+            "cmdb_id": "adservice2-0",
+            "failure_type": "k8s容器读io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1647820502,
+            "level": "pod",
+            "cmdb_id": "productcatalogservice-0",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 28,
+                    "score": 58.16951844247939,
+                    "path": "pod: productcatalogservice-0 --58.17--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647821967,
+            "level": "pod",
+            "cmdb_id": "shippingservice-1",
+            "failure_type": "k8s容器cpu负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1647824785,
+            "level": "service",
+            "cmdb_id": "productcatalogservice",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 12,
+                    "score": 16.036982698648757,
+                    "path": "api: checkoutservice-hipstershop.ProductCatalogService/GetProduct --16.04--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 6.924629479220239,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --6.92--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 3.6991095196447326,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --3.70--> api: frontend-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647825990,
+            "level": "service",
+            "cmdb_id": "checkoutservice",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1647827637,
+            "level": "service",
+            "cmdb_id": "shippingservice",
+            "failure_type": "k8s容器读io负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 37,
+                    "score": 4.646872385765564,
+                    "path": "pod: shippingservice-1 --4.65--> api: shippingservice-hipstershop.ShippingService/GetQuote",
+                    "name": "shippingservice-1"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 39,
+                    "score": 4.158543690503599,
+                    "path": "pod: shippingservice2-0 --4.16--> api: shippingservice-hipstershop.ShippingService/GetQuote",
+                    "name": "shippingservice2-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 38,
+                    "score": 3.902431974291265,
+                    "path": "pod: shippingservice-2 --3.90--> api: shippingservice-hipstershop.ShippingService/GetQuote",
+                    "name": "shippingservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647832658,
+            "level": "service",
+            "cmdb_id": "shippingservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 11.308214684320083,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --11.31--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647834030,
+            "level": "service",
+            "cmdb_id": "frontend",
+            "failure_type": "k8s容器内存负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 21,
+                    "score": 4.397682262314751,
+                    "path": "pod: frontend-1 --4.40--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "frontend-1"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647835475,
+            "level": "pod",
+            "cmdb_id": "recommendationservice-2",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 22.326314483541694,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --10.67--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --7.87--> api: frontend-hipstershop.RecommendationService/ListRecommendations --3.79--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 11.654565323778147,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --7.87--> api: frontend-hipstershop.RecommendationService/ListRecommendations --3.79--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                },
+                {
+                    "ntype": "api",
+                    "id": 27,
+                    "score": 3.7880069508618552,
+                    "path": "api: frontend-hipstershop.RecommendationService/ListRecommendations --3.79--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.RecommendationService/ListRecommendations"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647836321,
+            "level": "service",
+            "cmdb_id": "productcatalogservice",
+            "failure_type": "k8s容器网络延迟",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 39.65312524915361,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --18.73--> api: checkoutservice-hipstershop.ProductCatalogService/GetProduct --13.32--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --7.60--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 12,
+                    "score": 20.922772530579785,
+                    "path": "api: checkoutservice-hipstershop.ProductCatalogService/GetProduct --13.32--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --7.60--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 20.207792343799316,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --13.77--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --6.44--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 7.600569306022417,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --7.60--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 6.440367931469989,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --6.44--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647838805,
+            "level": "service",
+            "cmdb_id": "paymentservice",
+            "failure_type": "k8s容器网络延迟",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 11,
+                    "score": 5.720341429285052,
+                    "path": "api: checkoutservice-hipstershop.PaymentService/Charge --5.72--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.PaymentService/Charge"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647841146,
+            "level": "service",
+            "cmdb_id": "currencyservice",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1647842901,
+            "level": "service",
+            "cmdb_id": "emailservice",
+            "failure_type": "k8s容器读io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1647843413,
+            "level": "service",
+            "cmdb_id": "emailservice",
+            "failure_type": "k8s容器写io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1647844304,
+            "level": "pod",
+            "cmdb_id": "paymentservice-0",
+            "failure_type": "k8s容器进程中止",
+            "cand": []
+        },
+        {
+            "timestamp": 1647845943,
+            "level": "service",
+            "cmdb_id": "adservice",
+            "failure_type": "k8s容器读io负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 3,
+                    "score": 26.045594744501653,
+                    "path": "pod: adservice2-0 --26.05--> api: adservice-hipstershop.adservice/getads",
+                    "name": "adservice2-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 0,
+                    "score": 21.63208708800202,
+                    "path": "pod: adservice-0 --21.63--> api: adservice-hipstershop.adservice/getads",
+                    "name": "adservice-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647846519,
+            "level": "pod",
+            "cmdb_id": "frontend2-0",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 3,
+                    "score": 4.51685783871416,
+                    "path": "api: cartservice-/hipstershop.CartService/GetCart --4.52--> api: frontend-hipstershop.CartService/GetCart",
+                    "name": "cartservice-/hipstershop.CartService/GetCart"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647848731,
+            "level": "service",
+            "cmdb_id": "cartservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 4,
+                    "score": 11.990271652286122,
+                    "path": "api: cartservice-HGET --11.99--> api: cartservice-/hipstershop.CartService/AddItem",
+                    "name": "cartservice-HGET"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 7.583931467737425,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --7.58--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1647850299,
+            "level": "pod",
+            "cmdb_id": "frontend-2",
+            "failure_type": "k8s容器读io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1647895639,
+            "level": "pod",
+            "cmdb_id": "recommendationservice2-0",
+            "failure_type": "k8s容器内存负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 35,
+                    "score": 7.998100657978278,
+                    "path": "pod: recommendationservice2-0 --8.00--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice2-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648057737,
+            "level": "pod",
+            "cmdb_id": "recommendationservice-0",
+            "failure_type": "k8s容器读io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648064256,
+            "level": "pod",
+            "cmdb_id": "frontend-2",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648072355,
+            "level": "pod",
+            "cmdb_id": "shippingservice-2",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 0,
+                    "score": 7.84205914502505,
+                    "path": "api: adservice-hipstershop.adservice/getads --7.84--> api: frontend-hipstershop.AdService/GetAds",
+                    "name": "adservice-hipstershop.adservice/getads"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648079127,
+            "level": "service",
+            "cmdb_id": "currencyservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": []
+        },
+        {
+            "timestamp": 1648082215,
+            "level": "service",
+            "cmdb_id": "emailservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 10,
+                    "score": 20.51253704354707,
+                    "path": "api: checkoutservice-hipstershop.EmailService/SendOrderConfirmation --8.97--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --7.79--> api: frontend-hipstershop.CheckoutService/PlaceOrder --3.75--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.EmailService/SendOrderConfirmation"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 11.539957444652838,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --7.79--> api: frontend-hipstershop.CheckoutService/PlaceOrder --3.75--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 21,
+                    "score": 3.75073395020648,
+                    "path": "api: frontend-hipstershop.CheckoutService/PlaceOrder --3.75--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648083071,
+            "level": "pod",
+            "cmdb_id": "checkoutservice-0",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 8,
+                    "score": 6.402807570681892,
+                    "path": "pod: checkoutservice-0 --6.40--> api: checkoutservice-hipstershop.CartService/GetCart",
+                    "name": "checkoutservice-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648085863,
+            "level": "service",
+            "cmdb_id": "checkoutservice",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 11,
+                    "score": 6.313948426962595,
+                    "path": "pod: checkoutservice2-0 --6.31--> api: checkoutservice-hipstershop.ShippingService/ShipOrder",
+                    "name": "checkoutservice2-0"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 6.0762907688370404,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --6.08--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 8,
+                    "score": 5.900336475526041,
+                    "path": "pod: checkoutservice-0 --5.90--> api: checkoutservice-hipstershop.ShippingService/ShipOrder",
+                    "name": "checkoutservice-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648094386,
+            "level": "pod",
+            "cmdb_id": "frontend-1",
+            "failure_type": "k8s容器网络延迟",
+            "cand": []
+        },
+        {
+            "timestamp": 1648096595,
+            "level": "pod",
+            "cmdb_id": "productcatalogservice-2",
+            "failure_type": "k8s容器进程中止",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 10.867772054221351,
+                    "path": "pod: productcatalogservice-2 --10.87--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648097217,
+            "level": "service",
+            "cmdb_id": "emailservice",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 17,
+                    "score": 13.578071945233686,
+                    "path": "api: emailservice-/hipstershop.EmailService/SendOrderConfirmation --13.58--> api: checkoutservice-hipstershop.EmailService/SendOrderConfirmation",
+                    "name": "emailservice-/hipstershop.EmailService/SendOrderConfirmation"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 3.1489189737764636,
+                    "path": "pod: productcatalogservice-2 --3.15--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648099380,
+            "level": "pod",
+            "cmdb_id": "frontend-0",
+            "failure_type": "k8s容器写io负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 20,
+                    "score": 7.036451149301008,
+                    "path": "pod: frontend-0 --7.04--> api: frontend-hipstershop.ProductCatalogService/ListProducts",
+                    "name": "frontend-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 3.2302199298199583,
+                    "path": "pod: productcatalogservice-2 --3.23--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648100619,
+            "level": "pod",
+            "cmdb_id": "productcatalogservice-0",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 65.90882078256635,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --48.76--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --17.15--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 22.715910743561828,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --22.72--> api: checkoutservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 17.14879478395777,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --17.15--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648101973,
+            "level": "pod",
+            "cmdb_id": "checkoutservice2-0",
+            "failure_type": "k8s容器进程中止",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 2.4041296369459006,
+                    "path": "pod: productcatalogservice-2 --2.40--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648103333,
+            "level": "service",
+            "cmdb_id": "paymentservice",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 26,
+                    "score": 10.975019690381483,
+                    "path": "pod: paymentservice-2 --5.45--> api: paymentservice-grpc.hipstershop.PaymentService/Charge --5.53--> api: checkoutservice-hipstershop.PaymentService/Charge",
+                    "name": "paymentservice-2"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 24,
+                    "score": 10.975019690381483,
+                    "path": "pod: paymentservice-0 --5.45--> api: paymentservice-grpc.hipstershop.PaymentService/Charge --5.53--> api: checkoutservice-hipstershop.PaymentService/Charge",
+                    "name": "paymentservice-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 25,
+                    "score": 9.684802308486372,
+                    "path": "pod: paymentservice-1 --4.16--> api: paymentservice-grpc.hipstershop.PaymentService/Charge --5.53--> api: checkoutservice-hipstershop.PaymentService/Charge",
+                    "name": "paymentservice-1"
+                },
+                {
+                    "ntype": "api",
+                    "id": 29,
+                    "score": 5.525916872359697,
+                    "path": "api: paymentservice-grpc.hipstershop.PaymentService/Charge --5.53--> api: checkoutservice-hipstershop.PaymentService/Charge",
+                    "name": "paymentservice-grpc.hipstershop.PaymentService/Charge"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648105843,
+            "level": "service",
+            "cmdb_id": "checkoutservice",
+            "failure_type": "k8s容器网络延迟",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 12.780123852101756,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --8.68--> api: frontend-hipstershop.CheckoutService/PlaceOrder --4.10--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 21,
+                    "score": 4.098433823275543,
+                    "path": "api: frontend-hipstershop.CheckoutService/PlaceOrder --4.10--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648108996,
+            "level": "pod",
+            "cmdb_id": "recommendationservice-0",
+            "failure_type": "k8s容器写io负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 2.9821456502804247,
+                    "path": "pod: productcatalogservice-2 --2.98--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648110180,
+            "level": "pod",
+            "cmdb_id": "emailservice-1",
+            "failure_type": "k8s容器读io负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 17,
+                    "score": 16.216769260729524,
+                    "path": "pod: emailservice-1 --16.22--> api: emailservice-/hipstershop.EmailService/SendOrderConfirmation",
+                    "name": "emailservice-1"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 2.6888970377827937,
+                    "path": "pod: productcatalogservice-2 --2.69--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648115376,
+            "level": "pod",
+            "cmdb_id": "frontend-0",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 20,
+                    "score": 7.191560282437977,
+                    "path": "pod: frontend-0 --7.19--> api: frontend-hipstershop.ProductCatalogService/ListProducts",
+                    "name": "frontend-0"
+                },
+                {
+                    "ntype": "api",
+                    "id": 31,
+                    "score": 6.237456246729587,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/ListProducts --6.24--> api: frontend-hipstershop.ProductCatalogService/ListProducts",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 2.3722774701991436,
+                    "path": "pod: productcatalogservice-2 --2.37--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648115758,
+            "level": "service",
+            "cmdb_id": "emailservice",
+            "failure_type": "k8s容器读io负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 2.8057594461706383,
+                    "path": "pod: productcatalogservice-2 --2.81--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648117940,
+            "level": "service",
+            "cmdb_id": "paymentservice",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 24,
+                    "score": 14.121487546010744,
+                    "path": "pod: paymentservice-0 --6.00--> api: paymentservice-grpc.hipstershop.PaymentService/Charge --8.12--> api: checkoutservice-hipstershop.PaymentService/Charge",
+                    "name": "paymentservice-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 26,
+                    "score": 14.073829861943697,
+                    "path": "pod: paymentservice-2 --5.95--> api: paymentservice-grpc.hipstershop.PaymentService/Charge --8.12--> api: checkoutservice-hipstershop.PaymentService/Charge",
+                    "name": "paymentservice-2"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 25,
+                    "score": 12.317495142906033,
+                    "path": "pod: paymentservice-1 --4.19--> api: paymentservice-grpc.hipstershop.PaymentService/Charge --8.12--> api: checkoutservice-hipstershop.PaymentService/Charge",
+                    "name": "paymentservice-1"
+                },
+                {
+                    "ntype": "api",
+                    "id": 29,
+                    "score": 8.124286422902355,
+                    "path": "api: paymentservice-grpc.hipstershop.PaymentService/Charge --8.12--> api: checkoutservice-hipstershop.PaymentService/Charge",
+                    "name": "paymentservice-grpc.hipstershop.PaymentService/Charge"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 3.0350622896372026,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --3.04--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 35,
+                    "score": 2.9056249400197243,
+                    "path": "api: shippingservice-hipstershop.ShippingService/ShipOrder --2.91--> api: checkoutservice-hipstershop.ShippingService/ShipOrder",
+                    "name": "shippingservice-hipstershop.ShippingService/ShipOrder"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 2.6272375072963086,
+                    "path": "pod: productcatalogservice-2 --2.63--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648119480,
+            "level": "service",
+            "cmdb_id": "frontend",
+            "failure_type": "k8s容器读io负载",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 5,
+                    "score": 2.8253559233772014,
+                    "path": "api: cartservice-HMSET --2.83--> api: cartservice-/hipstershop.CartService/EmptyCart",
+                    "name": "cartservice-HMSET"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 2.02277960085328,
+                    "path": "pod: productcatalogservice-2 --2.02--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648120138,
+            "level": "service",
+            "cmdb_id": "shippingservice",
+            "failure_type": "k8s容器网络延迟",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 4.1517650609014805,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --4.15--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648124433,
+            "level": "pod",
+            "cmdb_id": "shippingservice-0",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 2.0257785235787553,
+                    "path": "pod: productcatalogservice-2 --2.03--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648127032,
+            "level": "pod",
+            "cmdb_id": "cartservice-2",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 3,
+                    "score": 6.045640860885026,
+                    "path": "api: cartservice-/hipstershop.CartService/GetCart --6.05--> api: frontend-hipstershop.CartService/GetCart",
+                    "name": "cartservice-/hipstershop.CartService/GetCart"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648133966,
+            "level": "pod",
+            "cmdb_id": "recommendationservice-2",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 43.58540002516398,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --31.11--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --8.30--> api: frontend-hipstershop.RecommendationService/ListRecommendations --4.18--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 34,
+                    "score": 34.68254670081963,
+                    "path": "pod: recommendationservice-2 --22.20--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --8.30--> api: frontend-hipstershop.RecommendationService/ListRecommendations --4.18--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "recommendationservice-2"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 12.479243697085623,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --8.30--> api: frontend-hipstershop.RecommendationService/ListRecommendations --4.18--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 0,
+                    "score": 9.454602411762279,
+                    "path": "pod: adservice-0 --9.45--> api: adservice-hipstershop.adservice/getads",
+                    "name": "adservice-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 3,
+                    "score": 8.822705777173121,
+                    "path": "pod: adservice2-0 --8.82--> api: adservice-hipstershop.adservice/getads",
+                    "name": "adservice2-0"
+                },
+                {
+                    "ntype": "api",
+                    "id": 27,
+                    "score": 4.183151983509582,
+                    "path": "api: frontend-hipstershop.RecommendationService/ListRecommendations --4.18--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.RecommendationService/ListRecommendations"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648136405,
+            "level": "pod",
+            "cmdb_id": "currencyservice-2",
+            "failure_type": "k8s容器读io负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 0,
+                    "score": 11.592465998513376,
+                    "path": "pod: adservice-0 --11.59--> api: adservice-hipstershop.adservice/getads",
+                    "name": "adservice-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 3,
+                    "score": 10.558032019609664,
+                    "path": "pod: adservice2-0 --10.56--> api: adservice-hipstershop.adservice/getads",
+                    "name": "adservice2-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648225796,
+            "level": "service",
+            "cmdb_id": "productcatalogservice",
+            "failure_type": "k8s容器内存负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 23,
+                    "score": 11.936747217737993,
+                    "path": "pod: frontend2-0 --11.94--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "frontend2-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 11.539184795586095,
+                    "path": "pod: productcatalogservice-2 --11.54--> api: productcatalogservice-hipstershop.ProductCatalogService/ListProducts",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648227602,
+            "level": "pod",
+            "cmdb_id": "productcatalogservice-1",
+            "failure_type": "k8s容器网络延迟",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 13.024566043319052,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --13.02--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 23,
+                    "score": 9.265408650972603,
+                    "path": "pod: frontend2-0 --9.27--> api: frontend-hipstershop.CurrencyService/Convert",
+                    "name": "frontend2-0"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 8.212533643268612,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --8.21--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 28,
+                    "score": 6.532556436930986,
+                    "path": "pod: productcatalogservice-0 --1.99--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --4.54--> api: checkoutservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-0"
+                },
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 4.537840234905978,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --4.54--> api: checkoutservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 0,
+                    "score": 3.8545340136677337,
+                    "path": "pod: adservice-0 --3.85--> api: adservice-hipstershop.adservice/getads",
+                    "name": "adservice-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648228052,
+            "level": "pod",
+            "cmdb_id": "frontend-0",
+            "failure_type": "k8s容器写io负载",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 9.892476779690973,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --9.89--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 8.437237860176506,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --8.44--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 5.729849593567769,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --5.73--> api: frontend-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 23,
+                    "score": 4.909659487267385,
+                    "path": "pod: frontend2-0 --4.91--> api: frontend-hipstershop.CurrencyService/GetSupportedCurrencies",
+                    "name": "frontend2-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 11,
+                    "score": 2.180589424135737,
+                    "path": "pod: checkoutservice2-0 --2.18--> api: checkoutservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "checkoutservice2-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648229763,
+            "level": "pod",
+            "cmdb_id": "recommendationservice-0",
+            "failure_type": "k8s容器网络延迟",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 23,
+                    "score": 9.435563734438501,
+                    "path": "pod: frontend2-0 --9.44--> api: frontend-hipstershop.ProductCatalogService/ListProducts",
+                    "name": "frontend2-0"
+                },
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 6.841197108931053,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --6.84--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648231146,
+            "level": "pod",
+            "cmdb_id": "frontend-1",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 23,
+                    "score": 11.025382906208762,
+                    "path": "pod: frontend2-0 --11.03--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "frontend2-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648233257,
+            "level": "pod",
+            "cmdb_id": "productcatalogservice2-0",
+            "failure_type": "k8s容器内存负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 23,
+                    "score": 11.086717643985779,
+                    "path": "pod: frontend2-0 --11.09--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "frontend2-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648238109,
+            "level": "pod",
+            "cmdb_id": "shippingservice-1",
+            "failure_type": "k8s容器网络延迟",
+            "cand": []
+        },
+        {
+            "timestamp": 1648239854,
+            "level": "service",
+            "cmdb_id": "cartservice",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 3,
+                    "score": 11.284682087327974,
+                    "path": "api: cartservice-/hipstershop.CartService/GetCart --11.28--> api: frontend-hipstershop.CartService/GetCart",
+                    "name": "cartservice-/hipstershop.CartService/GetCart"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 8,
+                    "score": 9.073830287721734,
+                    "path": "pod: checkoutservice-0 --9.07--> api: checkoutservice-hipstershop.CartService/GetCart",
+                    "name": "checkoutservice-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 10,
+                    "score": 8.973578292033846,
+                    "path": "pod: checkoutservice-2 --8.97--> api: checkoutservice-hipstershop.CartService/GetCart",
+                    "name": "checkoutservice-2"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 31,
+                    "score": 3.506982101986812,
+                    "path": "pod: productcatalogservice2-0 --3.51--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice2-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 28,
+                    "score": 3.506982101986812,
+                    "path": "pod: productcatalogservice-0 --3.51--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 29,
+                    "score": 3.506982101986812,
+                    "path": "pod: productcatalogservice-1 --3.51--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-1"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 3.506982101986812,
+                    "path": "pod: productcatalogservice-2 --3.51--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648242138,
+            "level": "service",
+            "cmdb_id": "cartservice",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 4,
+                    "score": 28.10756771469656,
+                    "path": "api: cartservice-HGET --9.02--> api: cartservice-/hipstershop.CartService/AddItem --19.09--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-HGET"
+                },
+                {
+                    "ntype": "api",
+                    "id": 1,
+                    "score": 19.08628738791335,
+                    "path": "api: cartservice-/hipstershop.CartService/AddItem --19.09--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-/hipstershop.CartService/AddItem"
+                },
+                {
+                    "ntype": "api",
+                    "id": 6,
+                    "score": 16.609998080703996,
+                    "path": "api: checkoutservice-hipstershop.CartService/EmptyCart --7.30--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --9.31--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CartService/EmptyCart"
+                },
+                {
+                    "ntype": "api",
+                    "id": 3,
+                    "score": 13.30927705931005,
+                    "path": "api: cartservice-/hipstershop.CartService/GetCart --13.31--> api: frontend-hipstershop.CartService/GetCart",
+                    "name": "cartservice-/hipstershop.CartService/GetCart"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 9.305601562177587,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --9.31--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 28,
+                    "score": 3.847401396059667,
+                    "path": "pod: productcatalogservice-0 --3.85--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 3.528206203037803,
+                    "path": "pod: productcatalogservice-2 --3.53--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648244407,
+            "level": "service",
+            "cmdb_id": "checkoutservice",
+            "failure_type": "k8s容器网络延迟",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 14.409595696362526,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --10.56--> api: frontend-hipstershop.CheckoutService/PlaceOrder --3.85--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 21,
+                    "score": 3.8510408133425944,
+                    "path": "api: frontend-hipstershop.CheckoutService/PlaceOrder --3.85--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648250862,
+            "level": "service",
+            "cmdb_id": "checkoutservice",
+            "failure_type": "k8s容器网络延迟",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 14.113392075828724,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --10.24--> api: frontend-hipstershop.CheckoutService/PlaceOrder --3.87--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 21,
+                    "score": 3.869663759479584,
+                    "path": "api: frontend-hipstershop.CheckoutService/PlaceOrder --3.87--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648256704,
+            "level": "service",
+            "cmdb_id": "shippingservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 17.2980435796186,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --17.30--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 12,
+                    "score": 2.5446863670395112,
+                    "path": "pod: currencyservice-0 --2.54--> api: currencyservice-grpc.hipstershop.CurrencyService/GetSupportedCurrencies",
+                    "name": "currencyservice-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 14,
+                    "score": 2.4831843724667264,
+                    "path": "pod: currencyservice-2 --2.48--> api: currencyservice-grpc.hipstershop.CurrencyService/GetSupportedCurrencies",
+                    "name": "currencyservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648257914,
+            "level": "pod",
+            "cmdb_id": "frontend-0",
+            "failure_type": "k8s容器内存负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 28,
+                    "score": 2.9081856083837256,
+                    "path": "pod: productcatalogservice-0 --2.91--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 2.2965392810149883,
+                    "path": "pod: productcatalogservice-2 --2.30--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648261901,
+            "level": "pod",
+            "cmdb_id": "shippingservice-0",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 14,
+                    "score": 11.802940207578901,
+                    "path": "api: checkoutservice-hipstershop.ShippingService/ShipOrder --7.06--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --4.74--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.ShippingService/ShipOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 4.741583438851533,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --4.74--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648442505,
+            "level": "pod",
+            "cmdb_id": "currencyservice-2",
+            "failure_type": "k8s容器读io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648448134,
+            "level": "pod",
+            "cmdb_id": "emailservice-1",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 7,
+                    "score": 37.281775206732725,
+                    "path": "pod: cartservice2-0 --15.84--> api: cartservice-HMSET --13.87--> api: cartservice-/hipstershop.CartService/AddItem --7.57--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice2-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 17,
+                    "score": 24.28167686875932,
+                    "path": "pod: emailservice-1 --24.28--> api: emailservice-/hipstershop.EmailService/SendOrderConfirmation",
+                    "name": "emailservice-1"
+                },
+                {
+                    "ntype": "api",
+                    "id": 5,
+                    "score": 21.44149773369948,
+                    "path": "api: cartservice-HMSET --13.87--> api: cartservice-/hipstershop.CartService/AddItem --7.57--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-HMSET"
+                },
+                {
+                    "ntype": "api",
+                    "id": 4,
+                    "score": 21.268574814019992,
+                    "path": "api: cartservice-HGET --13.70--> api: cartservice-/hipstershop.CartService/AddItem --7.57--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-HGET"
+                },
+                {
+                    "ntype": "api",
+                    "id": 10,
+                    "score": 8.876438777590181,
+                    "path": "api: checkoutservice-hipstershop.EmailService/SendOrderConfirmation --4.01--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --4.86--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.EmailService/SendOrderConfirmation"
+                },
+                {
+                    "ntype": "api",
+                    "id": 1,
+                    "score": 7.5721727517623165,
+                    "path": "api: cartservice-/hipstershop.CartService/AddItem --7.57--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-/hipstershop.CartService/AddItem"
+                },
+                {
+                    "ntype": "api",
+                    "id": 3,
+                    "score": 7.3469101546183815,
+                    "path": "api: cartservice-/hipstershop.CartService/GetCart --7.35--> api: frontend-hipstershop.CartService/GetCart",
+                    "name": "cartservice-/hipstershop.CartService/GetCart"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 4.863508182644837,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --4.86--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 2,
+                    "score": 4.276290044180383,
+                    "path": "api: cartservice-/hipstershop.CartService/EmptyCart --4.28--> api: checkoutservice-hipstershop.CartService/EmptyCart",
+                    "name": "cartservice-/hipstershop.CartService/EmptyCart"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648449121,
+            "level": "service",
+            "cmdb_id": "paymentservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 7,
+                    "score": 39.172066879406295,
+                    "path": "pod: cartservice2-0 --18.31--> api: cartservice-HMSET --14.42--> api: cartservice-/hipstershop.CartService/AddItem --6.44--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice2-0"
+                },
+                {
+                    "ntype": "api",
+                    "id": 5,
+                    "score": 20.86279824151021,
+                    "path": "api: cartservice-HMSET --14.42--> api: cartservice-/hipstershop.CartService/AddItem --6.44--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-HMSET"
+                },
+                {
+                    "ntype": "api",
+                    "id": 4,
+                    "score": 20.86279824151021,
+                    "path": "api: cartservice-HGET --14.42--> api: cartservice-/hipstershop.CartService/AddItem --6.44--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-HGET"
+                },
+                {
+                    "ntype": "api",
+                    "id": 11,
+                    "score": 17.8142450504146,
+                    "path": "api: checkoutservice-hipstershop.PaymentService/Charge --8.26--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --9.56--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.PaymentService/Charge"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 9.558698744333592,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --9.56--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 3,
+                    "score": 9.412789838174454,
+                    "path": "api: cartservice-/hipstershop.CartService/GetCart --9.41--> api: frontend-hipstershop.CartService/GetCart",
+                    "name": "cartservice-/hipstershop.CartService/GetCart"
+                },
+                {
+                    "ntype": "api",
+                    "id": 1,
+                    "score": 6.438818252741714,
+                    "path": "api: cartservice-/hipstershop.CartService/AddItem --6.44--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-/hipstershop.CartService/AddItem"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648451809,
+            "level": "pod",
+            "cmdb_id": "currencyservice-1",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 7,
+                    "score": 41.65557303425683,
+                    "path": "pod: cartservice2-0 --16.30--> api: cartservice-HMSET --16.98--> api: cartservice-/hipstershop.CartService/AddItem --8.37--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice2-0"
+                },
+                {
+                    "ntype": "api",
+                    "id": 4,
+                    "score": 25.472012957894684,
+                    "path": "api: cartservice-HGET --17.10--> api: cartservice-/hipstershop.CartService/AddItem --8.37--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-HGET"
+                },
+                {
+                    "ntype": "api",
+                    "id": 5,
+                    "score": 25.353446707684554,
+                    "path": "api: cartservice-HMSET --16.98--> api: cartservice-/hipstershop.CartService/AddItem --8.37--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-HMSET"
+                },
+                {
+                    "ntype": "api",
+                    "id": 3,
+                    "score": 15.166906989969199,
+                    "path": "api: cartservice-/hipstershop.CartService/GetCart --15.17--> api: frontend-hipstershop.CartService/GetCart",
+                    "name": "cartservice-/hipstershop.CartService/GetCart"
+                },
+                {
+                    "ntype": "api",
+                    "id": 1,
+                    "score": 8.374765198477045,
+                    "path": "api: cartservice-/hipstershop.CartService/AddItem --8.37--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-/hipstershop.CartService/AddItem"
+                },
+                {
+                    "ntype": "api",
+                    "id": 2,
+                    "score": 4.104586606143112,
+                    "path": "api: cartservice-/hipstershop.CartService/EmptyCart --4.10--> api: checkoutservice-hipstershop.CartService/EmptyCart",
+                    "name": "cartservice-/hipstershop.CartService/EmptyCart"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648453177,
+            "level": "pod",
+            "cmdb_id": "productcatalogservice-0",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 65.12970084402937,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --21.32--> api: checkoutservice-hipstershop.ProductCatalogService/GetProduct --30.82--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --12.99--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 57.31261580274495,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --33.06--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --24.26--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 7,
+                    "score": 48.6693775642796,
+                    "path": "pod: cartservice2-0 --16.96--> api: cartservice-HMSET --11.09--> api: cartservice-/hipstershop.CartService/GetCart --20.61--> api: frontend-hipstershop.CartService/GetCart",
+                    "name": "cartservice2-0"
+                },
+                {
+                    "ntype": "api",
+                    "id": 12,
+                    "score": 43.812338642179235,
+                    "path": "api: checkoutservice-hipstershop.ProductCatalogService/GetProduct --30.82--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --12.99--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 5,
+                    "score": 31.70815021503126,
+                    "path": "api: cartservice-HMSET --11.09--> api: cartservice-/hipstershop.CartService/GetCart --20.61--> api: frontend-hipstershop.CartService/GetCart",
+                    "name": "cartservice-HMSET"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 24.25757194558537,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --24.26--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                },
+                {
+                    "ntype": "api",
+                    "id": 3,
+                    "score": 20.613351038282094,
+                    "path": "api: cartservice-/hipstershop.CartService/GetCart --20.61--> api: frontend-hipstershop.CartService/GetCart",
+                    "name": "cartservice-/hipstershop.CartService/GetCart"
+                },
+                {
+                    "ntype": "api",
+                    "id": 1,
+                    "score": 14.883024285008442,
+                    "path": "api: cartservice-/hipstershop.CartService/AddItem --14.88--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-/hipstershop.CartService/AddItem"
+                },
+                {
+                    "ntype": "api",
+                    "id": 2,
+                    "score": 13.949336980621863,
+                    "path": "api: cartservice-/hipstershop.CartService/EmptyCart --13.95--> api: checkoutservice-hipstershop.CartService/EmptyCart",
+                    "name": "cartservice-/hipstershop.CartService/EmptyCart"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 12.989975738452143,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --12.99--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648454128,
+            "level": "service",
+            "cmdb_id": "adservice",
+            "failure_type": "k8s容器进程中止",
+            "cand": []
+        },
+        {
+            "timestamp": 1648456519,
+            "level": "service",
+            "cmdb_id": "productcatalogservice",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 72.25111627594221,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --26.32--> api: checkoutservice-hipstershop.ProductCatalogService/GetProduct --33.77--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --12.16--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 12,
+                    "score": 45.92929322247004,
+                    "path": "api: checkoutservice-hipstershop.ProductCatalogService/GetProduct --33.77--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --12.16--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 7,
+                    "score": 19.570427282947897,
+                    "path": "pod: cartservice2-0 --15.76--> api: cartservice-HMSET --3.81--> api: cartservice-/hipstershop.CartService/AddItem",
+                    "name": "cartservice2-0"
+                },
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 18.458715360196162,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --12.25--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --6.21--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 12.158526222624392,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --12.16--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 6.211595073152973,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --6.21--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 31,
+                    "score": 5.662857361634405,
+                    "path": "pod: productcatalogservice2-0 --5.66--> api: productcatalogservice-hipstershop.ProductCatalogService/ListProducts",
+                    "name": "productcatalogservice2-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 28,
+                    "score": 5.662857361634405,
+                    "path": "pod: productcatalogservice-0 --5.66--> api: productcatalogservice-hipstershop.ProductCatalogService/ListProducts",
+                    "name": "productcatalogservice-0"
+                },
+                {
+                    "ntype": "api",
+                    "id": 4,
+                    "score": 5.1689877121859364,
+                    "path": "api: cartservice-HGET --5.17--> api: cartservice-/hipstershop.CartService/AddItem",
+                    "name": "cartservice-HGET"
+                },
+                {
+                    "ntype": "api",
+                    "id": 5,
+                    "score": 3.8078232017865132,
+                    "path": "api: cartservice-HMSET --3.81--> api: cartservice-/hipstershop.CartService/AddItem",
+                    "name": "cartservice-HMSET"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648458405,
+            "level": "pod",
+            "cmdb_id": "recommendationservice-2",
+            "failure_type": "k8s容器读io负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 34,
+                    "score": 6.6264946272781415,
+                    "path": "pod: recommendationservice-2 --6.63--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-2"
+                },
+                {
+                    "ntype": "api",
+                    "id": 31,
+                    "score": 3.0805891962130207,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/ListProducts --3.08--> api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/ListProducts"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648461862,
+            "level": "pod",
+            "cmdb_id": "checkoutservice-1",
+            "failure_type": "k8s容器读io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648462827,
+            "level": "service",
+            "cmdb_id": "recommendationservice",
+            "failure_type": "k8s容器内存负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 0,
+                    "score": 3.1100792642755524,
+                    "path": "pod: adservice-0 --3.11--> api: adservice-hipstershop.adservice/getads",
+                    "name": "adservice-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648464636,
+            "level": "pod",
+            "cmdb_id": "frontend-1",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 21,
+                    "score": 6.962162073925844,
+                    "path": "pod: frontend-1 --6.96--> api: frontend-hipstershop.ProductCatalogService/ListProducts",
+                    "name": "frontend-1"
+                },
+                {
+                    "ntype": "api",
+                    "id": 31,
+                    "score": 6.934474448361198,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/ListProducts --6.93--> api: frontend-hipstershop.ProductCatalogService/ListProducts",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/ListProducts"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648468774,
+            "level": "service",
+            "cmdb_id": "shippingservice",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648471512,
+            "level": "service",
+            "cmdb_id": "emailservice",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 17,
+                    "score": 40.69963342930398,
+                    "path": "api: emailservice-/hipstershop.EmailService/SendOrderConfirmation --35.10--> api: checkoutservice-hipstershop.EmailService/SendOrderConfirmation --5.59--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "emailservice-/hipstershop.EmailService/SendOrderConfirmation"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 11,
+                    "score": 37.479532300152954,
+                    "path": "pod: checkoutservice2-0 --31.88--> api: checkoutservice-hipstershop.EmailService/SendOrderConfirmation --5.59--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice2-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 9,
+                    "score": 36.752505911767976,
+                    "path": "pod: checkoutservice-1 --31.16--> api: checkoutservice-hipstershop.EmailService/SendOrderConfirmation --5.59--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-1"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 8,
+                    "score": 36.62822343200538,
+                    "path": "pod: checkoutservice-0 --31.03--> api: checkoutservice-hipstershop.EmailService/SendOrderConfirmation --5.59--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 10,
+                    "score": 36.30623992159647,
+                    "path": "pod: checkoutservice-2 --30.71--> api: checkoutservice-hipstershop.EmailService/SendOrderConfirmation --5.59--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-2"
+                },
+                {
+                    "ntype": "api",
+                    "id": 10,
+                    "score": 5.594709962123156,
+                    "path": "api: checkoutservice-hipstershop.EmailService/SendOrderConfirmation --5.59--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.EmailService/SendOrderConfirmation"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648473493,
+            "level": "pod",
+            "cmdb_id": "recommendationservice-2",
+            "failure_type": "k8s容器进程中止",
+            "cand": []
+        },
+        {
+            "timestamp": 1648475761,
+            "level": "service",
+            "cmdb_id": "recommendationservice",
+            "failure_type": "k8s容器读io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648476928,
+            "level": "service",
+            "cmdb_id": "currencyservice",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": []
+        },
+        {
+            "timestamp": 1648480555,
+            "level": "service",
+            "cmdb_id": "currencyservice",
+            "failure_type": "k8s容器进程中止",
+            "cand": []
+        },
+        {
+            "timestamp": 1648486942,
+            "level": "pod",
+            "cmdb_id": "emailservice-0",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 16,
+                    "score": 39.7257838528714,
+                    "path": "pod: emailservice-0 --39.73--> api: emailservice-/hipstershop.EmailService/SendOrderConfirmation",
+                    "name": "emailservice-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648491433,
+            "level": "pod",
+            "cmdb_id": "recommendationservice2-0",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648492533,
+            "level": "pod",
+            "cmdb_id": "currencyservice-1",
+            "failure_type": "k8s容器读io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648494478,
+            "level": "service",
+            "cmdb_id": "shippingservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 7,
+                    "score": 17.68106937733561,
+                    "path": "pod: cartservice2-0 --17.68--> api: cartservice-HGET",
+                    "name": "cartservice2-0"
+                },
+                {
+                    "ntype": "api",
+                    "id": 28,
+                    "score": 9.082451390541417,
+                    "path": "api: frontend-hipstershop.ShippingService/GetQuote --9.08--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.ShippingService/GetQuote"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648499882,
+            "level": "service",
+            "cmdb_id": "frontend",
+            "failure_type": "k8s容器读io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648507813,
+            "level": "pod",
+            "cmdb_id": "paymentservice-1",
+            "failure_type": "k8s容器写io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648511772,
+            "level": "service",
+            "cmdb_id": "productcatalogservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 31,
+                    "score": 87.43049059433996,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/ListProducts --8.47--> api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --46.89--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --32.07--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 78.96085864622812,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --46.89--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --32.07--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 32.070288464038924,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --32.07--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                },
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 7.686935118769658,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --7.69--> api: frontend-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648512399,
+            "level": "pod",
+            "cmdb_id": "productcatalogservice-0",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 28,
+                    "score": 57.31158245598087,
+                    "path": "pod: productcatalogservice-0 --57.31--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648516754,
+            "level": "service",
+            "cmdb_id": "adservice",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648520175,
+            "level": "pod",
+            "cmdb_id": "productcatalogservice-0",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 36.77709938093582,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --36.78--> api: checkoutservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 27.108941789041776,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --16.55--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --10.56--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 10.556206151453658,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --10.56--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648522456,
+            "level": "pod",
+            "cmdb_id": "paymentservice-0",
+            "failure_type": "k8s容器读io负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 28,
+                    "score": 4.122584126741297,
+                    "path": "pod: productcatalogservice-0 --4.12--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648525567,
+            "level": "pod",
+            "cmdb_id": "cartservice-1",
+            "failure_type": "k8s容器进程中止",
+            "cand": []
+        },
+        {
+            "timestamp": 1648526627,
+            "level": "service",
+            "cmdb_id": "productcatalogservice",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 42.36709478834676,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --21.83--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --20.54--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 12,
+                    "score": 29.11871790263175,
+                    "path": "api: checkoutservice-hipstershop.ProductCatalogService/GetProduct --18.14--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --10.98--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 20.538158491626554,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --20.54--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                },
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 17.829668761981985,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --17.83--> api: frontend-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 21,
+                    "score": 15.513838420753698,
+                    "path": "pod: frontend-1 --15.51--> api: frontend-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "frontend-1"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 10.982840224568536,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --10.98--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648531683,
+            "level": "service",
+            "cmdb_id": "productcatalogservice",
+            "failure_type": "k8s容器进程中止",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 28,
+                    "score": 22.977851788400294,
+                    "path": "pod: productcatalogservice-0 --22.98--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 8.408362733332035,
+                    "path": "pod: productcatalogservice-2 --8.41--> api: productcatalogservice-hipstershop.ProductCatalogService/ListProducts",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648538597,
+            "level": "service",
+            "cmdb_id": "recommendationservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 74.4401421578026,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --46.71--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --27.73--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 27.73450609341588,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --27.73--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648540678,
+            "level": "pod",
+            "cmdb_id": "shippingservice-2",
+            "failure_type": "k8s容器网络丢包",
+            "cand": []
+        },
+        {
+            "timestamp": 1648549097,
+            "level": "service",
+            "cmdb_id": "frontend",
+            "failure_type": "k8s容器cpu负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648550137,
+            "level": "pod",
+            "cmdb_id": "cartservice-1",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 8.494752311444392,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --8.49--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 21,
+                    "score": 5.597944391731009,
+                    "path": "pod: frontend-1 --5.60--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "frontend-1"
+                },
+                {
+                    "ntype": "api",
+                    "id": 3,
+                    "score": 5.4366588112571925,
+                    "path": "api: cartservice-/hipstershop.CartService/GetCart --5.44--> api: frontend-hipstershop.CartService/GetCart",
+                    "name": "cartservice-/hipstershop.CartService/GetCart"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 31,
+                    "score": 4.581244352599451,
+                    "path": "pod: productcatalogservice2-0 --4.58--> api: productcatalogservice-hipstershop.ProductCatalogService/ListProducts",
+                    "name": "productcatalogservice2-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 29,
+                    "score": 4.581244352599451,
+                    "path": "pod: productcatalogservice-1 --4.58--> api: productcatalogservice-hipstershop.ProductCatalogService/ListProducts",
+                    "name": "productcatalogservice-1"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 4.581244352599451,
+                    "path": "pod: productcatalogservice-2 --4.58--> api: productcatalogservice-hipstershop.ProductCatalogService/ListProducts",
+                    "name": "productcatalogservice-2"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 28,
+                    "score": 4.581244352599451,
+                    "path": "pod: productcatalogservice-0 --4.58--> api: productcatalogservice-hipstershop.ProductCatalogService/ListProducts",
+                    "name": "productcatalogservice-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648552790,
+            "level": "pod",
+            "cmdb_id": "adservice2-0",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": []
+        },
+        {
+            "timestamp": 1648558337,
+            "level": "pod",
+            "cmdb_id": "recommendationservice-2",
+            "failure_type": "k8s容器内存负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 34,
+                    "score": 34.574569579786,
+                    "path": "pod: recommendationservice-2 --34.57--> api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts",
+                    "name": "recommendationservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648559364,
+            "level": "service",
+            "cmdb_id": "productcatalogservice",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 62.24835366016516,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --37.25--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --25.00--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 25.002921574873675,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --25.00--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                },
+                {
+                    "ntype": "api",
+                    "id": 12,
+                    "score": 21.293466731469575,
+                    "path": "api: checkoutservice-hipstershop.ProductCatalogService/GetProduct --10.36--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --10.93--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 10.933363882957165,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --10.93--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648560649,
+            "level": "pod",
+            "cmdb_id": "cartservice-2",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 6,
+                    "score": 4.618532727636448,
+                    "path": "pod: cartservice-2 --4.62--> api: cartservice-HMSET",
+                    "name": "cartservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648561519,
+            "level": "pod",
+            "cmdb_id": "emailservice-2",
+            "failure_type": "k8s容器网络丢包",
+            "cand": []
+        },
+        {
+            "timestamp": 1648563286,
+            "level": "service",
+            "cmdb_id": "adservice",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 18,
+                    "score": 3.6598033740308935,
+                    "path": "api: frontend-hipstershop.AdService/GetAds --3.66--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.AdService/GetAds"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648565706,
+            "level": "pod",
+            "cmdb_id": "frontend2-0",
+            "failure_type": "k8s容器cpu负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648566959,
+            "level": "service",
+            "cmdb_id": "adservice",
+            "failure_type": "k8s容器cpu负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648572514,
+            "level": "pod",
+            "cmdb_id": "frontend-2",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648575995,
+            "level": "pod",
+            "cmdb_id": "recommendationservice2-0",
+            "failure_type": "k8s容器写io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648576214,
+            "level": "service",
+            "cmdb_id": "adservice",
+            "failure_type": "k8s容器cpu负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648580238,
+            "level": "service",
+            "cmdb_id": "frontend",
+            "failure_type": "k8s容器读io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648585292,
+            "level": "pod",
+            "cmdb_id": "emailservice-1",
+            "failure_type": "k8s容器写io负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 17,
+                    "score": 25.095503711173514,
+                    "path": "pod: emailservice-1 --25.10--> api: emailservice-/hipstershop.EmailService/SendOrderConfirmation",
+                    "name": "emailservice-1"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648588279,
+            "level": "pod",
+            "cmdb_id": "paymentservice-1",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 11,
+                    "score": 8.168826763097634,
+                    "path": "api: checkoutservice-hipstershop.PaymentService/Charge --3.70--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --4.47--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.PaymentService/Charge"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 4.468064518523163,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --4.47--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648589675,
+            "level": "service",
+            "cmdb_id": "recommendationservice",
+            "failure_type": "k8s容器进程中止",
+            "cand": []
+        },
+        {
+            "timestamp": 1648590780,
+            "level": "service",
+            "cmdb_id": "cartservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 7,
+                    "score": 17.13462679316339,
+                    "path": "api: checkoutservice-hipstershop.CartService/GetCart --5.90--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --11.23--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CartService/GetCart"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 11.233603449947724,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --11.23--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 3,
+                    "score": 10.292773407147733,
+                    "path": "api: cartservice-/hipstershop.CartService/GetCart --10.29--> api: frontend-hipstershop.CartService/GetCart",
+                    "name": "cartservice-/hipstershop.CartService/GetCart"
+                },
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 9.22704350577119,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --9.23--> api: checkoutservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 31,
+                    "score": 3.9067386108706406,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/ListProducts --3.91--> api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 15,
+                    "score": 3.1720133304528284,
+                    "path": "pod: currencyservice2-0 --3.17--> api: currencyservice-grpc.hipstershop.CurrencyService/Convert",
+                    "name": "currencyservice2-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 12,
+                    "score": 3.1417401466704473,
+                    "path": "pod: currencyservice-0 --3.14--> api: currencyservice-grpc.hipstershop.CurrencyService/Convert",
+                    "name": "currencyservice-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 14,
+                    "score": 2.9394227637514283,
+                    "path": "pod: currencyservice-2 --2.94--> api: currencyservice-grpc.hipstershop.CurrencyService/Convert",
+                    "name": "currencyservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648592982,
+            "level": "pod",
+            "cmdb_id": "productcatalogservice-1",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 44.143545884937666,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --25.74--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --18.40--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 35.31475094395097,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --35.31--> api: checkoutservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 18.402897776292544,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --18.40--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648594936,
+            "level": "service",
+            "cmdb_id": "adservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 18,
+                    "score": 11.357994224192488,
+                    "path": "api: frontend-hipstershop.AdService/GetAds --11.36--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.AdService/GetAds"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648598533,
+            "level": "service",
+            "cmdb_id": "recommendationservice",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 31,
+                    "score": 62.560814372804295,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/ListProducts --9.27--> api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --27.94--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --25.35--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 53.292169884190784,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --27.94--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --25.35--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 25.352380761081548,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --25.35--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648603307,
+            "level": "service",
+            "cmdb_id": "recommendationservice",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 11.706613856264095,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --11.71--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 27,
+                    "score": 4.584838288948773,
+                    "path": "api: frontend-hipstershop.RecommendationService/ListRecommendations --4.58--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.RecommendationService/ListRecommendations"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648606641,
+            "level": "service",
+            "cmdb_id": "frontend",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648607495,
+            "level": "pod",
+            "cmdb_id": "adservice2-0",
+            "failure_type": "k8s容器进程中止",
+            "cand": []
+        },
+        {
+            "timestamp": 1648616859,
+            "level": "pod",
+            "cmdb_id": "productcatalogservice-0",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 53.797673247093726,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --31.89--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --21.91--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 21.910152966320176,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --21.91--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                },
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 6.3845497353115235,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --6.38--> api: frontend-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648618274,
+            "level": "service",
+            "cmdb_id": "emailservice",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648619018,
+            "level": "pod",
+            "cmdb_id": "productcatalogservice-1",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 29,
+                    "score": 58.95264169401963,
+                    "path": "pod: productcatalogservice-1 --55.78--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --3.17--> api: frontend-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-1"
+                },
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 3.173885173429113,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --3.17--> api: frontend-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648620473,
+            "level": "service",
+            "cmdb_id": "adservice",
+            "failure_type": "k8s容器写io负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 0,
+                    "score": 8.74821173002574,
+                    "path": "pod: adservice-0 --8.75--> api: adservice-hipstershop.adservice/getads",
+                    "name": "adservice-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648622785,
+            "level": "pod",
+            "cmdb_id": "recommendationservice-0",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648627686,
+            "level": "pod",
+            "cmdb_id": "currencyservice-0",
+            "failure_type": "k8s容器写io负载",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 15,
+                    "score": 6.962847338065183,
+                    "path": "api: currencyservice-grpc.hipstershop.CurrencyService/Convert --6.96--> api: frontend-hipstershop.CurrencyService/Convert",
+                    "name": "currencyservice-grpc.hipstershop.CurrencyService/Convert"
+                },
+                {
+                    "ntype": "api",
+                    "id": 29,
+                    "score": 3.3107189422011043,
+                    "path": "api: paymentservice-grpc.hipstershop.PaymentService/Charge --3.31--> api: checkoutservice-hipstershop.PaymentService/Charge",
+                    "name": "paymentservice-grpc.hipstershop.PaymentService/Charge"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648629730,
+            "level": "pod",
+            "cmdb_id": "productcatalogservice2-0",
+            "failure_type": "k8s容器写io负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 21,
+                    "score": 7.936578184811927,
+                    "path": "pod: frontend-1 --4.63--> api: frontend-hipstershop.RecommendationService/ListRecommendations --3.30--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-1"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 29,
+                    "score": 4.034633950161822,
+                    "path": "pod: productcatalogservice-1 --4.03--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-1"
+                },
+                {
+                    "ntype": "api",
+                    "id": 0,
+                    "score": 3.42907225983167,
+                    "path": "api: adservice-hipstershop.adservice/getads --3.43--> api: frontend-hipstershop.AdService/GetAds",
+                    "name": "adservice-hipstershop.adservice/getads"
+                },
+                {
+                    "ntype": "api",
+                    "id": 27,
+                    "score": 3.3048134935836293,
+                    "path": "api: frontend-hipstershop.RecommendationService/ListRecommendations --3.30--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.RecommendationService/ListRecommendations"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648631661,
+            "level": "service",
+            "cmdb_id": "shippingservice",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648634490,
+            "level": "pod",
+            "cmdb_id": "cartservice-0",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 6,
+                    "score": 15.58929492048157,
+                    "path": "api: checkoutservice-hipstershop.CartService/EmptyCart --8.01--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --7.58--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CartService/EmptyCart"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 7.576610993064636,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --7.58--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 3,
+                    "score": 4.9570730012591655,
+                    "path": "api: cartservice-/hipstershop.CartService/GetCart --4.96--> api: frontend-hipstershop.CartService/GetCart",
+                    "name": "cartservice-/hipstershop.CartService/GetCart"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 21,
+                    "score": 3.999981016086894,
+                    "path": "pod: frontend-1 --4.00--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "frontend-1"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648634886,
+            "level": "pod",
+            "cmdb_id": "recommendationservice-2",
+            "failure_type": "k8s容器内存负载",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 5,
+                    "score": 26.5872859388229,
+                    "path": "api: cartservice-HMSET --15.72--> api: cartservice-/hipstershop.CartService/AddItem --10.87--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-HMSET"
+                },
+                {
+                    "ntype": "api",
+                    "id": 4,
+                    "score": 26.5872859388229,
+                    "path": "api: cartservice-HGET --15.72--> api: cartservice-/hipstershop.CartService/AddItem --10.87--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-HGET"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 34,
+                    "score": 20.61520196565534,
+                    "path": "pod: recommendationservice-2 --20.62--> api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts",
+                    "name": "recommendationservice-2"
+                },
+                {
+                    "ntype": "api",
+                    "id": 3,
+                    "score": 13.339530494257614,
+                    "path": "api: cartservice-/hipstershop.CartService/GetCart --13.34--> api: frontend-hipstershop.CartService/GetCart",
+                    "name": "cartservice-/hipstershop.CartService/GetCart"
+                },
+                {
+                    "ntype": "api",
+                    "id": 1,
+                    "score": 10.869493979803964,
+                    "path": "api: cartservice-/hipstershop.CartService/AddItem --10.87--> api: frontend-hipstershop.CartService/AddItem",
+                    "name": "cartservice-/hipstershop.CartService/AddItem"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 6.378161506135114,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --6.38--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 21,
+                    "score": 5.1559900109493135,
+                    "path": "pod: frontend-1 --5.16--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "frontend-1"
+                },
+                {
+                    "ntype": "api",
+                    "id": 2,
+                    "score": 4.926474034949643,
+                    "path": "api: cartservice-/hipstershop.CartService/EmptyCart --4.93--> api: checkoutservice-hipstershop.CartService/EmptyCart",
+                    "name": "cartservice-/hipstershop.CartService/EmptyCart"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648640921,
+            "level": "service",
+            "cmdb_id": "paymentservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 11,
+                    "score": 11.720117998867511,
+                    "path": "api: checkoutservice-hipstershop.PaymentService/Charge --3.17--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --5.43--> api: frontend-hipstershop.CheckoutService/PlaceOrder --3.12--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.PaymentService/Charge"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 8.553891991975068,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --5.43--> api: frontend-hipstershop.CheckoutService/PlaceOrder --3.12--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 21,
+                    "score": 3.120856845498701,
+                    "path": "api: frontend-hipstershop.CheckoutService/PlaceOrder --3.12--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648645564,
+            "level": "pod",
+            "cmdb_id": "productcatalogservice-2",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 64.8464633556893,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --42.35--> api: checkoutservice-hipstershop.ProductCatalogService/GetProduct --12.15--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --10.34--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 12,
+                    "score": 22.49164233730634,
+                    "path": "api: checkoutservice-hipstershop.ProductCatalogService/GetProduct --12.15--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --10.34--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 10.341481559614,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --10.34--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 9.624179130909475,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --3.62--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --6.00--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 6.000521914043982,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --6.00--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 13,
+                    "score": 3.1409602289627014,
+                    "path": "pod: currencyservice-1 --3.14--> api: currencyservice-grpc.hipstershop.CurrencyService/GetSupportedCurrencies",
+                    "name": "currencyservice-1"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 31,
+                    "score": 3.100499380890827,
+                    "path": "pod: productcatalogservice2-0 --3.10--> api: productcatalogservice-hipstershop.ProductCatalogService/ListProducts",
+                    "name": "productcatalogservice2-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 14,
+                    "score": 2.6078212915332992,
+                    "path": "pod: currencyservice-2 --2.61--> api: currencyservice-grpc.hipstershop.CurrencyService/GetSupportedCurrencies",
+                    "name": "currencyservice-2"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 12,
+                    "score": 2.494663998642144,
+                    "path": "pod: currencyservice-0 --2.49--> api: currencyservice-grpc.hipstershop.CurrencyService/GetSupportedCurrencies",
+                    "name": "currencyservice-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648646387,
+            "level": "pod",
+            "cmdb_id": "shippingservice2-0",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648649212,
+            "level": "pod",
+            "cmdb_id": "productcatalogservice2-0",
+            "failure_type": "k8s容器读io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648693314,
+            "level": "service",
+            "cmdb_id": "productcatalogservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 47.176034254677205,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --21.64--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --25.54--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 12,
+                    "score": 27.707012742808857,
+                    "path": "api: checkoutservice-hipstershop.ProductCatalogService/GetProduct --17.47--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --10.24--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 25.540878614280874,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --25.54--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                },
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 25.0804105020326,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --25.08--> api: frontend-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 21,
+                    "score": 20.450228195794924,
+                    "path": "pod: frontend-1 --20.45--> api: frontend-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "frontend-1"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 10.23533929273232,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --10.24--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648699416,
+            "level": "pod",
+            "cmdb_id": "adservice2-0",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": []
+        },
+        {
+            "timestamp": 1648700781,
+            "level": "pod",
+            "cmdb_id": "paymentservice-2",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 11,
+                    "score": 17.64920954189902,
+                    "path": "api: checkoutservice-hipstershop.PaymentService/Charge --5.97--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --7.06--> api: frontend-hipstershop.CheckoutService/PlaceOrder --4.62--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.PaymentService/Charge"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 11.67702551283075,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --7.06--> api: frontend-hipstershop.CheckoutService/PlaceOrder --4.62--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 21,
+                    "score": 4.621985712688335,
+                    "path": "api: frontend-hipstershop.CheckoutService/PlaceOrder --4.62--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648703497,
+            "level": "pod",
+            "cmdb_id": "currencyservice-2",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648712777,
+            "level": "pod",
+            "cmdb_id": "emailservice-2",
+            "failure_type": "k8s容器内存负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 21,
+                    "score": 3.148830523759147,
+                    "path": "pod: frontend-1 --3.15--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "frontend-1"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648718548,
+            "level": "service",
+            "cmdb_id": "recommendationservice",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 56.64442822069203,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --42.32--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --14.33--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 14.329062779956951,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --14.33--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 3.4206811420824046,
+                    "path": "pod: productcatalogservice-2 --3.42--> api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-2"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 13,
+                    "score": 3.0982227967352554,
+                    "path": "pod: currencyservice-1 --3.10--> api: currencyservice-grpc.hipstershop.CurrencyService/GetSupportedCurrencies",
+                    "name": "currencyservice-1"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 15,
+                    "score": 3.0346694016631974,
+                    "path": "pod: currencyservice2-0 --3.03--> api: currencyservice-grpc.hipstershop.CurrencyService/Convert",
+                    "name": "currencyservice2-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648721316,
+            "level": "pod",
+            "cmdb_id": "shippingservice-1",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 8.987390821752518,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --8.99--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 21,
+                    "score": 3.3315280022292244,
+                    "path": "pod: frontend-1 --3.33--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "frontend-1"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648721801,
+            "level": "service",
+            "cmdb_id": "productcatalogservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 61.894795581890314,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --39.36--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --22.53--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 12,
+                    "score": 31.899448192124776,
+                    "path": "api: checkoutservice-hipstershop.ProductCatalogService/GetProduct --21.50--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --10.40--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 22.532361393322375,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --22.53--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 21,
+                    "score": 14.96525738413055,
+                    "path": "pod: frontend-1 --14.97--> api: frontend-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "frontend-1"
+                },
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 14.96525738413055,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --14.97--> api: frontend-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 22,
+                    "score": 12.216373549588537,
+                    "path": "pod: frontend-2 --12.22--> api: frontend-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "frontend-2"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 10.402430041544921,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --10.40--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 20,
+                    "score": 9.739823669548798,
+                    "path": "pod: frontend-0 --9.74--> api: frontend-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "frontend-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 15,
+                    "score": 5.989055521989088,
+                    "path": "pod: currencyservice2-0 --5.99--> api: currencyservice-grpc.hipstershop.CurrencyService/Convert",
+                    "name": "currencyservice2-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 13,
+                    "score": 3.3675201562074117,
+                    "path": "pod: currencyservice-1 --3.37--> api: currencyservice-grpc.hipstershop.CurrencyService/GetSupportedCurrencies",
+                    "name": "currencyservice-1"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648725211,
+            "level": "service",
+            "cmdb_id": "adservice",
+            "failure_type": "k8s容器写io负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 0,
+                    "score": 15.817218179742806,
+                    "path": "pod: adservice-0 --15.82--> api: adservice-hipstershop.adservice/getads",
+                    "name": "adservice-0"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 2,
+                    "score": 12.921607590292414,
+                    "path": "pod: adservice-2 --12.92--> api: adservice-hipstershop.adservice/getads",
+                    "name": "adservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648726593,
+            "level": "pod",
+            "cmdb_id": "emailservice-1",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 10,
+                    "score": 15.485020457413025,
+                    "path": "api: checkoutservice-hipstershop.EmailService/SendOrderConfirmation --7.14--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --4.98--> api: frontend-hipstershop.CheckoutService/PlaceOrder --3.37--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.EmailService/SendOrderConfirmation"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 17,
+                    "score": 14.114245358375966,
+                    "path": "pod: emailservice-1 --14.11--> api: emailservice-/hipstershop.EmailService/SendOrderConfirmation",
+                    "name": "emailservice-1"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 8.345438496495603,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --4.98--> api: frontend-hipstershop.CheckoutService/PlaceOrder --3.37--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 21,
+                    "score": 3.365187357816832,
+                    "path": "api: frontend-hipstershop.CheckoutService/PlaceOrder --3.37--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648727538,
+            "level": "pod",
+            "cmdb_id": "frontend-1",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 23,
+                    "score": 6.89980339185237,
+                    "path": "pod: frontend2-0 --6.90--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "frontend2-0"
+                },
+                {
+                    "ntype": "api",
+                    "id": 15,
+                    "score": 3.429748358177465,
+                    "path": "api: currencyservice-grpc.hipstershop.CurrencyService/Convert --3.43--> api: frontend-hipstershop.CurrencyService/Convert",
+                    "name": "currencyservice-grpc.hipstershop.CurrencyService/Convert"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648733714,
+            "level": "pod",
+            "cmdb_id": "emailservice-1",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 17,
+                    "score": 44.45188488460437,
+                    "path": "pod: emailservice-1 --26.96--> api: emailservice-/hipstershop.EmailService/SendOrderConfirmation --5.76--> api: checkoutservice-hipstershop.EmailService/SendOrderConfirmation --4.95--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --6.79--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "emailservice-1"
+                },
+                {
+                    "ntype": "api",
+                    "id": 17,
+                    "score": 17.493819883573885,
+                    "path": "api: emailservice-/hipstershop.EmailService/SendOrderConfirmation --5.76--> api: checkoutservice-hipstershop.EmailService/SendOrderConfirmation --4.95--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --6.79--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "emailservice-/hipstershop.EmailService/SendOrderConfirmation"
+                },
+                {
+                    "ntype": "api",
+                    "id": 10,
+                    "score": 11.737121887434661,
+                    "path": "api: checkoutservice-hipstershop.EmailService/SendOrderConfirmation --4.95--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --6.79--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.EmailService/SendOrderConfirmation"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 6.790860015002125,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --6.79--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648737096,
+            "level": "pod",
+            "cmdb_id": "adservice-0",
+            "failure_type": "k8s容器读io负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 0,
+                    "score": 3.8629139227810265,
+                    "path": "pod: adservice-0 --3.86--> api: adservice-hipstershop.adservice/getads",
+                    "name": "adservice-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648739135,
+            "level": "pod",
+            "cmdb_id": "frontend-1",
+            "failure_type": "k8s容器写io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648744024,
+            "level": "service",
+            "cmdb_id": "adservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 18,
+                    "score": 10.93755092570324,
+                    "path": "api: frontend-hipstershop.AdService/GetAds --10.94--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.AdService/GetAds"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 2,
+                    "score": 3.3776549244837173,
+                    "path": "pod: adservice-2 --3.38--> api: adservice-hipstershop.adservice/getads",
+                    "name": "adservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648746842,
+            "level": "pod",
+            "cmdb_id": "adservice2-0",
+            "failure_type": "k8s容器cpu负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648747519,
+            "level": "service",
+            "cmdb_id": "adservice",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 18,
+                    "score": 3.3177800975118554,
+                    "path": "api: frontend-hipstershop.AdService/GetAds --3.32--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.AdService/GetAds"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648748870,
+            "level": "pod",
+            "cmdb_id": "paymentservice-2",
+            "failure_type": "k8s容器cpu负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648751460,
+            "level": "pod",
+            "cmdb_id": "frontend-2",
+            "failure_type": "k8s容器读io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648755870,
+            "level": "pod",
+            "cmdb_id": "shippingservice-0",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 36,
+                    "score": 11.30267527626329,
+                    "path": "pod: shippingservice-0 --11.30--> api: shippingservice-hipstershop.ShippingService/GetQuote",
+                    "name": "shippingservice-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648757271,
+            "level": "pod",
+            "cmdb_id": "emailservice-2",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 18,
+                    "score": 37.134584452914595,
+                    "path": "pod: emailservice-2 --37.13--> api: emailservice-/hipstershop.EmailService/SendOrderConfirmation",
+                    "name": "emailservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648758701,
+            "level": "pod",
+            "cmdb_id": "shippingservice-1",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 37,
+                    "score": 6.215205636107598,
+                    "path": "pod: shippingservice-1 --6.22--> api: shippingservice-hipstershop.ShippingService/GetQuote",
+                    "name": "shippingservice-1"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648779950,
+            "level": "service",
+            "cmdb_id": "paymentservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 11,
+                    "score": 20.884878229299513,
+                    "path": "api: checkoutservice-hipstershop.PaymentService/Charge --8.48--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --8.69--> api: frontend-hipstershop.CheckoutService/PlaceOrder --3.71--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.PaymentService/Charge"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 12.402432070643506,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --8.69--> api: frontend-hipstershop.CheckoutService/PlaceOrder --3.71--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 21,
+                    "score": 3.712339084391915,
+                    "path": "api: frontend-hipstershop.CheckoutService/PlaceOrder --3.71--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648782177,
+            "level": "service",
+            "cmdb_id": "recommendationservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 55.90501797543794,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --42.27--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --13.64--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 13.636475448667762,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --13.64--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648782704,
+            "level": "pod",
+            "cmdb_id": "recommendationservice-1",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 32,
+                    "score": 15.34431017705711,
+                    "path": "api: recommendationservice-/hipstershop.ProductCatalogService/ListProducts --15.34--> api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.ProductCatalogService/ListProducts"
+                },
+                {
+                    "ntype": "api",
+                    "id": 27,
+                    "score": 3.2389484933043784,
+                    "path": "api: frontend-hipstershop.RecommendationService/ListRecommendations --3.24--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.RecommendationService/ListRecommendations"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648788865,
+            "level": "service",
+            "cmdb_id": "checkoutservice",
+            "failure_type": "k8s容器网络延迟",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 13.782668069642149,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --9.89--> api: frontend-hipstershop.CheckoutService/PlaceOrder --3.90--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 21,
+                    "score": 3.895113155142803,
+                    "path": "api: frontend-hipstershop.CheckoutService/PlaceOrder --3.90--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648790156,
+            "level": "service",
+            "cmdb_id": "emailservice",
+            "failure_type": "k8s容器写io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648791809,
+            "level": "service",
+            "cmdb_id": "shippingservice",
+            "failure_type": "k8s容器网络延迟",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 6.926895787984168,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --6.93--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 28,
+                    "score": 3.7422095836425804,
+                    "path": "api: frontend-hipstershop.ShippingService/GetQuote --3.74--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.ShippingService/GetQuote"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648794142,
+            "level": "pod",
+            "cmdb_id": "productcatalogservice-2",
+            "failure_type": "k8s容器内存负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 30,
+                    "score": 9.342903231621019,
+                    "path": "pod: productcatalogservice-2 --9.34--> api: productcatalogservice-hipstershop.ProductCatalogService/ListProducts",
+                    "name": "productcatalogservice-2"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648795387,
+            "level": "service",
+            "cmdb_id": "emailservice",
+            "failure_type": "k8s容器写io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648801830,
+            "level": "service",
+            "cmdb_id": "emailservice",
+            "failure_type": "k8s容器写io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648802490,
+            "level": "service",
+            "cmdb_id": "adservice",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 18,
+                    "score": 3.7061906441230383,
+                    "path": "api: frontend-hipstershop.AdService/GetAds --3.71--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.AdService/GetAds"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648807729,
+            "level": "service",
+            "cmdb_id": "recommendationservice",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648814142,
+            "level": "pod",
+            "cmdb_id": "currencyservice-1",
+            "failure_type": "k8s容器内存负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648815394,
+            "level": "pod",
+            "cmdb_id": "productcatalogservice2-0",
+            "failure_type": "k8s容器cpu负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648817073,
+            "level": "service",
+            "cmdb_id": "recommendationservice",
+            "failure_type": "k8s容器cpu负载",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 33,
+                    "score": 3.275764615508253,
+                    "path": "api: recommendationservice-/hipstershop.RecommendationService/ListRecommendations --3.28--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "recommendationservice-/hipstershop.RecommendationService/ListRecommendations"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648820408,
+            "level": "service",
+            "cmdb_id": "shippingservice",
+            "failure_type": "k8s容器网络丢包",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 9.90366239719598,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --9.90--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 21,
+                    "score": 4.457245620709209,
+                    "path": "pod: frontend-1 --4.46--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "frontend-1"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648821545,
+            "level": "pod",
+            "cmdb_id": "cartservice2-0",
+            "failure_type": "k8s容器网络延迟",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 12,
+                    "score": 19.545848169774892,
+                    "path": "api: checkoutservice-hipstershop.ProductCatalogService/GetProduct --9.28--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --6.76--> api: frontend-hipstershop.CheckoutService/PlaceOrder --3.50--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 10.261266947200301,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --6.76--> api: frontend-hipstershop.CheckoutService/PlaceOrder --3.50--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "api",
+                    "id": 30,
+                    "score": 3.7219509509755526,
+                    "path": "api: productcatalogservice-hipstershop.ProductCatalogService/GetProduct --3.72--> api: frontend-hipstershop.ProductCatalogService/GetProduct",
+                    "name": "productcatalogservice-hipstershop.ProductCatalogService/GetProduct"
+                },
+                {
+                    "ntype": "api",
+                    "id": 21,
+                    "score": 3.501712716582834,
+                    "path": "api: frontend-hipstershop.CheckoutService/PlaceOrder --3.50--> api: frontend-hipstershop.Frontend/Recv.",
+                    "name": "frontend-hipstershop.CheckoutService/PlaceOrder"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648824082,
+            "level": "service",
+            "cmdb_id": "adservice",
+            "failure_type": "k8s容器读io负载",
+            "cand": [
+                {
+                    "ntype": "pod",
+                    "id": 0,
+                    "score": 9.149661948205711,
+                    "path": "pod: adservice-0 --9.15--> api: adservice-hipstershop.adservice/getads",
+                    "name": "adservice-0"
+                }
+            ]
+        },
+        {
+            "timestamp": 1648825963,
+            "level": "pod",
+            "cmdb_id": "recommendationservice-2",
+            "failure_type": "k8s容器读io负载",
+            "cand": []
+        },
+        {
+            "timestamp": 1648826999,
+            "level": "pod",
+            "cmdb_id": "shippingservice-0",
+            "failure_type": "k8s容器网络资源包损坏",
+            "cand": [
+                {
+                    "ntype": "api",
+                    "id": 13,
+                    "score": 14.209023318350173,
+                    "path": "api: checkoutservice-hipstershop.ShippingService/GetQuote --4.26--> api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --9.95--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.ShippingService/GetQuote"
+                },
+                {
+                    "ntype": "api",
+                    "id": 8,
+                    "score": 9.946320752105795,
+                    "path": "api: checkoutservice-hipstershop.CheckoutService/PlaceOrder --9.95--> api: frontend-hipstershop.CheckoutService/PlaceOrder",
+                    "name": "checkoutservice-hipstershop.CheckoutService/PlaceOrder"
+                },
+                {
+                    "ntype": "pod",
+                    "id": 21,
+                    "score": 4.485193220503538,
+                    "path": "pod: frontend-1 --4.49--> api: frontend-hipstershop.RecommendationService/ListRecommendations",
+                    "name": "frontend-1"
+                }
+            ]
+        }
+    ]
+}

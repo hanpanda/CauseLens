@@ -1,0 +1,9 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+24,ts-travel-service-64469b5b48-zbwtm,268,ts-travel-service-Transaction.commit,36.64577190446728,36.64577190446728,0.0
+24,ts-travel-service-64469b5b48-zbwtm,267,ts-travel-service-SELECT ts.trip,36.63830557712705,36.63830557712705,0.0
+24,ts-travel-service-64469b5b48-zbwtm,271,ts-travel-service-TravelController.queryInfo,1.9507426076112786,2.5663831325138,0.6156405249025214
+264,ts-travel-service-HTTP POST /api/v1/travelservice/trip_detail,192,ts-preserve-service-HTTP POST /api/v1/travelservice/trip_detail,2.7218142526747107,2.7218142526747107,0.0
+15,ts-preserve-service-b5ccf8557-cn5km,192,ts-preserve-service-HTTP POST /api/v1/travelservice/trip_detail,-0.02885341224336857,2.7218142526747107,2.7506676649180792
+263,ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets,271,ts-travel-service-TravelController.queryInfo,-0.07561190442875843,2.5663831325138,2.6419950369425584
+262,ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels,271,ts-travel-service-TravelController.queryInfo,-0.11800934170703226,2.5663831325138,2.6843924742208323
+272,ts-travel-service-TripRepository.findAll,271,ts-travel-service-TravelController.queryInfo,0.7499645997107218,2.5663831325138,1.8164185328030782

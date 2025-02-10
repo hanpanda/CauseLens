@@ -1,0 +1,20 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+265,ts-travel-service-HTTP POST /api/v1/travelservice/trips/left,90,ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left,3.0534418248425963,3.0534418248425963,0.0
+90,ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left,80,ts-gateway-service-/*,2.3235979546995216,3.2990182605807186,0.9754203058811969
+271,ts-travel-service-TravelController.queryInfo,265,ts-travel-service-HTTP POST /api/v1/travelservice/trips/left,4.634433500990706,4.634433500990706,0.0
+258,ts-travel-service-BasicErrorController.error,265,ts-travel-service-HTTP POST /api/v1/travelservice/trips/left,0.008116067572422558,4.634433500990706,4.626317433418284
+24,ts-travel-service-64469b5b48-zbwtm,265,ts-travel-service-HTTP POST /api/v1/travelservice/trips/left,0.17050860210174168,4.634433500990706,4.463924898888965
+86,ts-gateway-service-HTTP POST /api/v1/inside_pay_service/inside_payment,80,ts-gateway-service-/*,0.297349775921516,3.2990182605807186,3.0016684846592026
+84,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},80,ts-gateway-service-/*,-0.047210636937710326,3.2990182605807186,3.346228897518429
+89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,80,ts-gateway-service-/*,0.2419100752704657,3.2990182605807186,3.057108185310253
+81,ts-gateway-service-FilteringWebHandler.handle,80,ts-gateway-service-/*,0.9909679481928899,3.2990182605807186,2.3080503123878287
+88,ts-gateway-service-HTTP POST /api/v1/preserveservice/preserve,80,ts-gateway-service-/*,-0.32661122509516094,3.2990182605807186,3.6256294856758795
+87,ts-gateway-service-HTTP POST /api/v1/preserveotherservice/preserveOther,80,ts-gateway-service-/*,-0.19178749067058964,3.2990182605807186,3.490805751251308
+82,ts-gateway-service-HTTP GET /api/v1/cancelservice/cancel/{orderId}/{loginId},80,ts-gateway-service-/*,-0.05389798562244641,3.2990182605807186,3.352916246203165
+91,ts-gateway-service-HTTP POST /api/v1/users/login,80,ts-gateway-service-/*,0.12619803053733092,3.2990182605807186,3.1728202300433876
+83,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},80,ts-gateway-service-/*,0.04720041305507916,3.2990182605807186,3.2518178475256394
+85,ts-gateway-service-HTTP GET /api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId},80,ts-gateway-service-/*,0.0032549124522511796,3.2990182605807186,3.2957633481284674
+9,ts-gateway-service-6f6cfc45b-m2jwn,80,ts-gateway-service-/*,0.023363895422175762,3.2990182605807186,3.275654365158543
+9,ts-gateway-service-6f6cfc45b-m2jwn,90,ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left,-0.028623256715707868,3.0534418248425963,3.082065081558304
+43,ts-contacts-service-ContactsController.getContactsByContactsId,45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},2.656094536043415,2.656094536043415,0.0
+5,ts-contacts-service-866bd68c97-b6rfg,45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},0.016114947906028743,2.656094536043415,2.639979588137386

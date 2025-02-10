@@ -1,0 +1,38 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+29,ts-basic-service-HTTP POST /api/v1/trainservice/trains/byNames,18,ts-basic-service-BasicController.queryForTravels,15.182213360927133,15.182213360927133,0.0
+251,ts-train-service-HTTP POST /api/v1/trainservice/trains/byNames,29,ts-basic-service-HTTP POST /api/v1/trainservice/trains/byNames,22.3648694451925,22.3648694451925,0.0
+18,ts-basic-service-BasicController.queryForTravels,25,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels,4.025501433705632,4.025501433705632,0.0
+276,ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travels,284,ts-travel2-service-Travel2Controller.queryInfo,2.748670428793471,2.748670428793471,0.0
+262,ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels,271,ts-travel-service-TravelController.queryInfo,3.033052609956163,3.033052609956163,0.0
+279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,3.3481236490905646,3.3481236490905646,0.0
+25,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels,276,ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travels,6.14571209328818,6.14571209328818,0.0
+25,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels,262,ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels,5.357221346166827,5.357221346166827,0.0
+242,ts-station-service-StationRepository.findByName,241,ts-station-service-StationController.queryForStationId,3.337427485206159,3.337427485206159,0.0
+284,ts-travel2-service-Travel2Controller.queryInfo,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,4.357242829585818,4.357242829585818,0.0
+255,ts-train-service-TrainController.retrieveByName,250,ts-train-service-HTTP GET /api/v1/trainservice/trains/byName/{name},30.752508032988512,30.752508032988512,0.0
+255,ts-train-service-TrainController.retrieveByName,251,ts-train-service-HTTP POST /api/v1/trainservice/trains/byNames,17.5050419447682,17.5050419447682,0.0
+23,ts-train-service-86f5f97bc9-f7687,250,ts-train-service-HTTP GET /api/v1/trainservice/trains/byName/{name},-0.005336502281590327,30.752508032988512,30.757844535270102
+23,ts-train-service-86f5f97bc9-f7687,251,ts-train-service-HTTP POST /api/v1/trainservice/trains/byNames,-0.12168709482993378,17.5050419447682,17.626729039598136
+2,ts-basic-service-5dc8d4f9fd-58xkn,29,ts-basic-service-HTTP POST /api/v1/trainservice/trains/byNames,0.026896249851063203,22.3648694451925,22.337973195341437
+2,ts-basic-service-5dc8d4f9fd-58xkn,18,ts-basic-service-BasicController.queryForTravels,-0.03594579197679515,15.182213360927133,15.218159152903928
+2,ts-basic-service-5dc8d4f9fd-58xkn,25,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels,-0.026368061947447785,4.025501433705632,4.051869495653079
+2,ts-basic-service-5dc8d4f9fd-58xkn,22,ts-basic-service-HTTP GET /api/v1/stationservice/stations/id/{stationNameForId},-0.03351238175336135,2.9989203871389174,3.0324327688922788
+26,ts-basic-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,18,ts-basic-service-BasicController.queryForTravels,-0.07371898007862931,15.182213360927133,15.255932341005762
+27,ts-basic-service-HTTP POST /api/v1/routeservice/routes/byIds/,18,ts-basic-service-BasicController.queryForTravels,-0.03822128523594159,15.182213360927133,15.220434646163074
+28,ts-basic-service-HTTP POST /api/v1/stationservice/stations/idlist,18,ts-basic-service-BasicController.queryForTravels,-0.027989067195910877,15.182213360927133,15.210202428123043
+25,ts-travel2-service-5c66d57d58-klvkm,276,ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travels,-0.025010177856955806,6.14571209328818,6.170722271145136
+25,ts-travel2-service-5c66d57d58-klvkm,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,0.30192346602213416,4.357242829585818,4.055319363563684
+25,ts-travel2-service-5c66d57d58-klvkm,284,ts-travel2-service-Travel2Controller.queryInfo,-0.12220410914203361,2.748670428793471,2.8708745379355047
+24,ts-travel-service-64469b5b48-zbwtm,262,ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels,-0.12491336065459446,5.357221346166827,5.482134706821421
+24,ts-travel-service-64469b5b48-zbwtm,271,ts-travel-service-TravelController.queryInfo,-0.01686635508831902,3.033052609956163,3.049918965044482
+274,ts-travel2-service-BasicErrorController.error,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,1.5883078325294826,4.357242829585818,2.7689349970563355
+19,ts-basic-service-BasicErrorController.error,25,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels,0.13146344928867526,4.025501433705632,3.8940379844169564
+237,ts-station-service-SELECT Station,242,ts-station-service-StationRepository.findByName,3.4175762571805026,3.4175762571805026,0.0
+21,ts-station-service-7f4f5f6f77-ssgjb,242,ts-station-service-StationRepository.findByName,-0.029648929822990944,3.4175762571805026,3.4472251870034936
+21,ts-station-service-7f4f5f6f77-ssgjb,241,ts-station-service-StationController.queryForStationId,0.24026630668865412,3.337427485206159,3.097161178517505
+9,ts-gateway-service-6f6cfc45b-m2jwn,89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,-0.0260734605680919,3.3481236490905646,3.3741971096586565
+263,ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets,271,ts-travel-service-TravelController.queryInfo,-0.25907789177361185,3.033052609956163,3.292130501729775
+272,ts-travel-service-TripRepository.findAll,271,ts-travel-service-TravelController.queryInfo,0.3975895201865409,3.033052609956163,2.635463089769622
+235,ts-station-service-HTTP GET /api/v1/stationservice/stations/id/{stationNameForId},22,ts-basic-service-HTTP GET /api/v1/stationservice/stations/id/{stationNameForId},2.9989203871389174,2.9989203871389174,0.0
+285,ts-travel2-service-TripRepository.findAll,284,ts-travel2-service-Travel2Controller.queryInfo,0.18265357130028903,2.748670428793471,2.566016857493182
+277,ts-travel2-service-HTTP POST /api/v1/seatservice/seats/left_tickets,284,ts-travel2-service-Travel2Controller.queryInfo,0.06208897699827132,2.748670428793471,2.6865814517952
