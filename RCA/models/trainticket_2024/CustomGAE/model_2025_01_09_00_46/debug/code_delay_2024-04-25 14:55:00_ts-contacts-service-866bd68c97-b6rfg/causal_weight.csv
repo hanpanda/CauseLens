@@ -1,0 +1,36 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+184,ts-preserve-service-HTTP GET /api/v1/contactservice/contacts/{id},193,ts-preserve-service-PreserveController.preserve,2.6604711952603317,2.6604711952603317,0.0
+45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},172,ts-preserve-other-service-HTTP GET /api/v1/contactservice/contacts/{id},13.307594054859496,13.307594054859496,0.0
+45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},184,ts-preserve-service-HTTP GET /api/v1/contactservice/contacts/{id},11.21854492408032,11.21854492408032,0.0
+187,ts-preserve-service-HTTP POST /api/v1/basicservice/basic/travel,193,ts-preserve-service-PreserveController.preserve,0.03657399422329899,2.6604711952603317,2.6238972010370327
+24,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel,187,ts-preserve-service-HTTP POST /api/v1/basicservice/basic/travel,5.815858651037505,5.815858651037505,0.0
+24,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel,175,ts-preserve-other-service-HTTP POST /api/v1/basicservice/basic/travel,5.490794745775779,5.490794745775779,0.0
+24,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel,275,ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travel,5.183217079242168,5.183217079242168,0.0
+24,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel,261,ts-travel-service-HTTP POST /api/v1/basicservice/basic/travel,3.2409692548124953,3.2409692548124953,0.0
+178,ts-preserve-other-service-HTTP POST /api/v1/preserveotherservice/preserveOther,87,ts-gateway-service-HTTP POST /api/v1/preserveotherservice/preserveOther,2.5442839238400827,2.5442839238400827,0.0
+14,ts-preserve-other-service-66646bdb5b-sd2p8,172,ts-preserve-other-service-HTTP GET /api/v1/contactservice/contacts/{id},-0.42598713189990534,13.307594054859496,13.733581186759402
+14,ts-preserve-other-service-66646bdb5b-sd2p8,175,ts-preserve-other-service-HTTP POST /api/v1/basicservice/basic/travel,0.16449296743137598,5.490794745775779,5.326301778344403
+14,ts-preserve-other-service-66646bdb5b-sd2p8,178,ts-preserve-other-service-HTTP POST /api/v1/preserveotherservice/preserveOther,0.08238093510812128,3.269972042041158,3.187591106933037
+15,ts-preserve-service-b5ccf8557-cn5km,184,ts-preserve-service-HTTP GET /api/v1/contactservice/contacts/{id},-0.024889680079105858,11.21854492408032,11.243434604159425
+15,ts-preserve-service-b5ccf8557-cn5km,187,ts-preserve-service-HTTP POST /api/v1/basicservice/basic/travel,0.2659911982230492,5.815858651037505,5.549867452814456
+15,ts-preserve-service-b5ccf8557-cn5km,193,ts-preserve-service-PreserveController.preserve,0.015233097761406356,2.6604711952603317,2.6452380974989254
+43,ts-contacts-service-ContactsController.getContactsByContactsId,45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},8.100686573583998,8.100686573583998,0.0
+5,ts-contacts-service-866bd68c97-b6rfg,45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},0.3546350912283289,8.100686573583998,7.746051482355669
+25,ts-travel2-service-5c66d57d58-klvkm,275,ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travel,-0.06445129240029157,5.183217079242168,5.24766837164246
+25,ts-travel2-service-5c66d57d58-klvkm,278,ts-travel2-service-HTTP POST /api/v1/travel2service/trip_detail,-0.037060475707742846,2.569285599645943,2.606346075353686
+17,ts-basic-service-BasicController.queryForTravel,24,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel,5.091650608922287,5.091650608922287,0.0
+2,ts-basic-service-5dc8d4f9fd-58xkn,24,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel,0.08481541595894715,5.091650608922287,5.00683519296334
+2,ts-basic-service-5dc8d4f9fd-58xkn,20,ts-basic-service-HTTP GET /api/v1/priceservice/prices/{routeId}/{trainType},0.04691980713082167,3.069170511148997,3.0222507040181754
+170,ts-preserve-other-service-BasicErrorController.error,178,ts-preserve-other-service-HTTP POST /api/v1/preserveotherservice/preserveOther,0.017432589457033743,3.269972042041158,3.2525394525841245
+181,ts-preserve-other-service-PreserveOtherController.preserve,178,ts-preserve-other-service-HTTP POST /api/v1/preserveotherservice/preserveOther,3.269972042041158,3.269972042041158,0.0
+24,ts-travel-service-64469b5b48-zbwtm,261,ts-travel-service-HTTP POST /api/v1/basicservice/basic/travel,0.027521981784669247,3.2409692548124953,3.213447273027826
+194,ts-price-service-HTTP GET /api/v1/priceservice/prices/{routeId}/{trainType},20,ts-basic-service-HTTP GET /api/v1/priceservice/prices/{routeId}/{trainType},3.069170511148997,3.069170511148997,0.0
+188,ts-preserve-service-HTTP POST /api/v1/foodservice/orders,193,ts-preserve-service-PreserveController.preserve,0.009704790262908158,2.6604711952603317,2.6507664049974236
+189,ts-preserve-service-HTTP POST /api/v1/orderservice/order,193,ts-preserve-service-PreserveController.preserve,0.019473700600578958,2.6604711952603317,2.6409974946597528
+191,ts-preserve-service-HTTP POST /api/v1/seatservice/seats,193,ts-preserve-service-PreserveController.preserve,0.021927860304172153,2.6604711952603317,2.6385433349561596
+183,ts-preserve-service-HTTP GET /api/v1/assuranceservice/assurances/{typeIndex}/{orderId},193,ts-preserve-service-PreserveController.preserve,0.010936329593588923,2.6604711952603317,2.649534865666743
+186,ts-preserve-service-HTTP GET /api/v1/userservice/users/id/{userId},193,ts-preserve-service-PreserveController.preserve,0.042304063009677595,2.6604711952603317,2.618167132250654
+185,ts-preserve-service-HTTP GET /api/v1/securityservice/securityConfigs/{accountId},193,ts-preserve-service-PreserveController.preserve,0.018263856032036063,2.6604711952603317,2.6422073392282956
+192,ts-preserve-service-HTTP POST /api/v1/travelservice/trip_detail,193,ts-preserve-service-PreserveController.preserve,-0.01914225284569815,2.6604711952603317,2.67961344810603
+283,ts-travel2-service-Travel2Controller.getTripAllDetailInfo,278,ts-travel2-service-HTTP POST /api/v1/travel2service/trip_detail,2.569285599645943,2.569285599645943,0.0
+9,ts-gateway-service-6f6cfc45b-m2jwn,87,ts-gateway-service-HTTP POST /api/v1/preserveotherservice/preserveOther,-0.10057369126161575,2.5442839238400827,2.6448576151016985

@@ -1,0 +1,3 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+25,ts-travel2-service-5c66d57d58-klvkm,281,ts-travel2-service-SELECT ts.trip2,5.007289231572984,5.007289231572984,0.0
+25,ts-travel2-service-5c66d57d58-klvkm,282,ts-travel2-service-Transaction.commit,5.007289231572984,5.007289231572984,0.0

@@ -1,0 +1,14 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+241,ts-station-service-StationController.queryForStationId,235,ts-station-service-HTTP GET /api/v1/stationservice/stations/id/{stationNameForId},2.613739477546036,2.613739477546036,0.0
+226,ts-security-service-SELECT SecurityConfig,229,ts-security-service-SecurityRepository.findByName,4.10729192655061,4.10729192655061,0.0
+24,ts-travel-service-64469b5b48-zbwtm,267,ts-travel-service-SELECT ts.trip,7.202985323612284,7.202985323612284,0.0
+24,ts-travel-service-64469b5b48-zbwtm,268,ts-travel-service-Transaction.commit,7.197819511224746,7.197819511224746,0.0
+24,ts-travel-service-64469b5b48-zbwtm,258,ts-travel-service-BasicErrorController.error,6.6564727814047595,6.6564727814047595,0.0
+242,ts-station-service-StationRepository.findByName,241,ts-station-service-StationController.queryForStationId,5.569437074858594,5.569437074858594,0.0
+21,ts-station-service-7f4f5f6f77-ssgjb,241,ts-station-service-StationController.queryForStationId,-0.08252994097362709,5.569437074858594,5.651967015832221
+21,ts-station-service-7f4f5f6f77-ssgjb,235,ts-station-service-HTTP GET /api/v1/stationservice/stations/id/{stationNameForId},-0.11668452388113515,2.613739477546036,2.730424001427171
+6,ts-delivery-service-7d97b69596-jngz4,50,ts-delivery-service-INSERT ts.delivery,4.961173861398087,4.961173861398087,0.0
+6,ts-delivery-service-7d97b69596-jngz4,51,ts-delivery-service-SELECT ts.delivery,4.961173861398087,4.961173861398087,0.0
+227,ts-security-service-SELECT ts.security_config,226,ts-security-service-SELECT SecurityConfig,4.611594558791844,4.611594558791844,0.0
+19,ts-security-service-cb9788d56-v24jq,226,ts-security-service-SELECT SecurityConfig,0.015634378562873863,4.611594558791844,4.59596018022897
+19,ts-security-service-cb9788d56-v24jq,229,ts-security-service-SecurityRepository.findByName,-0.0013500498644116732,4.10729192655061,4.108641976415021

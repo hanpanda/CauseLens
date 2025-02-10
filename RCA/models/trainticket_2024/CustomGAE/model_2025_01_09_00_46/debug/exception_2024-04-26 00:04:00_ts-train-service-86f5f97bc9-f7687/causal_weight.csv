@@ -1,0 +1,62 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+29,ts-basic-service-HTTP POST /api/v1/trainservice/trains/byNames,18,ts-basic-service-BasicController.queryForTravels,15.299556797488258,15.299556797488258,0.0
+251,ts-train-service-HTTP POST /api/v1/trainservice/trains/byNames,29,ts-basic-service-HTTP POST /api/v1/trainservice/trains/byNames,21.10512647579442,21.10512647579442,0.0
+18,ts-basic-service-BasicController.queryForTravels,25,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels,4.01398010317971,4.01398010317971,0.0
+215,ts-seat-service-HTTP GET /api/v1/configservice/configs/{configName},221,ts-seat-service-SeatController.getLeftTicketOfInterval,6.322119550585026,6.322119550585026,0.0
+253,ts-train-service-SELECT train_type,257,ts-train-service-TrainTypeRepository.findByNames,7.0021685702495615,7.0021685702495615,0.0
+257,ts-train-service-TrainTypeRepository.findByNames,255,ts-train-service-TrainController.retrieveByName,6.806627166280931,6.806627166280931,0.0
+255,ts-train-service-TrainController.retrieveByName,251,ts-train-service-HTTP POST /api/v1/trainservice/trains/byNames,18.316186095887467,18.316186095887467,0.0
+26,ts-basic-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,18,ts-basic-service-BasicController.queryForTravels,-0.09495158267430526,15.299556797488258,15.394508380162563
+276,ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travels,284,ts-travel2-service-Travel2Controller.queryInfo,3.5698368480724056,3.8641294599375,0.29429261186509403
+221,ts-seat-service-SeatController.getLeftTicketOfInterval,219,ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets,6.130021080636979,6.130021080636979,0.0
+219,ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets,263,ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets,4.845160191474767,4.845160191474767,0.0
+198,ts-price-service-PriceController.query,195,ts-price-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,5.064845851554331,5.064845851554331,0.0
+195,ts-price-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,26,ts-basic-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,6.515018281559624,6.515018281559624,0.0
+25,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels,276,ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travels,6.475198402131804,6.475198402131804,0.0
+25,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels,262,ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels,5.719087276968435,5.719087276968435,0.0
+284,ts-travel2-service-Travel2Controller.queryInfo,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,3.1483531680333896,3.1483531680333896,0.0
+279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,4.2686241929573,4.2686241929573,0.0
+280,ts-travel2-service-SELECT Trip,285,ts-travel2-service-TripRepository.findAll,0.7905283388733706,2.6381400995807445,1.8476117607073739
+285,ts-travel2-service-TripRepository.findAll,284,ts-travel2-service-Travel2Controller.queryInfo,0.7064918493680663,3.8641294599375,3.1576376105694335
+2,ts-basic-service-5dc8d4f9fd-58xkn,29,ts-basic-service-HTTP POST /api/v1/trainservice/trains/byNames,-0.051601076277115965,21.10512647579442,21.156727552071537
+2,ts-basic-service-5dc8d4f9fd-58xkn,18,ts-basic-service-BasicController.queryForTravels,0.004566989987369041,15.299556797488258,15.294989807500889
+2,ts-basic-service-5dc8d4f9fd-58xkn,26,ts-basic-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,-0.4468346869586872,6.515018281559624,6.961852968518311
+2,ts-basic-service-5dc8d4f9fd-58xkn,25,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels,0.0305932171639971,4.01398010317971,3.983386886015713
+23,ts-train-service-86f5f97bc9-f7687,251,ts-train-service-HTTP POST /api/v1/trainservice/trains/byNames,0.01050472224441279,18.316186095887467,18.305681373643054
+23,ts-train-service-86f5f97bc9-f7687,253,ts-train-service-SELECT train_type,-0.3720288996677734,10.179942393820651,10.551971293488425
+23,ts-train-service-86f5f97bc9-f7687,257,ts-train-service-TrainTypeRepository.findByNames,-0.6501799311921896,7.0021685702495615,7.652348501441751
+23,ts-train-service-86f5f97bc9-f7687,255,ts-train-service-TrainController.retrieveByName,-0.2575027564067467,6.806627166280931,7.064129922687678
+27,ts-basic-service-HTTP POST /api/v1/routeservice/routes/byIds/,18,ts-basic-service-BasicController.queryForTravels,-0.16730426658062925,15.299556797488258,15.466861064068887
+28,ts-basic-service-HTTP POST /api/v1/stationservice/stations/idlist,18,ts-basic-service-BasicController.queryForTravels,-0.10804142016109708,15.299556797488258,15.407598217649355
+40,ts-config-service-HTTP GET /api/v1/configservice/configs/{configName},215,ts-seat-service-HTTP GET /api/v1/configservice/configs/{configName},11.822838710680797,11.822838710680797,0.0
+18,ts-seat-service-5c95b49cff-j7jvt,215,ts-seat-service-HTTP GET /api/v1/configservice/configs/{configName},0.2382163187263231,11.822838710680797,11.584622391954474
+18,ts-seat-service-5c95b49cff-j7jvt,221,ts-seat-service-SeatController.getLeftTicketOfInterval,-1.1363117749356508,6.322119550585026,7.458431325520677
+18,ts-seat-service-5c95b49cff-j7jvt,219,ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets,0.4731940259067038,6.130021080636979,5.656827054730275
+254,ts-train-service-SELECT ts.train_type,253,ts-train-service-SELECT train_type,10.179942393820651,10.179942393820651,0.0
+256,ts-train-service-TrainTypeRepository.findByName,255,ts-train-service-TrainController.retrieveByName,0.34230463744231976,6.806627166280931,6.464322528838611
+25,ts-travel2-service-5c66d57d58-klvkm,276,ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travels,0.05116881997539657,6.475198402131804,6.4240295821564075
+25,ts-travel2-service-5c66d57d58-klvkm,284,ts-travel2-service-Travel2Controller.queryInfo,0.06078348318012816,3.8641294599375,3.8033459767573716
+25,ts-travel2-service-5c66d57d58-klvkm,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,0.15183031408076086,3.1483531680333896,2.9965228539526287
+25,ts-travel2-service-5c66d57d58-klvkm,280,ts-travel2-service-SELECT Trip,-0.29733575650833854,2.6984376020459164,2.995773358554255
+25,ts-travel2-service-5c66d57d58-klvkm,285,ts-travel2-service-TripRepository.findAll,0.27831402828167207,2.6381400995807445,2.3598260712990724
+216,ts-seat-service-HTTP POST /api/v1/orderOtherService/orderOther/tickets,221,ts-seat-service-SeatController.getLeftTicketOfInterval,-0.7089425711665234,6.322119550585026,7.03106212175155
+217,ts-seat-service-HTTP POST /api/v1/orderservice/order/tickets,221,ts-seat-service-SeatController.getLeftTicketOfInterval,-0.9345209375057397,6.322119550585026,7.256640488090766
+214,ts-seat-service-BasicErrorController.error,219,ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets,-0.0016253472754286236,6.130021080636979,6.131646427912408
+24,ts-travel-service-64469b5b48-zbwtm,262,ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels,-0.11362502088967741,5.719087276968435,5.832712297858112
+24,ts-travel-service-64469b5b48-zbwtm,263,ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets,-0.093767204915709,4.845160191474767,4.938927396390476
+24,ts-travel-service-64469b5b48-zbwtm,266,ts-travel-service-SELECT Trip,-0.005526962982050243,3.7662871562964493,3.7718141192784995
+197,ts-price-service-PriceConfigRepository.findByRouteIdsAndTrainTypes,198,ts-price-service-PriceController.query,4.3418414793385764,5.098715710440425,0.756874231101849
+196,ts-price-service-PriceConfigRepository.findByRouteIdAndTrainType,198,ts-price-service-PriceController.query,3.7192031135807255,5.098715710440425,1.3795125968596995
+16,ts-price-service-76846864d9-shjpl,198,ts-price-service-PriceController.query,0.22915802533615182,5.098715710440425,4.869557685104273
+16,ts-price-service-76846864d9-shjpl,195,ts-price-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,0.002678074604688163,5.064845851554331,5.062167776949643
+16,ts-price-service-76846864d9-shjpl,200,ts-price-service-SELECT price_config,0.18493930993929508,2.604306423525748,2.419367113586453
+9,ts-gateway-service-6f6cfc45b-m2jwn,89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,-0.08472694366425504,4.2686241929573,4.353351136621555
+19,ts-basic-service-BasicErrorController.error,25,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels,0.03582097819891139,4.01398010317971,3.978159124980799
+277,ts-travel2-service-HTTP POST /api/v1/seatservice/seats/left_tickets,284,ts-travel2-service-Travel2Controller.queryInfo,-0.11189920527574371,3.8641294599375,3.9760286652132435
+267,ts-travel-service-SELECT ts.trip,266,ts-travel-service-SELECT Trip,3.7662871562964493,3.7662871562964493,0.0
+208,ts-route-service-SELECT route,207,ts-route-service-RouteRepository.findByIds,3.5377795284830054,3.5377795284830054,0.0
+17,ts-route-service-b6c59fb57-4tcvp,207,ts-route-service-RouteRepository.findByIds,-0.18576868692579218,3.5377795284830054,3.7235482154087975
+274,ts-travel2-service-BasicErrorController.error,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,-0.04439571773667028,3.1483531680333896,3.19274888577006
+281,ts-travel2-service-SELECT ts.trip2,280,ts-travel2-service-SELECT Trip,2.6984376020459164,2.6984376020459164,0.0
+282,ts-travel2-service-Transaction.commit,285,ts-travel2-service-TripRepository.findAll,0.9873580242210924,2.6381400995807445,1.650782075359652
+201,ts-price-service-SELECT ts.price_config,200,ts-price-service-SELECT price_config,2.604306423525748,2.604306423525748,0.0

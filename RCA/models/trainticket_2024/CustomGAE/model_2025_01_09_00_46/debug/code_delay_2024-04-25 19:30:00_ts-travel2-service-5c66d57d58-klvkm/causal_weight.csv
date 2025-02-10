@@ -1,0 +1,36 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,80,ts-gateway-service-/*,4.024624870356663,4.024624870356663,0.0
+279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,5.977871219677722,5.977871219677722,0.0
+207,ts-route-service-RouteRepository.findByIds,205,ts-route-service-RouteController.queryByIds,3.212368158938028,3.668784599843994,0.4564164409059659
+274,ts-travel2-service-BasicErrorController.error,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,-0.04039610352615952,5.974435614388457,6.014831717914617
+205,ts-route-service-RouteController.queryByIds,203,ts-route-service-HTTP POST /api/v1/routeservice/routes/byIds/,3.63923940050233,3.63923940050233,0.0
+203,ts-route-service-HTTP POST /api/v1/routeservice/routes/byIds/,27,ts-basic-service-HTTP POST /api/v1/routeservice/routes/byIds/,3.3920447040240815,3.3920447040240815,0.0
+9,ts-gateway-service-6f6cfc45b-m2jwn,89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,-0.07991957704859409,5.977871219677722,6.057790796726316
+9,ts-gateway-service-6f6cfc45b-m2jwn,80,ts-gateway-service-/*,0.08490423331150732,4.024624870356663,3.939720637045156
+284,ts-travel2-service-Travel2Controller.queryInfo,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,5.974435614388457,5.974435614388457,0.0
+25,ts-travel2-service-5c66d57d58-klvkm,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,0.6037837228823584,5.974435614388457,5.370651891506099
+25,ts-travel2-service-5c66d57d58-klvkm,281,ts-travel2-service-SELECT ts.trip2,4.9480355121764665,4.9480355121764665,0.0
+25,ts-travel2-service-5c66d57d58-klvkm,282,ts-travel2-service-Transaction.commit,4.9480355121764665,4.9480355121764665,0.0
+25,ts-travel2-service-5c66d57d58-klvkm,274,ts-travel2-service-BasicErrorController.error,4.598833800652033,4.598833800652033,0.0
+208,ts-route-service-SELECT route,207,ts-route-service-RouteRepository.findByIds,5.362569669301314,5.362569669301314,0.0
+17,ts-route-service-b6c59fb57-4tcvp,207,ts-route-service-RouteRepository.findByIds,0.001510947916964156,5.362569669301314,5.3610587213843495
+17,ts-route-service-b6c59fb57-4tcvp,205,ts-route-service-RouteController.queryByIds,0.2668844649953286,3.668784599843994,3.4019001348486655
+17,ts-route-service-b6c59fb57-4tcvp,203,ts-route-service-HTTP POST /api/v1/routeservice/routes/byIds/,0.04516607653586391,3.63923940050233,3.594073323966466
+86,ts-gateway-service-HTTP POST /api/v1/inside_pay_service/inside_payment,80,ts-gateway-service-/*,-0.3509673018545092,4.024624870356663,4.375592172211173
+84,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},80,ts-gateway-service-/*,-0.018290990749306957,4.024624870356663,4.04291586110597
+81,ts-gateway-service-FilteringWebHandler.handle,80,ts-gateway-service-/*,-0.27907481807906276,4.024624870356663,4.303699688435726
+88,ts-gateway-service-HTTP POST /api/v1/preserveservice/preserve,80,ts-gateway-service-/*,-0.6813836701762597,4.024624870356663,4.706008540532923
+87,ts-gateway-service-HTTP POST /api/v1/preserveotherservice/preserveOther,80,ts-gateway-service-/*,-0.2763868663909106,4.024624870356663,4.301011736747574
+82,ts-gateway-service-HTTP GET /api/v1/cancelservice/cancel/{orderId}/{loginId},80,ts-gateway-service-/*,-0.0006863943021100383,4.024624870356663,4.025311264658773
+91,ts-gateway-service-HTTP POST /api/v1/users/login,80,ts-gateway-service-/*,0.09414337015662477,4.024624870356663,3.9304815002000386
+90,ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left,80,ts-gateway-service-/*,-0.07940471389975201,4.024624870356663,4.104029584256415
+83,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},80,ts-gateway-service-/*,0.02577952005478501,4.024624870356663,3.9988453503018784
+85,ts-gateway-service-HTTP GET /api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId},80,ts-gateway-service-/*,0.016428849944599477,4.024624870356663,4.008196020412064
+211,ts-route-service-SELECT ts.route_stations,205,ts-route-service-RouteController.queryByIds,0.09676188639599781,3.668784599843994,3.5720227134479963
+210,ts-route-service-SELECT ts.route_distances,205,ts-route-service-RouteController.queryByIds,-0.09732430521833502,3.668784599843994,3.766108905062329
+243,ts-station-service-StationRepository.findByNames,240,ts-station-service-StationController.queryForIdBatch,3.4136720315959783,3.4136720315959783,0.0
+21,ts-station-service-7f4f5f6f77-ssgjb,240,ts-station-service-StationController.queryForIdBatch,-0.2700880675766011,3.4136720315959783,3.6837600991725794
+2,ts-basic-service-5dc8d4f9fd-58xkn,27,ts-basic-service-HTTP POST /api/v1/routeservice/routes/byIds/,0.02008511579174277,3.3920447040240815,3.3719595882323388
+11,ts-order-other-service-6cdbf9b4cc-r5dxl,133,ts-order-other-service-SELECT ts.orders_other,3.226544768234108,3.226544768234108,0.0
+11,ts-order-other-service-6cdbf9b4cc-r5dxl,137,ts-order-other-service-UPDATE ts.orders_other,3.196264842905773,3.196264842905773,0.0
+11,ts-order-other-service-6cdbf9b4cc-r5dxl,121,ts-order-other-service-INSERT ts.orders_other,3.0061262224563636,3.0061262224563636,0.0

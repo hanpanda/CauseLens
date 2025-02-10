@@ -1,0 +1,22 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,80,ts-gateway-service-/*,5.7821096189332994,6.944654047019891,1.1625444280865918
+279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,6.066388141952514,6.066388141952514,0.0
+59,ts-execute-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},84,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},4.442630392421332,4.442630392421332,0.0
+84,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},80,ts-gateway-service-/*,0.15270576986862583,6.944654047019891,6.791948277151265
+86,ts-gateway-service-HTTP POST /api/v1/inside_pay_service/inside_payment,80,ts-gateway-service-/*,0.3870696903133277,6.944654047019891,6.557584356706563
+81,ts-gateway-service-FilteringWebHandler.handle,80,ts-gateway-service-/*,1.107735376446736,6.944654047019891,5.836918670573155
+88,ts-gateway-service-HTTP POST /api/v1/preserveservice/preserve,80,ts-gateway-service-/*,-0.4397747347214791,6.944654047019891,7.38442878174137
+87,ts-gateway-service-HTTP POST /api/v1/preserveotherservice/preserveOther,80,ts-gateway-service-/*,-0.20556324307237173,6.944654047019891,7.150217290092263
+82,ts-gateway-service-HTTP GET /api/v1/cancelservice/cancel/{orderId}/{loginId},80,ts-gateway-service-/*,-0.11356967659994321,6.944654047019891,7.058223723619834
+91,ts-gateway-service-HTTP POST /api/v1/users/login,80,ts-gateway-service-/*,-0.03417843963638667,6.944654047019891,6.978832486656278
+90,ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left,80,ts-gateway-service-/*,0.1103017519334335,6.944654047019891,6.8343522950864575
+83,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},80,ts-gateway-service-/*,0.03909473301622057,6.944654047019891,6.90555931400367
+85,ts-gateway-service-HTTP GET /api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId},80,ts-gateway-service-/*,0.018904888429121414,6.944654047019891,6.92574915859077
+9,ts-gateway-service-6f6cfc45b-m2jwn,80,ts-gateway-service-/*,0.03535465086092149,6.944654047019891,6.9092993961589695
+9,ts-gateway-service-6f6cfc45b-m2jwn,89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,-0.08084901977575054,6.066388141952514,6.147237161728264
+9,ts-gateway-service-6f6cfc45b-m2jwn,84,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},-0.05529064726690347,4.442630392421332,4.497921039688236
+274,ts-travel2-service-BasicErrorController.error,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,0.03831347062253876,5.87688208129863,5.8385686106760915
+284,ts-travel2-service-Travel2Controller.queryInfo,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,5.87688208129863,5.87688208129863,0.0
+25,ts-travel2-service-5c66d57d58-klvkm,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,0.051610280699499356,5.87688208129863,5.825271800599131
+57,ts-execute-service-ExecuteControlller.executeTicket,59,ts-execute-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},4.443789658538154,4.443789658538154,0.0
+7,ts-execute-service-775f544d9-xhnd8,59,ts-execute-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},-0.01861081852079849,4.443789658538154,4.462400477058953

@@ -1,0 +1,32 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+172,ts-preserve-other-service-HTTP GET /api/v1/contactservice/contacts/{id},181,ts-preserve-other-service-PreserveOtherController.preserve,1.1331038718330382,3.007373734477378,1.8742698626443397
+45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},172,ts-preserve-other-service-HTTP GET /api/v1/contactservice/contacts/{id},12.890796564542645,12.890796564542645,0.0
+45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},184,ts-preserve-service-HTTP GET /api/v1/contactservice/contacts/{id},11.743333668382391,11.743333668382391,0.0
+178,ts-preserve-other-service-HTTP POST /api/v1/preserveotherservice/preserveOther,87,ts-gateway-service-HTTP POST /api/v1/preserveotherservice/preserveOther,2.7653777914908195,2.7653777914908195,0.0
+181,ts-preserve-other-service-PreserveOtherController.preserve,178,ts-preserve-other-service-HTTP POST /api/v1/preserveotherservice/preserveOther,3.963543975792374,3.963543975792374,0.0
+14,ts-preserve-other-service-66646bdb5b-sd2p8,172,ts-preserve-other-service-HTTP GET /api/v1/contactservice/contacts/{id},-0.5278552864695065,12.890796564542645,13.418651851012152
+14,ts-preserve-other-service-66646bdb5b-sd2p8,178,ts-preserve-other-service-HTTP POST /api/v1/preserveotherservice/preserveOther,0.2704657879098602,3.963543975792374,3.693078187882514
+14,ts-preserve-other-service-66646bdb5b-sd2p8,181,ts-preserve-other-service-PreserveOtherController.preserve,-0.0900887619930848,3.007373734477378,3.0974624964704627
+15,ts-preserve-service-b5ccf8557-cn5km,184,ts-preserve-service-HTTP GET /api/v1/contactservice/contacts/{id},-0.07235055944946289,11.743333668382391,11.815684227831854
+43,ts-contacts-service-ContactsController.getContactsByContactsId,45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},8.244437508236183,8.244437508236183,0.0
+5,ts-contacts-service-866bd68c97-b6rfg,45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},0.2969063696742422,8.244437508236183,7.947531138561941
+170,ts-preserve-other-service-BasicErrorController.error,178,ts-preserve-other-service-HTTP POST /api/v1/preserveotherservice/preserveOther,0.037764618505737424,3.963543975792374,3.9257793572866366
+171,ts-preserve-other-service-HTTP GET /api/v1/assuranceservice/assurances/{typeIndex}/{orderId},181,ts-preserve-other-service-PreserveOtherController.preserve,0.1519895422077795,3.007373734477378,2.8553841922695984
+174,ts-preserve-other-service-HTTP GET /api/v1/userservice/users/id/{userId},181,ts-preserve-other-service-PreserveOtherController.preserve,0.14409419195732553,3.007373734477378,2.8632795425200523
+175,ts-preserve-other-service-HTTP POST /api/v1/basicservice/basic/travel,181,ts-preserve-other-service-PreserveOtherController.preserve,0.13346613254593098,3.007373734477378,2.873907601931447
+177,ts-preserve-other-service-HTTP POST /api/v1/orderOtherService/orderOther,181,ts-preserve-other-service-PreserveOtherController.preserve,0.1497347196594574,3.007373734477378,2.8576390148179205
+179,ts-preserve-other-service-HTTP POST /api/v1/seatservice/seats,181,ts-preserve-other-service-PreserveOtherController.preserve,0.1116939424659309,3.007373734477378,2.895679792011447
+176,ts-preserve-other-service-HTTP POST /api/v1/foodservice/orders,181,ts-preserve-other-service-PreserveOtherController.preserve,0.15126094833268855,3.007373734477378,2.8561127861446893
+173,ts-preserve-other-service-HTTP GET /api/v1/securityservice/securityConfigs/{accountId},181,ts-preserve-other-service-PreserveOtherController.preserve,0.1161129472446043,3.007373734477378,2.8912607872327736
+180,ts-preserve-other-service-HTTP POST /api/v1/travel2service/trip_detail,181,ts-preserve-other-service-PreserveOtherController.preserve,0.1191326197952054,3.007373734477378,2.8882411146821725
+54,ts-delivery-service-food_delivery process,64,ts-food-service-<default> send,2.927475368740477,2.927475368740477,0.0
+8,ts-food-service-f5756978c-55kmn,64,ts-food-service-<default> send,0.14031120295468336,2.927475368740477,2.7871641657857937
+8,ts-food-service-f5756978c-55kmn,79,ts-food-service-Transaction.commit,0.09620145295843852,2.854726024278415,2.7585245713199766
+8,ts-food-service-f5756978c-55kmn,76,ts-food-service-SELECT FoodOrder,0.13883061955060194,2.7514972579046324,2.6126666383540305
+75,ts-food-service-INSERT ts.food_order,79,ts-food-service-Transaction.commit,2.854726024278415,2.854726024278415,0.0
+9,ts-gateway-service-6f6cfc45b-m2jwn,87,ts-gateway-service-HTTP POST /api/v1/preserveotherservice/preserveOther,-0.4660082872180795,2.7653777914908195,3.231386078708899
+77,ts-food-service-SELECT ts.food_order,76,ts-food-service-SELECT FoodOrder,2.7514972579046324,2.7514972579046324,0.0
+133,ts-order-other-service-SELECT ts.orders_other,134,ts-order-other-service-Session.find other.entity.Order,2.5631611583857574,2.5631611583857574,0.0
+11,ts-order-other-service-6cdbf9b4cc-r5dxl,134,ts-order-other-service-Session.find other.entity.Order,-0.38230397246708936,2.5631611583857574,2.945465130852847
+51,ts-delivery-service-SELECT ts.delivery,52,ts-delivery-service-Session.merge delivery.entity.Delivery,2.5296560176273197,2.5296560176273197,0.0
+6,ts-delivery-service-7d97b69596-jngz4,52,ts-delivery-service-Session.merge delivery.entity.Delivery,-0.012849514924045735,2.5296560176273197,2.5425055325513655

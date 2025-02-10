@@ -1,0 +1,94 @@
+loss: 0.11195499207824469. 
+dataset: trainticket_2024. 
+. training samples: 2510. 
+
+model: CustomGAE.
+model_file: .
+mode: train.
+seed: 42.
+epoch: 100.
+batch_size: 64.
+lr: 0.001.
+device: cuda.
+valid_ratio: 0.0.
+dataset: trainticket_2024.
+data_dir: ../datasets/TrainTicket_2024/graph_1.
+failure_types: [''].
+failure_duration: 15.
+train_dates: ['2024-04-05', '2024-04-06'].
+test_dates: None.
+used_etypes: None.
+nfeat_select: {'api': ['count', 'mean', 'q60', 'q70', 'q80', 'q90', 'q95', 'max'], 'pod': ['CpuUsage(m)', 'CpuUsageRate(%)', 'MemoryUsage(Mi)', 'MemoryUsageRate(%)', 'SyscallRead', 'SyscallWrite', 'NetworkReceiveBytes', 'NetworkTransmitBytes']}.
+node_scale_type: nodewise.
+edge_scale_type: edgewise.
+add_self_loop: False.
+edge_reverse: False.
+log_before_scale: True.
+process_miss: interpolate.
+process_extreme: False.
+k_sigma: 3.
+use_split_info: False.
+conv_type: DotGAT.
+num_heads: 12.
+feat_drop: 0.0.
+attn_drop: 0.0.
+num_enc_layers: 1.
+num_dec_layers: 1.
+decoder_type: mlp.
+num_etypes: 6.
+edge_feats: 1.
+etype_feats: 5.
+residual: False.
+hidden_dim: 8.
+proj_feats: 12.
+mask: False.
+mask_feat_type: mean.
+loss_type: mse.
+use_edge_feats: True.
+use_etype_feats: False.
+embedding: True.
+recon_ntypes: ['api', 'pod'].
+window: 300.
+score_type: pred_and_mean.
+causal_threshold: 0.3.
+ad_threshold: 1.0.
+dist_type_for_counterfactual: euclidean.
+threshold_1: 0.
+threshold_2: 8.
+weight_score: False.
+CustomGAE(
+  (encoder): GATEncoder(
+    (gat_layers): ModuleList(
+      (0): myDotGATConv(
+        (fc_k): Linear(in_features=12, out_features=96, bias=True)
+        (fc_q): Linear(in_features=12, out_features=96, bias=True)
+        (fc_v): Linear(in_features=12, out_features=96, bias=True)
+        (fc_e): Linear(in_features=1, out_features=96, bias=True)
+        (feat_drop): Dropout(p=0.0, inplace=False)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (activation): LeakyReLU(negative_slope=0.01)
+      )
+    )
+    (linear): Linear(in_features=96, out_features=8, bias=True)
+  )
+  (attr_decoder): MLP(
+    (linears): ModuleList(
+      (0): Linear(in_features=8, out_features=36, bias=True)
+      (1): Linear(in_features=36, out_features=24, bias=True)
+      (2): Linear(in_features=24, out_features=12, bias=True)
+    )
+  )
+  (struct_decoder): InnerProductDecoder()
+  (in_projs): ModuleDict(
+    (api): Linear(in_features=8, out_features=12, bias=True)
+    (pod): Linear(in_features=8, out_features=12, bias=True)
+  )
+  (out_projs): ModuleDict(
+    (api): Linear(in_features=12, out_features=8, bias=True)
+    (pod): Linear(in_features=12, out_features=8, bias=True)
+  )
+  (emb_layer_dict): ModuleDict(
+    (api): Embedding(294, 12)
+    (pod): Embedding(28, 12)
+  )
+)

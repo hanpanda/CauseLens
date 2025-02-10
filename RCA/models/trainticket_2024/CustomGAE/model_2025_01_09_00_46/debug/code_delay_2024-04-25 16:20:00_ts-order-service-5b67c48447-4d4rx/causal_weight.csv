@@ -1,0 +1,52 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+34,ts-cancel-service-HTTP GET /api/v1/orderservice/order/{orderId},30,ts-cancel-service-CancelController.cancelTicket,3.9552585564012412,3.9552585564012412,0.0
+63,ts-execute-service-HTTP GET /api/v1/orderservice/order/{orderId},56,ts-execute-service-ExecuteControlller.collectTicket,4.330664986736378,4.330664986736378,0.0
+63,ts-execute-service-HTTP GET /api/v1/orderservice/order/{orderId},57,ts-execute-service-ExecuteControlller.executeTicket,2.857911032538846,2.857911032538846,0.0
+140,ts-order-service-HTTP GET /api/v1/orderservice/order/{orderId},34,ts-cancel-service-HTTP GET /api/v1/orderservice/order/{orderId},30.93636909449838,30.93636909449838,0.0
+140,ts-order-service-HTTP GET /api/v1/orderservice/order/{orderId},63,ts-execute-service-HTTP GET /api/v1/orderservice/order/{orderId},16.14161390394823,16.14161390394823,0.0
+140,ts-order-service-HTTP GET /api/v1/orderservice/order/{orderId},99,ts-inside-payment-service-HTTP GET /api/v1/orderservice/order/{orderId},7.930516093842821,7.930516093842821,0.0
+84,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},80,ts-gateway-service-/*,0.545557762892853,2.7288506827504864,2.1832929198576334
+59,ts-execute-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},84,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},5.716326637701809,5.716326637701809,0.0
+83,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},80,ts-gateway-service-/*,1.713884282670994,2.7288506827504864,1.0149664000794925
+230,ts-station-food-service-HTTP POST /api/v1/stationfoodservice/stationfoodstores,74,ts-food-service-HTTP POST /api/v1/stationfoodservice/stationfoodstores,4.265736361131566,4.265736361131566,0.0
+58,ts-execute-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},83,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},5.185733398081863,5.185733398081863,0.0
+56,ts-execute-service-ExecuteControlller.collectTicket,58,ts-execute-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},4.377617092620306,4.377617092620306,0.0
+57,ts-execute-service-ExecuteControlller.executeTicket,59,ts-execute-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},5.71191646331793,5.71191646331793,0.0
+3,ts-cancel-service-756f6c4675-n8l65,34,ts-cancel-service-HTTP GET /api/v1/orderservice/order/{orderId},-0.20574754797597805,30.93636909449838,31.14211664247436
+3,ts-cancel-service-756f6c4675-n8l65,30,ts-cancel-service-CancelController.cancelTicket,0.004321903262872073,3.9552585564012412,3.950936653138369
+7,ts-execute-service-775f544d9-xhnd8,63,ts-execute-service-HTTP GET /api/v1/orderservice/order/{orderId},-0.09213424706114637,16.14161390394823,16.233748151009376
+7,ts-execute-service-775f544d9-xhnd8,59,ts-execute-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},-0.03769116979439602,5.71191646331793,5.749607633112326
+7,ts-execute-service-775f544d9-xhnd8,58,ts-execute-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},-0.0036195276764843243,4.377617092620306,4.38123662029679
+7,ts-execute-service-775f544d9-xhnd8,56,ts-execute-service-ExecuteControlller.collectTicket,-0.04126865137072677,4.330664986736378,4.371933638107104
+7,ts-execute-service-775f544d9-xhnd8,57,ts-execute-service-ExecuteControlller.executeTicket,-0.22791389396264217,2.857911032538846,3.085824926501488
+146,ts-order-service-OrderController.getOrderById,140,ts-order-service-HTTP GET /api/v1/orderservice/order/{orderId},11.084486640133447,11.084486640133447,0.0
+12,ts-order-service-5b67c48447-4d4rx,140,ts-order-service-HTTP GET /api/v1/orderservice/order/{orderId},0.0397045698834404,11.084486640133447,11.044782070250006
+10,ts-inside-payment-service-6f94c49ccd-ql78t,99,ts-inside-payment-service-HTTP GET /api/v1/orderservice/order/{orderId},0.018083021414147638,7.930516093842821,7.912433072428674
+9,ts-gateway-service-6f6cfc45b-m2jwn,84,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},-0.07474041411577925,5.716326637701809,5.791067051817588
+9,ts-gateway-service-6f6cfc45b-m2jwn,83,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},-0.10743062074123433,5.185733398081863,5.293164018823098
+9,ts-gateway-service-6f6cfc45b-m2jwn,80,ts-gateway-service-/*,0.053917271582864856,2.7288506827504864,2.6749334111676215
+233,ts-station-food-service-StationFoodController.getFoodStoresByStationNames,230,ts-station-food-service-HTTP POST /api/v1/stationfoodservice/stationfoodstores,4.6917926944766375,4.6917926944766375,0.0
+20,ts-station-food-service-dc4d75dd-vsjjg,230,ts-station-food-service-HTTP POST /api/v1/stationfoodservice/stationfoodstores,0.1762657370738454,4.6917926944766375,4.515526957402792
+55,ts-execute-service-BasicErrorController.error,58,ts-execute-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},-0.5643261373724524,4.377617092620306,4.941943229992758
+60,ts-execute-service-HTTP GET /api/v1/orderOtherService/orderOther/status/{orderId}/{status},56,ts-execute-service-ExecuteControlller.collectTicket,0.021196500030414178,4.330664986736378,4.309468486705963
+61,ts-execute-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId},56,ts-execute-service-ExecuteControlller.collectTicket,0.0397441886544696,4.330664986736378,4.290920798081908
+61,ts-execute-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId},57,ts-execute-service-ExecuteControlller.executeTicket,0.009588220661283398,2.857911032538846,2.8483228118775625
+62,ts-execute-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},56,ts-execute-service-ExecuteControlller.collectTicket,-0.07898081216622277,4.330664986736378,4.4096457989026
+62,ts-execute-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},57,ts-execute-service-ExecuteControlller.executeTicket,-0.05751885116963029,2.857911032538846,2.915429883708476
+8,ts-food-service-f5756978c-55kmn,74,ts-food-service-HTTP POST /api/v1/stationfoodservice/stationfoodstores,0.28891128977159886,4.265736361131566,3.976825071359967
+36,ts-cancel-service-HTTP PUT /api/v1/orderOtherService/orderOther,30,ts-cancel-service-CancelController.cancelTicket,-0.01576349239985797,3.9552585564012412,3.971022048801099
+35,ts-cancel-service-HTTP GET /api/v1/userservice/users/id/{userId},30,ts-cancel-service-CancelController.cancelTicket,0.010676298689150876,3.9552585564012412,3.9445822577120904
+37,ts-cancel-service-HTTP PUT /api/v1/orderservice/order,30,ts-cancel-service-CancelController.cancelTicket,-0.01797538057084136,3.9552585564012412,3.9732339369720826
+32,ts-cancel-service-HTTP GET /api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money},30,ts-cancel-service-CancelController.cancelTicket,-0.001652331648735128,3.9552585564012412,3.9569108880499764
+33,ts-cancel-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId},30,ts-cancel-service-CancelController.cancelTicket,-0.010641512759703708,3.9552585564012412,3.965900069160945
+5,ts-assurance-service-SELECT Assurance,1,ts-assurance-service-AssuranceRepository.findByOrderId,3.592128714763494,3.592128714763494,0.0
+0,ts-assurance-service-69876c9868-tsp2m,1,ts-assurance-service-AssuranceRepository.findByOrderId,0.06644215285165389,3.592128714763494,3.52568656191184
+86,ts-gateway-service-HTTP POST /api/v1/inside_pay_service/inside_payment,80,ts-gateway-service-/*,0.29360969376621693,2.7288506827504864,2.4352409889842694
+89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,80,ts-gateway-service-/*,0.026684798389592146,2.7288506827504864,2.702165884360894
+81,ts-gateway-service-FilteringWebHandler.handle,80,ts-gateway-service-/*,0.5007146518671917,2.7288506827504864,2.2281360308832947
+88,ts-gateway-service-HTTP POST /api/v1/preserveservice/preserve,80,ts-gateway-service-/*,-0.4188387790632646,2.7288506827504864,3.147689461813751
+87,ts-gateway-service-HTTP POST /api/v1/preserveotherservice/preserveOther,80,ts-gateway-service-/*,0.01806931838498338,2.7288506827504864,2.710781364365503
+82,ts-gateway-service-HTTP GET /api/v1/cancelservice/cancel/{orderId}/{loginId},80,ts-gateway-service-/*,-0.20709031935993494,2.7288506827504864,2.9359410021104213
+91,ts-gateway-service-HTTP POST /api/v1/users/login,80,ts-gateway-service-/*,0.05570157146299293,2.7288506827504864,2.6731491112874934
+90,ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left,80,ts-gateway-service-/*,-0.1571894071243829,2.7288506827504864,2.8860400898748693
+85,ts-gateway-service-HTTP GET /api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId},80,ts-gateway-service-/*,0.48127045362926957,2.7288506827504864,2.247580229121217

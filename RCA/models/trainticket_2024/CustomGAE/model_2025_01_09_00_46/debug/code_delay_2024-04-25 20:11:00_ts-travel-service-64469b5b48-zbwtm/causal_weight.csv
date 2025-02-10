@@ -1,0 +1,38 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+22,ts-basic-service-HTTP GET /api/v1/stationservice/stations/id/{stationNameForId},17,ts-basic-service-BasicController.queryForTravel,6.754513032646637,6.754513032646637,0.0
+165,ts-payment-service-PaymentRepository.save,163,ts-payment-service-PaymentController.pay,3.2507423012895207,3.2507423012895207,0.0
+207,ts-route-service-RouteRepository.findByIds,205,ts-route-service-RouteController.queryByIds,2.6542975006892955,2.6542975006892955,0.0
+203,ts-route-service-HTTP POST /api/v1/routeservice/routes/byIds/,27,ts-basic-service-HTTP POST /api/v1/routeservice/routes/byIds/,3.1310943076105833,3.1310943076105833,0.0
+161,ts-payment-service-HTTP POST /api/v1/paymentservice/payment,101,ts-inside-payment-service-HTTP POST /api/v1/paymentservice/payment,2.9520115358683268,2.9520115358683268,0.0
+120,ts-order-other-service-HTTP PUT /api/v1/orderOtherService/orderOther,36,ts-cancel-service-HTTP PUT /api/v1/orderOtherService/orderOther,3.669206370881156,3.669206370881156,0.0
+163,ts-payment-service-PaymentController.pay,161,ts-payment-service-HTTP POST /api/v1/paymentservice/payment,3.68149613581596,3.68149613581596,0.0
+205,ts-route-service-RouteController.queryByIds,203,ts-route-service-HTTP POST /api/v1/routeservice/routes/byIds/,3.6829134431211297,3.6829134431211297,0.0
+264,ts-travel-service-HTTP POST /api/v1/travelservice/trip_detail,192,ts-preserve-service-HTTP POST /api/v1/travelservice/trip_detail,2.925056523838766,2.925056523838766,0.0
+20,ts-basic-service-HTTP GET /api/v1/priceservice/prices/{routeId}/{trainType},17,ts-basic-service-BasicController.queryForTravel,-0.10142967393005708,6.754513032646637,6.855942706576694
+21,ts-basic-service-HTTP GET /api/v1/routeservice/routes/{routeId},17,ts-basic-service-BasicController.queryForTravel,0.014584539393232454,6.754513032646637,6.739928493253404
+23,ts-basic-service-HTTP GET /api/v1/trainservice/trains/byName/{name},17,ts-basic-service-BasicController.queryForTravel,0.022712754230159504,6.754513032646637,6.731800278416477
+2,ts-basic-service-5dc8d4f9fd-58xkn,17,ts-basic-service-BasicController.queryForTravel,-0.0043618868813801726,6.754513032646637,6.758874919528017
+2,ts-basic-service-5dc8d4f9fd-58xkn,22,ts-basic-service-HTTP GET /api/v1/stationservice/stations/id/{stationNameForId},-0.2796823407501261,5.0993105596554535,5.37899290040558
+2,ts-basic-service-5dc8d4f9fd-58xkn,27,ts-basic-service-HTTP POST /api/v1/routeservice/routes/byIds/,0.378936214292211,3.1310943076105833,2.7521580933183722
+235,ts-station-service-HTTP GET /api/v1/stationservice/stations/id/{stationNameForId},22,ts-basic-service-HTTP GET /api/v1/stationservice/stations/id/{stationNameForId},5.0993105596554535,5.0993105596554535,0.0
+168,ts-payment-service-Session.merge com.trainticket.entity.Payment,165,ts-payment-service-PaymentRepository.save,0.04545157965101776,4.578564842474987,4.533113262823969
+169,ts-payment-service-Transaction.commit,165,ts-payment-service-PaymentRepository.save,4.578564842474987,4.578564842474987,0.0
+13,ts-payment-service-7fc6f5476f-bfkj9,165,ts-payment-service-PaymentRepository.save,-0.02492707795038296,4.578564842474987,4.60349192042537
+13,ts-payment-service-7fc6f5476f-bfkj9,161,ts-payment-service-HTTP POST /api/v1/paymentservice/payment,-0.0475777565167661,3.68149613581596,3.729073892332726
+13,ts-payment-service-7fc6f5476f-bfkj9,163,ts-payment-service-PaymentController.pay,-0.0746937819202036,3.2507423012895207,3.3254360832097243
+208,ts-route-service-SELECT route,207,ts-route-service-RouteRepository.findByIds,4.203243016300544,4.203243016300544,0.0
+17,ts-route-service-b6c59fb57-4tcvp,207,ts-route-service-RouteRepository.findByIds,0.05568515298925103,4.203243016300544,4.147557863311293
+17,ts-route-service-b6c59fb57-4tcvp,203,ts-route-service-HTTP POST /api/v1/routeservice/routes/byIds/,0.2324465130176705,3.6829134431211297,3.450466930103459
+17,ts-route-service-b6c59fb57-4tcvp,205,ts-route-service-RouteController.queryByIds,0.5007034920961289,2.6542975006892955,2.1535940085931666
+3,ts-cancel-service-756f6c4675-n8l65,36,ts-cancel-service-HTTP PUT /api/v1/orderOtherService/orderOther,-0.04675971298513382,3.669206370881156,3.71596608386629
+126,ts-order-other-service-OrderOtherController.saveOrderInfo,120,ts-order-other-service-HTTP PUT /api/v1/orderOtherService/orderOther,3.4594137538213507,3.4594137538213507,0.0
+11,ts-order-other-service-6cdbf9b4cc-r5dxl,120,ts-order-other-service-HTTP PUT /api/v1/orderOtherService/orderOther,-0.026745694914598328,3.4594137538213507,3.486159448735949
+164,ts-payment-service-PaymentRepository.findByOrderId,163,ts-payment-service-PaymentController.pay,0.4416702662728955,3.2507423012895207,2.809072035016625
+10,ts-inside-payment-service-6f94c49ccd-ql78t,101,ts-inside-payment-service-HTTP POST /api/v1/paymentservice/payment,0.4771010369299846,2.9520115358683268,2.474910498938342
+15,ts-preserve-service-b5ccf8557-cn5km,192,ts-preserve-service-HTTP POST /api/v1/travelservice/trip_detail,0.14300634965284065,2.925056523838766,2.782050174185925
+15,ts-preserve-service-b5ccf8557-cn5km,187,ts-preserve-service-HTTP POST /api/v1/basicservice/basic/travel,-0.0011383569156975248,2.731008764395708,2.7321471213114057
+24,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travel,187,ts-preserve-service-HTTP POST /api/v1/basicservice/basic/travel,2.731008764395708,2.731008764395708,0.0
+211,ts-route-service-SELECT ts.route_stations,205,ts-route-service-RouteController.queryByIds,-0.24615659684497482,2.6542975006892955,2.9004540975342703
+210,ts-route-service-SELECT ts.route_distances,205,ts-route-service-RouteController.queryByIds,0.06565743178767125,2.6542975006892955,2.5886400689016242
+270,ts-travel-service-TravelController.getTripAllDetailInfo,264,ts-travel-service-HTTP POST /api/v1/travelservice/trip_detail,2.6518853522899835,2.6518853522899835,0.0
+24,ts-travel-service-64469b5b48-zbwtm,264,ts-travel-service-HTTP POST /api/v1/travelservice/trip_detail,-0.25501687345946644,2.6518853522899835,2.90690222574945

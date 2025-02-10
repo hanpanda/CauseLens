@@ -1,0 +1,27 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,6.123087851268135,6.123087851268135,0.0
+89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,80,ts-gateway-service-/*,5.166975060339367,5.166975060339367,0.0
+249,ts-train-food-service-TrainFoodRepository.findByTripId,248,ts-train-food-service-TrainFoodController.getTrainFoodOfTrip,2.621215760906808,2.621215760906808,0.0
+244,ts-train-food-service-HTTP GET /api/v1/trainfoodservice/trainfoods/{tripId},71,ts-food-service-HTTP GET /api/v1/trainfoodservice/trainfoods/{tripId},3.580558618149663,3.580558618149663,0.0
+248,ts-train-food-service-TrainFoodController.getTrainFoodOfTrip,244,ts-train-food-service-HTTP GET /api/v1/trainfoodservice/trainfoods/{tripId},4.052583254169271,4.052583254169271,0.0
+274,ts-travel2-service-BasicErrorController.error,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,0.0747066904987781,7.1129388771679976,7.0382321866692195
+284,ts-travel2-service-Travel2Controller.queryInfo,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,7.1129388771679976,7.1129388771679976,0.0
+25,ts-travel2-service-5c66d57d58-klvkm,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,0.693624103499463,7.1129388771679976,6.4193147736685345
+9,ts-gateway-service-6f6cfc45b-m2jwn,89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,-0.0643208619563751,6.123087851268135,6.18740871322451
+9,ts-gateway-service-6f6cfc45b-m2jwn,80,ts-gateway-service-/*,0.018068388941108182,5.166975060339367,5.148906671398259
+86,ts-gateway-service-HTTP POST /api/v1/inside_pay_service/inside_payment,80,ts-gateway-service-/*,0.11198962201147111,5.166975060339367,5.054985438327896
+84,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},80,ts-gateway-service-/*,-0.4505242178643991,5.166975060339367,5.617499278203766
+81,ts-gateway-service-FilteringWebHandler.handle,80,ts-gateway-service-/*,-0.19900741069602823,5.166975060339367,5.365982471035395
+88,ts-gateway-service-HTTP POST /api/v1/preserveservice/preserve,80,ts-gateway-service-/*,-0.40470309952066774,5.166975060339367,5.571678159860035
+87,ts-gateway-service-HTTP POST /api/v1/preserveotherservice/preserveOther,80,ts-gateway-service-/*,-0.19597835310554057,5.166975060339367,5.362953413444908
+82,ts-gateway-service-HTTP GET /api/v1/cancelservice/cancel/{orderId}/{loginId},80,ts-gateway-service-/*,0.004298677924517769,5.166975060339367,5.162676382414849
+91,ts-gateway-service-HTTP POST /api/v1/users/login,80,ts-gateway-service-/*,-0.015071861886265303,5.166975060339367,5.1820469222256325
+90,ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left,80,ts-gateway-service-/*,-0.2450845908274788,5.166975060339367,5.412059651166846
+83,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},80,ts-gateway-service-/*,-0.0572862732708419,5.166975060339367,5.224261333610209
+85,ts-gateway-service-HTTP GET /api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId},80,ts-gateway-service-/*,0.03376437238982,5.166975060339367,5.133210687949547
+245,ts-train-food-service-SELECT TrainFood,249,ts-train-food-service-TrainFoodRepository.findByTripId,4.968707493699314,4.968707493699314,0.0
+22,ts-train-food-service-59bbbdd99b-dvkgz,249,ts-train-food-service-TrainFoodRepository.findByTripId,-0.014753718720061926,4.968707493699314,4.983461212419376
+22,ts-train-food-service-59bbbdd99b-dvkgz,244,ts-train-food-service-HTTP GET /api/v1/trainfoodservice/trainfoods/{tripId},0.03999578307351026,4.052583254169271,4.0125874710957605
+22,ts-train-food-service-59bbbdd99b-dvkgz,248,ts-train-food-service-TrainFoodController.getTrainFoodOfTrip,-0.02428615710264692,2.621215760906808,2.645501918009455
+8,ts-food-service-f5756978c-55kmn,71,ts-food-service-HTTP GET /api/v1/trainfoodservice/trainfoods/{tripId},0.026317570593510364,3.580558618149663,3.5542410475561526
+247,ts-train-food-service-SELECT ts.train_food_list,248,ts-train-food-service-TrainFoodController.getTrainFoodOfTrip,0.20027425412985878,2.621215760906808,2.4209415067769493

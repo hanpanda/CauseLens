@@ -1,0 +1,54 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+29,ts-basic-service-HTTP POST /api/v1/trainservice/trains/byNames,18,ts-basic-service-BasicController.queryForTravels,11.555376861443264,15.040489639446578,3.4851127780033146
+251,ts-train-service-HTTP POST /api/v1/trainservice/trains/byNames,29,ts-basic-service-HTTP POST /api/v1/trainservice/trains/byNames,20.961274144343268,20.961274144343268,0.0
+18,ts-basic-service-BasicController.queryForTravels,25,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels,4.282603875537843,4.282603875537843,0.0
+198,ts-price-service-PriceController.query,195,ts-price-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,7.095129473007182,7.095129473007182,0.0
+195,ts-price-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,26,ts-basic-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,6.183315158136844,6.183315158136844,0.0
+69,ts-food-service-FoodOrderRepository.save,66,ts-food-service-FoodController.createFoodOrder,5.1715246927353045,5.1715246927353045,0.0
+26,ts-basic-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,18,ts-basic-service-BasicController.queryForTravels,-0.033319222614810684,15.040489639446578,15.073808862061389
+66,ts-food-service-FoodController.createFoodOrder,73,ts-food-service-HTTP POST /api/v1/foodservice/orders,3.622346020687931,3.622346020687931,0.0
+25,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels,276,ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travels,6.284297298829537,6.284297298829537,0.0
+25,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels,262,ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels,5.374831516867935,5.374831516867935,0.0
+279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,3.419882830083496,3.419882830083496,0.0
+73,ts-food-service-HTTP POST /api/v1/foodservice/orders,176,ts-preserve-other-service-HTTP POST /api/v1/foodservice/orders,3.9256138871760977,3.9256138871760977,0.0
+78,ts-food-service-Session.merge foodsearch.entity.FoodOrder,69,ts-food-service-FoodOrderRepository.save,1.8472881060669435,6.625140914119936,4.777852808052993
+255,ts-train-service-TrainController.retrieveByName,250,ts-train-service-HTTP GET /api/v1/trainservice/trains/byName/{name},29.247706333536044,29.247706333536044,0.0
+255,ts-train-service-TrainController.retrieveByName,251,ts-train-service-HTTP POST /api/v1/trainservice/trains/byNames,17.407398005897853,17.407398005897853,0.0
+23,ts-train-service-86f5f97bc9-f7687,250,ts-train-service-HTTP GET /api/v1/trainservice/trains/byName/{name},-0.24600637539664305,29.247706333536044,29.493712708932687
+23,ts-train-service-86f5f97bc9-f7687,251,ts-train-service-HTTP POST /api/v1/trainservice/trains/byNames,0.017351007984625966,17.407398005897853,17.390046997913228
+2,ts-basic-service-5dc8d4f9fd-58xkn,29,ts-basic-service-HTTP POST /api/v1/trainservice/trains/byNames,-0.16186056595406484,20.961274144343268,21.123134710297332
+2,ts-basic-service-5dc8d4f9fd-58xkn,18,ts-basic-service-BasicController.queryForTravels,0.04262123901483683,15.040489639446578,14.997868400431742
+2,ts-basic-service-5dc8d4f9fd-58xkn,26,ts-basic-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,0.29578887317342595,6.183315158136844,5.8875262849634185
+2,ts-basic-service-5dc8d4f9fd-58xkn,25,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels,-0.017876532402788747,4.282603875537843,4.300480407940632
+27,ts-basic-service-HTTP POST /api/v1/routeservice/routes/byIds/,18,ts-basic-service-BasicController.queryForTravels,-0.0802273909081972,15.040489639446578,15.120717030354776
+28,ts-basic-service-HTTP POST /api/v1/stationservice/stations/idlist,18,ts-basic-service-BasicController.queryForTravels,0.002697584756006677,15.040489639446578,15.037792054690572
+197,ts-price-service-PriceConfigRepository.findByRouteIdsAndTrainTypes,198,ts-price-service-PriceController.query,9.020855605394521,9.020855605394521,0.0
+196,ts-price-service-PriceConfigRepository.findByRouteIdAndTrainType,198,ts-price-service-PriceController.query,-0.24159968373536778,9.020855605394521,9.262455289129889
+16,ts-price-service-76846864d9-shjpl,198,ts-price-service-PriceController.query,0.03721200317112405,9.020855605394521,8.983643602223397
+16,ts-price-service-76846864d9-shjpl,195,ts-price-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,0.10364308774726005,7.095129473007182,6.991486385259922
+79,ts-food-service-Transaction.commit,69,ts-food-service-FoodOrderRepository.save,2.185542109094823,6.625140914119936,4.439598805025113
+8,ts-food-service-f5756978c-55kmn,69,ts-food-service-FoodOrderRepository.save,-0.030671417217528862,6.625140914119936,6.655812331337465
+8,ts-food-service-f5756978c-55kmn,66,ts-food-service-FoodController.createFoodOrder,-0.04555690321981043,5.1715246927353045,5.217081595955115
+8,ts-food-service-f5756978c-55kmn,76,ts-food-service-SELECT FoodOrder,-0.049261473942402656,3.705393615924922,3.7546550898673248
+8,ts-food-service-f5756978c-55kmn,73,ts-food-service-HTTP POST /api/v1/foodservice/orders,-0.03763441700247405,3.622346020687931,3.6599804376904053
+8,ts-food-service-f5756978c-55kmn,78,ts-food-service-Session.merge foodsearch.entity.FoodOrder,0.06202767365828166,3.473260043707337,3.4112323700490554
+25,ts-travel2-service-5c66d57d58-klvkm,276,ts-travel2-service-HTTP POST /api/v1/basicservice/basic/travels,0.15577427245379916,6.284297298829537,6.1285230263757375
+25,ts-travel2-service-5c66d57d58-klvkm,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,0.30457280175667156,4.25001666000406,3.9454438582473883
+24,ts-travel-service-64469b5b48-zbwtm,262,ts-travel-service-HTTP POST /api/v1/basicservice/basic/travels,-0.3215128352393979,5.374831516867935,5.6963443521073325
+64,ts-food-service-<default> send,66,ts-food-service-FoodController.createFoodOrder,-0.07883197165114098,5.1715246927353045,5.250356664386445
+68,ts-food-service-FoodOrderRepository.findByOrderId,66,ts-food-service-FoodController.createFoodOrder,0.0253178479077123,5.1715246927353045,5.146206844827592
+50,ts-delivery-service-INSERT ts.delivery,53,ts-delivery-service-Transaction.commit,5.0276070783852855,5.0276070783852855,0.0
+6,ts-delivery-service-7d97b69596-jngz4,53,ts-delivery-service-Transaction.commit,0.27002756256711713,5.0276070783852855,4.757579515818168
+19,ts-basic-service-BasicErrorController.error,25,ts-basic-service-HTTP POST /api/v1/basicservice/basic/travels,0.01941302385661814,4.282603875537843,4.263190851681225
+274,ts-travel2-service-BasicErrorController.error,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,1.5838158952346126,4.25001666000406,2.6662007647694472
+284,ts-travel2-service-Travel2Controller.queryInfo,279,ts-travel2-service-HTTP POST /api/v1/travel2service/trips/left,4.25001666000406,4.25001666000406,0.0
+14,ts-preserve-other-service-66646bdb5b-sd2p8,176,ts-preserve-other-service-HTTP POST /api/v1/foodservice/orders,0.037955601854245735,3.9256138871760977,3.887658285321852
+77,ts-food-service-SELECT ts.food_order,76,ts-food-service-SELECT FoodOrder,3.705393615924922,3.705393615924922,0.0
+77,ts-food-service-SELECT ts.food_order,78,ts-food-service-Session.merge foodsearch.entity.FoodOrder,3.473260043707337,3.473260043707337,0.0
+9,ts-gateway-service-6f6cfc45b-m2jwn,89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,-0.008728337403382191,3.419882830083496,3.428611167486878
+290,ts-user-service-UserController.getUserByUserId,287,ts-user-service-HTTP GET /api/v1/userservice/users/id/{userId},2.7158696065573813,2.7158696065573813,0.0
+26,ts-user-service-687d654649-vr6qt,287,ts-user-service-HTTP GET /api/v1/userservice/users/id/{userId},0.01691175670652445,2.7158696065573813,2.698957849850857
+209,ts-route-service-SELECT ts.route,208,ts-route-service-SELECT route,2.6803436733399395,2.6803436733399395,0.0
+17,ts-route-service-b6c59fb57-4tcvp,208,ts-route-service-SELECT route,-0.26298582433715634,2.6803436733399395,2.943329497677096
+5,ts-assurance-service-SELECT Assurance,1,ts-assurance-service-AssuranceRepository.findByOrderId,2.5878216731927846,2.5878216731927846,0.0
+0,ts-assurance-service-69876c9868-tsp2m,1,ts-assurance-service-AssuranceRepository.findByOrderId,0.03448197002110698,2.5878216731927846,2.5533397031716776

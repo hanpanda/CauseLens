@@ -1,0 +1,48 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+139,ts-order-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},98,ts-inside-payment-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},8.122378202006248,8.122378202006248,0.0
+31,ts-cancel-service-HTTP GET /api/v1/cancelservice/cancel/{orderId}/{loginId},82,ts-gateway-service-HTTP GET /api/v1/cancelservice/cancel/{orderId}/{loginId},3.3871584380555237,3.3871584380555237,0.0
+32,ts-cancel-service-HTTP GET /api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money},30,ts-cancel-service-CancelController.cancelTicket,3.0915353578933775,3.0915353578933775,0.0
+82,ts-gateway-service-HTTP GET /api/v1/cancelservice/cancel/{orderId}/{loginId},80,ts-gateway-service-/*,0.36842504616936633,4.567139401639928,4.198714355470561
+95,ts-inside-payment-service-HTTP GET /api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money},32,ts-cancel-service-HTTP GET /api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money},3.4388110325633794,3.4388110325633794,0.0
+104,ts-inside-payment-service-InsidePaymentController.drawBack,95,ts-inside-payment-service-HTTP GET /api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money},3.2445905608108356,3.2445905608108356,0.0
+30,ts-cancel-service-CancelController.cancelTicket,31,ts-cancel-service-HTTP GET /api/v1/cancelservice/cancel/{orderId}/{loginId},3.4848021538912772,3.4848021538912772,0.0
+86,ts-gateway-service-HTTP POST /api/v1/inside_pay_service/inside_payment,80,ts-gateway-service-/*,3.4677341872696195,4.567139401639928,1.099405214370308
+148,ts-order-service-OrderController.modifyOrder,139,ts-order-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},10.695417832967687,10.695417832967687,0.0
+12,ts-order-service-5b67c48447-4d4rx,139,ts-order-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},0.08236519732547265,10.695417832967687,10.613052635642214
+10,ts-inside-payment-service-6f94c49ccd-ql78t,98,ts-inside-payment-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},0.940430777825382,8.122378202006248,7.181947424180866
+10,ts-inside-payment-service-6f94c49ccd-ql78t,95,ts-inside-payment-service-HTTP GET /api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money},0.3237715004105959,3.2445905608108356,2.9208190604002398
+10,ts-inside-payment-service-6f94c49ccd-ql78t,104,ts-inside-payment-service-InsidePaymentController.drawBack,0.07230142908465265,3.107743710307333,3.0354422812226804
+10,ts-inside-payment-service-6f94c49ccd-ql78t,106,ts-inside-payment-service-PaymentRepository.findByUserId,0.05609018932902021,2.544163767577804,2.488073578248784
+132,ts-order-other-service-SELECT Order,128,ts-order-other-service-OrderOtherRepository.findByAccountId,5.403272034288233,5.403272034288233,0.0
+11,ts-order-other-service-6cdbf9b4cc-r5dxl,128,ts-order-other-service-OrderOtherRepository.findByAccountId,-0.6789771435862777,5.403272034288233,6.082249177874511
+84,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/execute/{orderId},80,ts-gateway-service-/*,-0.3401132562755862,4.567139401639928,4.907252657915514
+89,ts-gateway-service-HTTP POST /api/v1/travel2service/trips/left,80,ts-gateway-service-/*,-0.13015653200338928,4.567139401639928,4.697295933643317
+81,ts-gateway-service-FilteringWebHandler.handle,80,ts-gateway-service-/*,2.183738144815652,4.567139401639928,2.3834012568242757
+88,ts-gateway-service-HTTP POST /api/v1/preserveservice/preserve,80,ts-gateway-service-/*,-0.2339228993257425,4.567139401639928,4.80106230096567
+87,ts-gateway-service-HTTP POST /api/v1/preserveotherservice/preserveOther,80,ts-gateway-service-/*,-0.025879899993347166,4.567139401639928,4.593019301633275
+91,ts-gateway-service-HTTP POST /api/v1/users/login,80,ts-gateway-service-/*,0.1596496450630207,4.567139401639928,4.407489756576907
+90,ts-gateway-service-HTTP POST /api/v1/travelservice/trips/left,80,ts-gateway-service-/*,0.05121189282204597,4.567139401639928,4.515927508817882
+83,ts-gateway-service-HTTP GET /api/v1/executeservice/execute/collected/{orderId},80,ts-gateway-service-/*,-0.0347542301173025,4.567139401639928,4.60189363175723
+85,ts-gateway-service-HTTP GET /api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId},80,ts-gateway-service-/*,-0.03151837126450108,4.567139401639928,4.598657772904429
+9,ts-gateway-service-6f6cfc45b-m2jwn,80,ts-gateway-service-/*,0.04699268234888887,4.567139401639928,4.520146719291039
+9,ts-gateway-service-6f6cfc45b-m2jwn,82,ts-gateway-service-HTTP GET /api/v1/cancelservice/cancel/{orderId}/{loginId},-0.017882071051763315,3.3871584380555237,3.405040509107287
+9,ts-gateway-service-6f6cfc45b-m2jwn,86,ts-gateway-service-HTTP POST /api/v1/inside_pay_service/inside_payment,-0.07212579297241861,2.7247881885928824,2.796913981565301
+3,ts-cancel-service-756f6c4675-n8l65,31,ts-cancel-service-HTTP GET /api/v1/cancelservice/cancel/{orderId}/{loginId},-0.012989654601290201,3.4848021538912772,3.4977918084925674
+3,ts-cancel-service-756f6c4675-n8l65,32,ts-cancel-service-HTTP GET /api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money},0.04640673735755296,3.4388110325633794,3.3924042952058264
+3,ts-cancel-service-756f6c4675-n8l65,30,ts-cancel-service-CancelController.cancelTicket,0.07147415229301668,3.0915353578933775,3.020061205600361
+60,ts-execute-service-HTTP GET /api/v1/orderOtherService/orderOther/status/{orderId}/{status},56,ts-execute-service-ExecuteControlller.collectTicket,-0.06444734173565658,3.377622006504793,3.4420693482404494
+61,ts-execute-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId},56,ts-execute-service-ExecuteControlller.collectTicket,-0.004654683401432713,3.377622006504793,3.3822766899062255
+62,ts-execute-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},56,ts-execute-service-ExecuteControlller.collectTicket,3.377622006504793,3.377622006504793,0.0
+63,ts-execute-service-HTTP GET /api/v1/orderservice/order/{orderId},56,ts-execute-service-ExecuteControlller.collectTicket,0.057669084951597505,3.377622006504793,3.3199529215531953
+7,ts-execute-service-775f544d9-xhnd8,56,ts-execute-service-ExecuteControlller.collectTicket,0.05576606912402404,3.377622006504793,3.321855937380769
+93,ts-inside-payment-service-AddMoneyRepository.save,104,ts-inside-payment-service-InsidePaymentController.drawBack,1.5570439436352248,3.107743710307333,1.5506997666721083
+92,ts-inside-payment-service-AddMoneyRepository.findByUserId,104,ts-inside-payment-service-InsidePaymentController.drawBack,0.5040636707245363,3.107743710307333,2.603680039582797
+36,ts-cancel-service-HTTP PUT /api/v1/orderOtherService/orderOther,30,ts-cancel-service-CancelController.cancelTicket,0.03588963729422634,3.0915353578933775,3.055645720599151
+35,ts-cancel-service-HTTP GET /api/v1/userservice/users/id/{userId},30,ts-cancel-service-CancelController.cancelTicket,-0.009165843938374163,3.0915353578933775,3.1007012018317517
+34,ts-cancel-service-HTTP GET /api/v1/orderservice/order/{orderId},30,ts-cancel-service-CancelController.cancelTicket,0.011256478298142802,3.0915353578933775,3.0802788795952347
+37,ts-cancel-service-HTTP PUT /api/v1/orderservice/order,30,ts-cancel-service-CancelController.cancelTicket,0.026048946324578548,3.0915353578933775,3.065486411568799
+33,ts-cancel-service-HTTP GET /api/v1/orderOtherService/orderOther/{orderId},30,ts-cancel-service-CancelController.cancelTicket,0.02529160694633159,3.0915353578933775,3.066243750947046
+250,ts-train-service-HTTP GET /api/v1/trainservice/trains/byName/{name},23,ts-basic-service-HTTP GET /api/v1/trainservice/trains/byName/{name},2.938252824256415,2.938252824256415,0.0
+2,ts-basic-service-5dc8d4f9fd-58xkn,23,ts-basic-service-HTTP GET /api/v1/trainservice/trains/byName/{name},-0.05719644426807591,2.938252824256415,2.995449268524491
+100,ts-inside-payment-service-HTTP POST /api/v1/inside_pay_service/inside_payment,86,ts-gateway-service-HTTP POST /api/v1/inside_pay_service/inside_payment,2.7247881885928824,2.7247881885928824,0.0
+109,ts-inside-payment-service-SELECT Payment,106,ts-inside-payment-service-PaymentRepository.findByUserId,2.544163767577804,2.544163767577804,0.0

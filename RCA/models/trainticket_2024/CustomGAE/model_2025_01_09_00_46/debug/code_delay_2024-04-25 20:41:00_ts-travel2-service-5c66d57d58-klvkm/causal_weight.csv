@@ -1,0 +1,4 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+24,ts-travel-service-64469b5b48-zbwtm,267,ts-travel-service-SELECT ts.trip,4.862822276062648,4.862822276062648,0.0
+24,ts-travel-service-64469b5b48-zbwtm,268,ts-travel-service-Transaction.commit,4.857825343650843,4.857825343650843,0.0
+24,ts-travel-service-64469b5b48-zbwtm,258,ts-travel-service-BasicErrorController.error,4.463364014728917,4.463364014728917,0.0

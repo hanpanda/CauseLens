@@ -1,0 +1,9 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},172,ts-preserve-other-service-HTTP GET /api/v1/contactservice/contacts/{id},12.291919448779788,12.291919448779788,0.0
+45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},184,ts-preserve-service-HTTP GET /api/v1/contactservice/contacts/{id},10.141774542121455,10.141774542121455,0.0
+14,ts-preserve-other-service-66646bdb5b-sd2p8,172,ts-preserve-other-service-HTTP GET /api/v1/contactservice/contacts/{id},0.28960592562991927,12.291919448779788,12.00231352314987
+15,ts-preserve-service-b5ccf8557-cn5km,184,ts-preserve-service-HTTP GET /api/v1/contactservice/contacts/{id},0.09079080614221624,10.141774542121455,10.050983735979239
+43,ts-contacts-service-ContactsController.getContactsByContactsId,45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},8.437482548089731,8.437482548089731,0.0
+5,ts-contacts-service-866bd68c97-b6rfg,45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},0.468129644067262,8.437482548089731,7.969352904022469
+128,ts-order-other-service-OrderOtherRepository.findByAccountId,127,ts-order-other-service-OrderOtherController.securityInfoCheck,2.6637694340558737,2.6637694340558737,0.0
+11,ts-order-other-service-6cdbf9b4cc-r5dxl,127,ts-order-other-service-OrderOtherController.securityInfoCheck,0.10127624906420118,2.6637694340558737,2.5624931849916726

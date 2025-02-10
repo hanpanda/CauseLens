@@ -1,0 +1,11 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+139,ts-order-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},98,ts-inside-payment-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},7.466414161880997,7.466414161880997,0.0
+139,ts-order-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},62,ts-execute-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},6.702995591370263,6.702995591370263,0.0
+148,ts-order-service-OrderController.modifyOrder,139,ts-order-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},10.617874059435469,10.617874059435469,0.0
+12,ts-order-service-5b67c48447-4d4rx,139,ts-order-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},-0.049608995637372644,10.617874059435469,10.667483055072841
+10,ts-inside-payment-service-6f94c49ccd-ql78t,98,ts-inside-payment-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},0.6741173013655537,7.466414161880997,6.792296860515443
+7,ts-execute-service-775f544d9-xhnd8,62,ts-execute-service-HTTP GET /api/v1/orderservice/order/status/{orderId}/{status},-0.26813550785582674,6.702995591370263,6.971131099226089
+43,ts-contacts-service-ContactsController.getContactsByContactsId,45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},3.591526110659442,3.591526110659442,0.0
+5,ts-contacts-service-866bd68c97-b6rfg,45,ts-contacts-service-HTTP GET /api/v1/contactservice/contacts/{id},0.22031115425568792,3.591526110659442,3.371214956403754
+227,ts-security-service-SELECT ts.security_config,226,ts-security-service-SELECT SecurityConfig,3.4921369216424125,3.4921369216424125,0.0
+19,ts-security-service-cb9788d56-v24jq,226,ts-security-service-SELECT SecurityConfig,0.00151796131351567,3.4921369216424125,3.490618960328897

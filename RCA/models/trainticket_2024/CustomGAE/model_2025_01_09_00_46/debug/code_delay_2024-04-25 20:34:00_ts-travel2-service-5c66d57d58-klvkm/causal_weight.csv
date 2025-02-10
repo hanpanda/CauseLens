@@ -1,0 +1,11 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+219,ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets,263,ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets,4.330874605391988,4.330874605391988,0.0
+24,ts-travel-service-64469b5b48-zbwtm,267,ts-travel-service-SELECT ts.trip,11.468822462564555,11.468822462564555,0.0
+24,ts-travel-service-64469b5b48-zbwtm,268,ts-travel-service-Transaction.commit,11.466261499762187,11.466261499762187,0.0
+24,ts-travel-service-64469b5b48-zbwtm,258,ts-travel-service-BasicErrorController.error,10.64396079598816,10.64396079598816,0.0
+24,ts-travel-service-64469b5b48-zbwtm,263,ts-travel-service-HTTP POST /api/v1/seatservice/seats/left_tickets,0.6140865359714502,4.330874605391988,3.7167880694205375
+24,ts-travel-service-64469b5b48-zbwtm,259,ts-travel-service-HTTP GET /api/v1/routeservice/routes/{routeId},0.29214972879497214,2.899816170635312,2.60766644184034
+214,ts-seat-service-BasicErrorController.error,219,ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets,-0.0125217669029567,5.073270199690003,5.08579196659296
+221,ts-seat-service-SeatController.getLeftTicketOfInterval,219,ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets,5.073270199690003,5.073270199690003,0.0
+18,ts-seat-service-5c95b49cff-j7jvt,219,ts-seat-service-HTTP POST /api/v1/seatservice/seats/left_tickets,-0.11644442655487186,5.073270199690003,5.189714626244875
+202,ts-route-service-HTTP GET /api/v1/routeservice/routes/{routeId},259,ts-travel-service-HTTP GET /api/v1/routeservice/routes/{routeId},2.899816170635312,2.899816170635312,0.0

@@ -1,0 +1,16 @@
+u,u_name,v,v_name,score_diff,score,score_counter
+38,ts-config-service-ConfigController.retrieve,40,ts-config-service-HTTP GET /api/v1/configservice/configs/{configName},3.114722966638143,3.114722966638143,0.0
+197,ts-price-service-PriceConfigRepository.findByRouteIdsAndTrainTypes,198,ts-price-service-PriceController.query,3.2786779669916837,3.2786779669916837,0.0
+39,ts-config-service-ConfigRepository.findByName,38,ts-config-service-ConfigController.retrieve,5.3710891097880245,5.3710891097880245,0.0
+195,ts-price-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,26,ts-basic-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,2.662543855989537,2.662543855989537,0.0
+198,ts-price-service-PriceController.query,195,ts-price-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,3.617699422263123,3.617699422263123,0.0
+4,ts-config-service-5fcd447d84-f8khv,38,ts-config-service-ConfigController.retrieve,0.31696902409187544,5.3710891097880245,5.054120085696149
+4,ts-config-service-5fcd447d84-f8khv,39,ts-config-service-ConfigRepository.findByName,0.25017822803417555,4.384041776706583,4.133863548672408
+4,ts-config-service-5fcd447d84-f8khv,40,ts-config-service-HTTP GET /api/v1/configservice/configs/{configName},0.05288151371988237,3.114722966638143,3.0618414529182605
+200,ts-price-service-SELECT price_config,197,ts-price-service-PriceConfigRepository.findByRouteIdsAndTrainTypes,4.548832953949857,4.548832953949857,0.0
+16,ts-price-service-76846864d9-shjpl,197,ts-price-service-PriceConfigRepository.findByRouteIdsAndTrainTypes,0.16119487166495006,4.548832953949857,4.387638082284907
+16,ts-price-service-76846864d9-shjpl,195,ts-price-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,0.23331776282703443,3.617699422263123,3.3843816594360887
+16,ts-price-service-76846864d9-shjpl,198,ts-price-service-PriceController.query,0.10255567822214351,3.2786779669916837,3.17612228876954
+41,ts-config-service-SELECT Config,39,ts-config-service-ConfigRepository.findByName,4.384041776706583,4.384041776706583,0.0
+196,ts-price-service-PriceConfigRepository.findByRouteIdAndTrainType,198,ts-price-service-PriceController.query,-1.021440125235634,3.2786779669916837,4.300118092227318
+2,ts-basic-service-5dc8d4f9fd-58xkn,26,ts-basic-service-HTTP POST /api/v1/priceservice/prices/byRouteIdsAndTrainTypes,-0.2572401613097739,2.662543855989537,2.919784017299311

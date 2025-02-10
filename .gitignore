@@ -1,0 +1,8 @@
+/RCA/runs*
+/RCA/backup
+/RCA/images
+/backup/data
+/datasets/*
+/tmp
+
+__pycache__
